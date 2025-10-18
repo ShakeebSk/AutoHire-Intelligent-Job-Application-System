@@ -1,0 +1,4 @@
+The __pycache__ folder in  app (or any Python project) is automatically created by Python when you run your program.
+
+It stores compiled bytecode files (with the .pyc extension) for your Python scripts.
+For example, if you have a file main.py, Python compiles it to main.cpython-311.pyc and puts it inside __pycache__.
