@@ -1,0 +1,437 @@
+{% extends "base.html" %}
+
+{% block title %}Profile - AutoHire{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="h3 text-light mb-0">Profile Settings</h1>
+                    <p class="text-light mb-0">Manage your personal and professional information</p>
+                </div>
+                <div>
+                    <a href="{{ url_for('dashboard.settings') }}" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i>Back to Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xl-8 col-lg-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-user me-2"></i>Personal & Professional Information
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {{ form.hidden_tag() }}
+                        
+                        <!-- Basic Information -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="fw-bold text-primary mb-3">
+                                    <i class="fas fa-id-card me-2"></i>Basic Information
+                                </h6>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                {{ form.username.label(class="form-label fw-bold text-light") }}
+                                {{ form.username(class="form-control") }}
+                                {% if form.username.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.username.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                {{ form.email.label(class="form-label fw-bold") }}
+                                {{ form.email(class="form-control") }}
+                                {% if form.email.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.email.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                {{ form.full_name.label(class="form-label fw-bold text-light") }}
+                                {{ form.full_name(class="form-control", placeholder="Enter your full name") }}
+                                {% if form.full_name.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.full_name.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-3">
+                                {{ form.age.label(class="form-label fw-bold text-light") }}
+                                {{ form.age(class="form-control", placeholder="Age") }}
+                                {% if form.age.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.age.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-3">
+                                {{ form.phone.label(class="form-label fw-bold text-light") }}
+                                {{ form.phone(class="form-control", placeholder="Phone number") }}
+                                {% if form.phone.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.phone.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                {{ form.location.label(class="form-label fw-bold text-light") }}
+                                {{ form.location(class="form-control", placeholder="City, State/Country") }}
+                                {% if form.location.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.location.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <!-- Professional Information -->
+                        <hr class="my-4">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="fw-bold text-primary mb-3">
+                                    <i class="fas fa-briefcase me-2"></i>Professional Information
+                                </h6>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                {{ form.experience_years.label(class="form-label fw-bold text-light") }}
+                                {{ form.experience_years(class="form-control", placeholder="Years") }}
+                                {% if form.experience_years.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.experience_years.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                {{ form.current_salary.label(class="form-label fw-bold text-light") }}
+                                <div class="input-group">
+                                    <span class="input-group-text">₹</span>
+                                    {{ form.current_salary(class="form-control", placeholder="0.00") }}
+                                    <span class="input-group-text">LPA</span>
+                                </div>
+                                {% if form.current_salary.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.current_salary.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4">
+                                {{ form.expected_salary.label(class="form-label fw-bold text-light") }}
+                                <div class="input-group">
+                                    <span class="input-group-text">₹</span>
+                                    {{ form.expected_salary(class="form-control", placeholder="0.00") }}
+                                    <span class="input-group-text">LPA</span>
+                                </div>
+                                {% if form.expected_salary.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.expected_salary.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {{ form.skills.label(class="form-label fw-bold text-light") }}
+                                {{ form.skills(class="form-control", rows="3", placeholder="e.g., Python, JavaScript, Machine Learning, Project Management...") }}
+                                <div class="form-text text-secondary link-light">Separate multiple skills with commas</div>
+                                {% if form.skills.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.skills.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {{ form.education.label(class="form-label fw-bold text-light") }}
+                                {{ form.education(class="form-control", rows="3", placeholder="Your educational background, degrees, certifications...") }}
+                                {% if form.education.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.education.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                {{ form.achievements.label(class="form-label fw-bold text-light") }}
+                                {{ form.achievements(class="form-control", rows="3", placeholder="Awards, recognitions, notable projects, publications...") }}
+                                {% if form.achievements.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.achievements.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <!-- Application Settings -->
+                        <hr class="my-4">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="fw-bold text-primary mb-3">
+                                    <i class="fas fa-cog me-2"></i>Application Settings
+                                </h6>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                {{ form.daily_application_limit.label(class="form-label fw-bold text-light") }}
+                                {{ form.daily_application_limit(class="form-control") }}
+                                <div class="form-text text-secondary link-light">Maximum number of applications per day (1-10)</div>
+                                {% if form.daily_application_limit.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.daily_application_limit.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <!-- Form Actions -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex gap-2">
+                                    {{ form.submit(class="btn btn-outline-light px-4") }}
+                                    <a href="{{ url_for('dashboard.settings') }}" class="btn btn-outline-secondary px-4">
+                                        Cancel
+                                    </a>
+                                    <button type="button" class="btn btn-outline-secondary px-4" onclick="previewProfile()">
+                                        <i class="fas fa-eye me-1"></i>Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Profile Preview Sidebar -->
+        <div class="col-xl-4 col-lg-2">
+            <div class=" card sticky-top" style="top: 100px;">
+                <div class="card-header">
+                    <h6 class="card-title mb-0">
+                        <i class="fas fa-user-circle me-2"></i>Profile Preview
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-3">
+                        <div class="profile-avatar text-white rounded-circle mx-auto mb-2 feature-icon bg-primary d-flex align-items-center justify-content-center" 
+                             style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                            {{ current_user.username[0].upper() if current_user.username else 'U' }}
+                        </div>
+                        <h6 class="fw-bold mb-1 text-light" id="preview-name">
+                            {{ current_user.full_name or current_user.username or 'Your Name' }}
+                        </h6>
+                        <small class="text-light" id="preview-email">{{ current_user.email or 'your@email.com' }}</small>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <div class="info-item mb-2">
+                            <i class="fas fa-map-marker-alt text-light me-2"></i>
+                            <span id="preview-location" class="text-light">{{ current_user.location or 'Location not set' }}</span>
+                        </div>
+                        <div class="info-item mb-2">
+                            <i class="fas fa-briefcase text-light me-2"></i>
+                            <span class="text-light" id="preview-experience">
+                                {{ current_user.experience_years or 0 }} years experience
+                            </span>
+                        </div>
+                        <div class="info-item mb-2">
+                            <i class="fas fa-phone text-light me-2"></i>
+                            <span id="preview-phone" class="text-light">{{ current_user.phone or 'Phone not set' }}</span>
+                        </div>
+                        {% if current_user.skills %}
+                        <div class="info-item mb-3">
+                            <i class="fas fa-tags text-light me-2"></i>
+                            <div class="skills-preview mt-1">
+                                {% for skill in current_user.skills.split(',')[:3] %}
+                                <span class="badge bg-light text-dark me-1 mb-1">{{ skill.strip() }}</span>
+                                {% endfor %}
+                                {% if current_user.skills.split(',') | length > 3 %}
+                                <span class="badge bg-light text-dark">+{{ current_user.skills.split(',') | length - 3 }} more</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="profile-stats">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <div class="fw-bold text-primary">{{ current_user.job_applications.count() }}</div>
+                                    <small class="text-light">Applications</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <div class="fw-bold text-success">{{ current_user.daily_application_limit or 10 }}</div>
+                                    <small class="text-light">Daily Limit</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.form-label.fw-bold {
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background: var(--main-content);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    font-weight: 500;
+}
+
+.profile-avatar {
+    font-weight: bold;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.skills-preview .badge {
+    font-size: 0.75rem;
+}
+
+.stat-item {
+    padding: 0.5rem;
+}
+
+hr {
+    border-top: 2px solid #dee2e6;
+    opacity: 0.3;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
+
+.sticky-top {
+    position: sticky;
+    z-index: 1020;
+}
+
+@media (max-width: 1200px) {
+    .sticky-top {
+        position: relative;
+    }
+}
+
+.profile-ava {
+    background-color: var();
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function previewProfile() {
+    // Update preview with current form values
+    const fullName = document.getElementById('full_name').value || document.getElementById('username').value || 'Your Name';
+    const email = document.getElementById('email').value || 'your@email.com';
+    const location = document.getElementById('location').value || 'Location not set';
+    const experience = document.getElementById('experience_years').value || '0';
+    const phone = document.getElementById('phone').value || 'Phone not set';
+    
+    document.getElementById('preview-name').textContent = fullName;
+    document.getElementById('preview-email').textContent = email;
+    document.getElementById('preview-location').textContent = location;
+    document.getElementById('preview-experience').textContent = experience + ' years experience';
+    document.getElementById('preview-phone').textContent = phone;
+    
+    // Update avatar
+    const avatar = document.querySelector('.profile-avatar');
+    avatar.textContent = fullName.charAt(0).toUpperCase();
+    
+    // Show success message
+    AutoHire.showNotification('Profile preview updated!', 'success', 2000);
+}
+
+// Auto-update preview as user types
+document.addEventListener('DOMContentLoaded', function() {
+    const formFields = ['full_name', 'email', 'location', 'experience_years', 'phone'];
+    
+    formFields.forEach(fieldId => {
+        const field = document.getElementById(fieldId);
+        if (field) {
+            field.addEventListener('input', function() {
+                // Debounce the preview update
+                clearTimeout(this.updateTimeout);
+                this.updateTimeout = setTimeout(previewProfile, 500);
+            });
+        }
+    });
+});
+</script>
+{% endblock %}
