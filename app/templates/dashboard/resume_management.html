@@ -1,0 +1,596 @@
+{% extends "base.html" %}
+
+{% block title %}Resume Management - AutoHire{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="h3 mb-0">Resume Management</h1>
+                    <p class="text-muted mb-0">Upload and manage your resumes for job applications</p>
+                </div>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadResumeModal">
+                    <i class="fas fa-upload me-1"></i>Upload Resume
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Stats -->
+    <div class="row g-4 mb-4">
+        <div class="col-xl-3 col-md-6">
+            <div class="card stats-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="stats-icon bg-primary">
+                            <i class="fas fa-file-pdf text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h2 class="h4 mb-0 fw-bold">{{ stats.total_resumes }}</h2>
+                            <p class="text-muted mb-0">Total Resumes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card stats-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="stats-icon bg-success">
+                            <i class="fas fa-check-circle text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h2 class="h4 mb-0 fw-bold">{{ stats.active_resumes }}</h2>
+                            <p class="text-muted mb-0">Active Resumes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card stats-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="stats-icon bg-info">
+                            <i class="fas fa-paper-plane text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h2 class="h4 mb-0 fw-bold">{{ stats.total_usage }}</h2>
+                            <p class="text-muted mb-0">Times Used</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card stats-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="stats-icon bg-warning">
+                            <i class="fas fa-percentage text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h2 class="h4 mb-0 fw-bold">{{ (stats.average_success_rate * 100)|round(1) }}%</h2>
+                            <p class="text-muted mb-0">Avg. Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume List -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-folder-open text-primary me-2"></i>
+                        <h5 class="card-title mb-0">Your Resumes</h5>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    {% if not resumes %}
+                    <!-- No Resumes State -->
+                    <div class="empty-state text-center py-5" id="emptyState">
+                        <i class="fas fa-file-pdf fa-4x text-muted mb-3"></i>
+                        <h5 class="text-muted mb-2">No resumes uploaded yet</h5>
+                        <p class="text-muted mb-4">Upload your first resume to start applying for jobs automatically</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadResumeModal">
+                            <i class="fas fa-upload me-2"></i>Upload Your First Resume
+                        </button>
+                        
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-md-8">
+                                <div class="alert alert-light border" role="alert">
+                                    <h6 class="alert-heading">
+                                        <i class="fas fa-lightbulb text-warning me-2"></i>Tips for uploading resumes:
+                                    </h6>
+                                    <ul class="mb-0 text-start">
+                                        <li>Use PDF format for best compatibility</li>
+                                        <li>Keep file size under 5MB</li>
+                                        <li>Use clear, descriptive names</li>
+                                        <li>Set one resume as primary for default use</li>
+                                        <li>Upload different versions for different job types</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <!-- Resume Table -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Resume Name</th>
+                                    <th>File Name</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th>Status</th>
+                                    <th>Used</th>
+                                    <th>Success Rate</th>
+                                    <th>Uploaded</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for resume in resumes %}
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-file-pdf text-danger me-2"></i>
+                                            <div>
+                                                <div class="fw-bold">{{ resume.resume_name }}</div>
+                                                {% if resume.is_primary %}
+                                                <span class="badge badge-primary-resume">Primary</span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>{{ resume.original_filename }}</td>
+                                    <td>{{ resume.file_type.split('/')[-1].upper() if resume.file_type else 'PDF' }}</td>
+                                    <td>{{ resume.get_file_size_mb() }} MB</td>
+                                    <td>
+                                        {% if resume.is_active %}
+                                        <span class="badge badge-active">Active</span>
+                                        {% else %}
+                                        <span class="badge badge-inactive">Inactive</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ resume.times_used or 0 }}</td>
+                                    <td>{{ (resume.success_rate * 100)|round(1) if resume.success_rate else 0 }}%</td>
+                                    <td>{{ resume.uploaded_at.strftime('%Y-%m-%d') if resume.uploaded_at else 'N/A' }}</td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            {% if not resume.is_primary %}
+                                            <button type="button" class="btn btn-outline-success btn-sm" 
+                                                    title="Set as Primary" 
+                                                    onclick="setPrimaryResume({{ resume.id }}, '{{ resume.resume_name }}', this)">
+                                                <i class="fas fa-star"></i>
+                                            </button>
+                                            {% endif %}
+                                            <button type="button" class="btn btn-outline-info btn-sm" 
+                                                    title="{{ 'Deactivate' if resume.is_active else 'Activate' }} Resume" 
+                                                    onclick="toggleResumeStatus({{ resume.id }}, '{{ resume.resume_name }}', {{ resume.is_active|lower }}, this)">
+                                                <i class="fas fa-toggle-{{ 'on' if resume.is_active else 'off' }}"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm" 
+                                                    title="Delete Resume" 
+                                                    onclick="deleteResume({{ resume.id }}, '{{ resume.resume_name }}', this)">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Upload Resume Modal -->
+<div class="modal fade" id="uploadResumeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-upload text-primary me-2"></i>
+                    <h5 class="modal-title">Upload Resume</h5>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="uploadResumeForm" method="POST" action="{{ url_for('dashboard.upload_resume') }}" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="row g-3">
+                        <div class="col-12">
+                            {{ form.resume.label(class="form-label fw-bold") }}
+                            <!-- The actual file input is hidden. We trigger it with JS. -->
+                            {{ form.resume(id="resumeFile", style="display:none;") }}
+                            
+                            <div class="upload-area" id="uploadArea">
+                                <div class="upload-content-prompt" id="uploadPrompt" style="display: block;">
+                                    <i class="fas fa-cloud-upload-alt fa-3x text-muted mb-3"></i>
+                                    <h6 class="text-muted">Drag & drop or click to select a file</h6>
+                                    <p class="text-muted small mb-3">PDF, DOC, or DOCX files only (Max 5MB)</p>
+                                    <button type="button" class="btn btn-outline-primary">Browse Files</button>
+                                </div>
+                                <div class="upload-content-info" id="fileInfo" style="display: none;">
+                                    <!-- File info will be shown here by JS -->
+                                </div>
+                            </div>
+                            {% for error in form.resume.errors %}
+                                <div class="invalid-feedback d-block">{{ error }}</div>
+                            {% endfor %}
+                            <div class="form-text">Accepted formats: PDF, DOC, DOCX. Maximum size: 5MB.</div>
+                        </div>
+
+                        <div class="col-12">
+                            {{ form.resume_name.label(class="form-label fw-bold") }}
+                            {{ form.resume_name(class="form-control", id="resumeName", placeholder="e.g., Software Engineer Resume - 2025") }}
+                             {% for error in form.resume_name.errors %}
+                                <div class="invalid-feedback d-block">{{ error }}</div>
+                            {% endfor %}
+                            <div class="form-text">Give your resume a descriptive name for easy identification</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                {{ form.is_primary(class="form-check-input") }}
+                                {{ form.is_primary.label(class="form-check-label fw-bold") }}
+                                <div class="form-text">Primary resume is used by default for applications</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="uploadResumeForm" class="btn btn-primary">
+                    <i class="fas fa-upload me-1"></i>Upload Resume
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.stats-card {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-2px);
+}
+
+.stats-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #0d6efd;
+    background-color: #f8f9ff;
+}
+
+.upload-area.dragover {
+    border-color: #0d6efd;
+    background-color: #f8f9ff;
+    transform: scale(1.02);
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.table th {
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.badge-primary-resume {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-active {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-inactive {
+    background-color: #6c757d;
+    color: white;
+}
+
+.empty-state {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// File upload handling
+document.addEventListener('DOMContentLoaded', function() {
+    const uploadArea = document.getElementById('uploadArea');
+    const resumeFileInput = document.getElementById('resumeFile');
+    const uploadPrompt = document.getElementById('uploadPrompt');
+    const fileInfo = document.getElementById('fileInfo');
+
+    if (!uploadArea || !resumeFileInput || !uploadPrompt || !fileInfo) {
+        console.error("One or more upload elements are missing from the DOM.");
+        return;
+    }
+
+    // --- Event Listeners ---
+
+    // 1. Click on the upload area to trigger file input
+    uploadArea.addEventListener('click', (e) => {
+        // Don't trigger if a button inside is clicked (e.g., the 'Remove' button)
+        if (e.target.tagName !== 'BUTTON' && !e.target.closest('button')) {
+            resumeFileInput.click();
+        }
+    });
+
+    // 2. Listen for file selection via browse or drag/drop
+    resumeFileInput.addEventListener('change', () => {
+        if (resumeFileInput.files.length > 0) {
+            window.handleFileSelect(resumeFileInput.files[0]);
+        }
+    });
+
+    // 3. Drag and Drop listeners
+    uploadArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        uploadArea.classList.add('dragover');
+    });
+
+    uploadArea.addEventListener('dragleave', () => {
+        uploadArea.classList.remove('dragover');
+    });
+
+    uploadArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        uploadArea.classList.remove('dragover');
+        if (e.dataTransfer.files.length > 0) {
+            // Assign dropped files to the input
+            resumeFileInput.files = e.dataTransfer.files;
+            // Manually trigger the change event
+            const changeEvent = new Event('change', { bubbles: true });
+            resumeFileInput.dispatchEvent(changeEvent);
+        }
+    });
+
+    // --- Core Functions ---
+
+    window.handleFileSelect = function(file) {
+        const fileName = file.name;
+        const fileSize = (file.size / 1024 / 1024).toFixed(2);
+
+        // Simple validation (can be enhanced)
+        const allowedExtensions = /(\.pdf|\.doc|\.docx)$/i;
+        if (!allowedExtensions.exec(fileName)) {
+            alert('Invalid file type. Please select a PDF, DOC, or DOCX file.');
+            resumeFileInput.value = ''; // Clear the invalid file
+            return;
+        }
+        if (file.size > 5 * 1024 * 1024) {
+            alert('File is too large. Maximum size is 5MB.');
+            resumeFileInput.value = ''; // Clear the invalid file
+            return;
+        }
+
+        // Update UI
+        fileInfo.innerHTML = `
+            <i class="fas fa-file-check fa-3x text-success mb-3"></i>
+            <h6 class="text-success">${fileName}</h6>
+            <p class="text-muted small">Size: ${fileSize} MB</p>
+            <button type="button" class="btn btn-outline-danger btn-sm" onclick="clearFileSelection()">
+                <i class="fas fa-times me-1"></i>Remove File
+            </button>
+        `;
+        uploadPrompt.style.display = 'none';
+        fileInfo.style.display = 'block';
+
+        // Auto-fill resume name input if it's empty
+        const resumeNameInput = document.getElementById('resumeName');
+        if (!resumeNameInput.value) {
+            resumeNameInput.value = fileName.replace(/\.[^/.]+$/, "");
+        }
+    }
+
+    window.clearFileSelection = function() {
+        // Reset the file input
+        resumeFileInput.value = '';
+
+        // Reset the UI
+        fileInfo.innerHTML = '';
+        fileInfo.style.display = 'none';
+        uploadPrompt.style.display = 'block';
+
+        // Optional: clear the resume name
+        document.getElementById('resumeName').value = '';
+    }
+});
+
+// Modal reset functionality
+function resetUploadModal() {
+    // Reset form
+    document.getElementById('uploadResumeForm').reset();
+    
+    // Reset file upload area
+    if (window.clearFileSelection) {
+        window.clearFileSelection();
+    }
+    
+    // Reset buttons
+    const uploadBtn = document.querySelector('button[form="uploadResumeForm"]');
+    if (uploadBtn) {
+        uploadBtn.innerHTML = '<i class="fas fa-upload me-1"></i>Upload Resume';
+        uploadBtn.disabled = false;
+    }
+}
+
+// Add event listener to reset modal when it's closed
+document.addEventListener('DOMContentLoaded', function() {
+    const uploadModal = document.getElementById('uploadResumeModal');
+    if (uploadModal) {
+        uploadModal.addEventListener('hidden.bs.modal', function () {
+            resetUploadModal();
+        });
+    }
+});
+
+// Better alert function
+function showAlert(message, type = 'info') {
+    // Create alert element
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; max-width: 400px;';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    // Add to body
+    document.body.appendChild(alertDiv);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (alertDiv.parentNode) {
+            alertDiv.remove();
+        }
+    }, 5000);
+}
+
+// Resume management functions
+function setPrimaryResume(resumeId, resumeName, buttonElement) {
+    if (confirm(`Are you sure you want to set \\"${resumeName}\\" as your primary resume?`)) {
+        // Show loading state
+        const originalContent = buttonElement.innerHTML;
+        buttonElement.innerHTML = '\\<i class="fas fa-spinner fa-spin">\\</i>';
+        buttonElement.disabled = true;
+        
+        // Create and submit form
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = `/dashboard/resume/${resumeId}/set_primary`;
+        form.style.display = 'none';
+        
+        // Add CSRF token from form if available
+        const existingForm = document.getElementById('uploadResumeForm');
+        if (existingForm) {
+            const csrfInput = existingForm.querySelector('input[name="csrf_token"]');
+            if (csrfInput) {
+                const newCsrfInput = document.createElement('input');
+                newCsrfInput.type = 'hidden';
+                newCsrfInput.name = 'csrf_token';
+                newCsrfInput.value = csrfInput.value;
+                form.appendChild(newCsrfInput);
+            }
+        }
+        
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+function toggleResumeStatus(resumeId, resumeName, currentStatus, buttonElement) {
+    const action = currentStatus ? 'deactivate' : 'activate';
+    if (confirm(`Are you sure you want to ${action} \\"${resumeName}\\"?`)) {
+        // Show loading state
+        const originalContent = buttonElement.innerHTML;
+        buttonElement.innerHTML = '\\<i class="fas fa-spinner fa-spin">\\</i>';
+        buttonElement.disabled = true;
+        
+        // Create and submit form
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = `/dashboard/resume/${resumeId}/toggle_status`;
+        form.style.display = 'none';
+        
+        // Add CSRF token from form if available
+        const existingForm = document.getElementById('uploadResumeForm');
+        if (existingForm) {
+            const csrfInput = existingForm.querySelector('input[name="csrf_token"]');
+            if (csrfInput) {
+                const newCsrfInput = document.createElement('input');
+                newCsrfInput.type = 'hidden';
+                newCsrfInput.name = 'csrf_token';
+                newCsrfInput.value = csrfInput.value;
+                form.appendChild(newCsrfInput);
+            }
+        }
+        
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+function deleteResume(resumeId, resumeName, buttonElement) {
+    if (confirm(`Are you sure you want to delete \\"${resumeName}\\"? This action cannot be undone.`)) {
+        // Show loading state
+        const originalContent = buttonElement.innerHTML;
+        buttonElement.innerHTML = '\\<i class="fas fa-spinner fa-spin">\\</i>';
+        buttonElement.disabled = true;
+        
+        // Create and submit form
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = `/dashboard/resume/${resumeId}/delete`;
+        form.style.display = 'none';
+        
+        // Add CSRF token from form if available
+        const existingForm = document.getElementById('uploadResumeForm');
+        if (existingForm) {
+            const csrfInput = existingForm.querySelector('input[name="csrf_token"]');
+            if (csrfInput) {
+                const newCsrfInput = document.createElement('input');
+                newCsrfInput.type = 'hidden';
+                newCsrfInput.name = 'csrf_token';
+                newCsrfInput.value = csrfInput.value;
+                form.appendChild(newCsrfInput);
+            }
+        }
+        
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+</script>
+{% endblock %}
