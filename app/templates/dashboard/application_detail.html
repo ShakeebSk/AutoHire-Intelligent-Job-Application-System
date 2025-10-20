@@ -1,0 +1,595 @@
+{% extends "base.html" %}
+
+{% block title %}{{ application.job_title }} - AutoHire{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-2">
+                            <li class="breadcrumb-item">
+                                <a href="{{ url_for('dashboard.index') }}" class="text-decoration-none">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="{{ url_for('dashboard.applications') }}" class="text-decoration-none">Applications</a>
+                            </li>
+                            <li class="breadcrumb-item active">{{ application.job_title }}</li>
+                        </ol>
+                    </nav>
+                    <h1 class="h3 mb-0">{{ application.job_title }}</h1>
+                    <p class="text-muted mb-0">{{ application.company_name or 'Unknown Company' }} • {{ application.platform.title() }}</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-secondary me-2" onclick="history.back()">
+                        <i class="fas fa-arrow-left me-1"></i>Back
+                    </button>
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-cog me-1"></i>Actions
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ application.job_url or '#' }}" target="_blank">
+                                <i class="fas fa-external-link-alt me-2"></i>View Original Job
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="updateStatus()">
+                                <i class="fas fa-edit me-2"></i>Update Status
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="addNote()">
+                                <i class="fas fa-sticky-note me-2"></i>Add Note
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#" onclick="deleteApplication()">
+                                <i class="fas fa-trash me-2"></i>Delete Application
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Main Application Details -->
+        <div class="col-xl-8">
+            <!-- Application Overview -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-transparent border-0 pb-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-briefcase text-primary me-2"></i>
+                            <h5 class="card-title mb-0">Application Overview</h5>
+                        </div>
+                        <span class="badge status-badge status-{{ application.status }} fs-6">
+                            {{ application.status.title() }}
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <label class="info-label">Job Title</label>
+                                <div class="info-value">{{ application.job_title }}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <label class="info-label">Company</label>
+                                <div class="info-value">{{ application.company_name or 'Not specified' }}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <label class="info-label">Platform</label>
+                                <div class="info-value">
+                                    <span class="badge badge-platform badge-{{ application.platform }}">
+                                        {% if application.platform == 'linkedin' %}
+                                            <i class="fab fa-linkedin me-1"></i>
+                                        {% elif application.platform == 'indeed' %}
+                                            <i class="fas fa-briefcase me-1"></i>
+                                        {% elif application.platform == 'naukri' %}
+                                            <i class="fas fa-user-tie me-1"></i>
+                                        {% elif application.platform == 'internshala' %}
+                                            <i class="fas fa-graduation-cap me-1"></i>
+                                        {% endif %}
+                                        {{ application.platform.title() }}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <label class="info-label">Work Type</label>
+                                <div class="info-value">{{ application.work_type.title() if application.work_type else 'Not specified' }}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <label class="info-label">Location</label>
+                                <div class="info-value">{{ application.location or 'Not specified' }}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-item">
+                                <label class="info-label">Salary</label>
+                                <div class="info-value">{{ application.salary or 'Not specified' }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Description -->
+            {% if application.job_description %}
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-transparent border-0 pb-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-file-alt text-info me-2"></i>
+                        <h5 class="card-title mb-0">Job Description</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="job-description">
+                        {{ application.job_description | nl2br | safe }}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Requirements -->
+            {% if application.requirements %}
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-transparent border-0 pb-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-list-check text-warning me-2"></i>
+                        <h5 class="card-title mb-0">Requirements</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="requirements">
+                        {{ application.requirements | nl2br | safe }}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Notes -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-sticky-note text-success me-2"></i>
+                        <h5 class="card-title mb-0">Notes</h5>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm" onclick="addNote()">
+                        <i class="fas fa-plus me-1"></i>Add Note
+                    </button>
+                </div>
+                <div class="card-body">
+                    {% if application.notes %}
+                        <div class="alert alert-light border" role="alert">
+                            {{ application.notes | nl2br | safe }}
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-sticky-note fa-2x text-muted mb-2"></i>
+                            <p class="text-muted mb-0">No notes added yet</p>
+                            <small class="text-muted">Add notes to track your progress with this application</small>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-xl-4">
+            <!-- Application Timeline -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-transparent border-0 pb-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-timeline text-secondary me-2"></i>
+                        <h5 class="card-title mb-0">Timeline</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <strong>Application Submitted</strong>
+                                    <small class="text-muted">{{ application.application_date.strftime('%b %d, %Y at %I:%M %p') if application.application_date else 'Unknown' }}</small>
+                                </div>
+                                <div class="timeline-body">
+                                    {% if application.auto_applied %}
+                                        <span class="badge bg-success">Automatically Applied</span>
+                                    {% else %}
+                                        <span class="badge bg-info">Manually Applied</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                        {% if application.response_date %}
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-info"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <strong>Response Received</strong>
+                                    <small class="text-muted">{{ application.response_date.strftime('%b %d, %Y at %I:%M %p') }}</small>
+                                </div>
+                                <div class="timeline-body">
+                                    Status updated to {{ application.status.title() }}
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if application.follow_up_date %}
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-warning"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <strong>Follow-up Scheduled</strong>
+                                    <small class="text-muted">{{ application.follow_up_date.strftime('%b %d, %Y') }}</small>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application Stats -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-transparent border-0 pb-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-chart-bar text-primary me-2"></i>
+                        <h5 class="card-title mb-0">Application Details</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="stat-items">
+                        <div class="stat-item">
+                            <div class="stat-label">Resume Used</div>
+                            <div class="stat-value">{{ application.resume_used or 'Default Resume' }}</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Platform Job ID</div>
+                            <div class="stat-value">{{ application.platform_job_id or 'N/A' }}</div>
+                        </div>
+                        {% if application.error_message %}
+                        <div class="stat-item">
+                            <div class="stat-label">Error Message</div>
+                            <div class="stat-value text-danger">{{ application.error_message }}</div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent border-0 pb-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-bolt text-warning me-2"></i>
+                        <h5 class="card-title mb-0">Quick Actions</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary" onclick="updateStatus()">
+                            <i class="fas fa-edit me-2"></i>Update Status
+                        </button>
+                        <button class="btn btn-outline-info" onclick="scheduleFollowUp()">
+                            <i class="fas fa-calendar-plus me-2"></i>Schedule Follow-up
+                        </button>
+                        {% if application.job_url %}
+                        <a href="{{ application.job_url }}" target="_blank" class="btn btn-outline-success">
+                            <i class="fas fa-external-link-alt me-2"></i>View Original Job
+                        </a>
+                        {% endif %}
+                        <button class="btn btn-outline-secondary" onclick="duplicateApplication()">
+                            <i class="fas fa-copy me-2"></i>Apply to Similar Jobs
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Update Status Modal -->
+<div class="modal fade" id="updateStatusModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Application Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="updateStatusForm">
+                    <div class="mb-3">
+                        <label class="form-label">New Status</label>
+                        <select class="form-select" id="newStatus">
+                            <option value="applied" {{ 'selected' if application.status == 'applied' else '' }}>Applied</option>
+                            <option value="interview" {{ 'selected' if application.status == 'interview' else '' }}>Interview Scheduled</option>
+                            <option value="hired" {{ 'selected' if application.status == 'hired' else '' }}>Hired</option>
+                            <option value="rejected" {{ 'selected' if application.status == 'rejected' else '' }}>Rejected</option>
+                            <option value="error" {{ 'selected' if application.status == 'error' else '' }}>Error</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Notes (Optional)</label>
+                        <textarea class="form-control" rows="3" id="statusNotes" placeholder="Add any additional notes..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="saveStatusUpdate()">Update Status</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Note Modal -->
+<div class="modal fade" id="addNoteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Note</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addNoteForm">
+                    <div class="mb-3">
+                        <label class="form-label">Note</label>
+                        <textarea class="form-control" rows="4" id="noteText" placeholder="Add your note here..." required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="saveNote()">Save Note</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.info-item {
+    margin-bottom: 1.5rem;
+}
+
+.info-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 1rem;
+    color: #212529;
+    font-weight: 500;
+}
+
+.job-description, .requirements {
+    line-height: 1.6;
+    color: #495057;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e9ecef;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -0.5rem;
+    top: 0.25rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #e9ecef;
+}
+
+.timeline-content {
+    margin-left: 1rem;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-header strong {
+    flex: 1;
+    font-size: 0.875rem;
+}
+
+.timeline-header small {
+    font-size: 0.75rem;
+}
+
+.timeline-body {
+    font-size: 0.875rem;
+}
+
+.stat-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stat-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 0.875rem;
+    color: #495057;
+    word-break: break-word;
+}
+
+.badge-platform {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+}
+
+.badge-linkedin { background-color: #0077b5; color: white; }
+.badge-indeed { background-color: #2164f3; color: white; }
+.badge-naukri { background-color: #ff6b35; color: white; }
+.badge-internshala { background-color: #00d4aa; color: white; }
+
+.status-badge {
+    font-size: 0.875rem;
+    padding: 6px 12px;
+}
+
+.status-applied { background-color: #007bff; color: white; }
+.status-interview { background-color: #28a745; color: white; }
+.status-hired { background-color: #ffc107; color: black; }
+.status-rejected { background-color: #dc3545; color: white; }
+.status-error { background-color: #6c757d; color: white; }
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+}
+
+.breadcrumb-item a:hover {
+    color: #0d6efd;
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function updateStatus() {
+    const modal = new bootstrap.Modal(document.getElementById('updateStatusModal'));
+    modal.show();
+}
+
+function addNote() {
+    const modal = new bootstrap.Modal(document.getElementById('addNoteModal'));
+    modal.show();
+}
+
+function scheduleFollowUp() {
+    const date = prompt('Enter follow-up date (YYYY-MM-DD):');
+    if (date) {
+        // Here you would typically send an API request
+        console.log('Scheduling follow-up for:', date);
+        alert('Follow-up scheduled for ' + date);
+    }
+}
+
+function duplicateApplication() {
+    if (confirm('This will search for similar jobs and apply automatically. Continue?')) {
+        console.log('Searching for similar jobs...');
+        alert('Searching for similar jobs based on this application...');
+    }
+}
+
+function deleteApplication() {
+    if (confirm('Are you sure you want to delete this application? This action cannot be undone.')) {
+        console.log('Deleting application...');
+        // Here you would typically send an API request
+        window.location.href = '{{ url_for("dashboard.applications") }}';
+    }
+}
+
+function saveStatusUpdate() {
+    const newStatus = document.getElementById('newStatus').value;
+    const notes = document.getElementById('statusNotes').value;
+    
+    // Here you would typically send an API request
+    console.log('Updating status to:', newStatus, 'with notes:', notes);
+    
+    // Simulate success
+    setTimeout(() => {
+        alert('Status updated successfully!');
+        bootstrap.Modal.getInstance(document.getElementById('updateStatusModal')).hide();
+        location.reload();
+    }, 500);
+}
+
+function saveNote() {
+    const noteText = document.getElementById('noteText').value.trim();
+    
+    if (!noteText) {
+        alert('Please enter a note.');
+        return;
+    }
+    
+    // Here you would typically send an API request
+    console.log('Adding note:', noteText);
+    
+    // Simulate success
+    setTimeout(() => {
+        alert('Note added successfully!');
+        bootstrap.Modal.getInstance(document.getElementById('addNoteModal')).hide();
+        location.reload();
+    }, 500);
+}
+
+// Add custom filter for nl2br in templates (if not already available)
+// This would typically be done in the Flask app, but for demo purposes
+document.addEventListener('DOMContentLoaded', function() {
+    // Convert line breaks to <br> tags in elements with nl2br class
+    const elements = document.querySelectorAll('.job-description, .requirements');
+    elements.forEach(element => {
+        if (element.textContent) {
+            element.innerHTML = element.textContent.replace(/\n/g, '<br>');
+        }
+    });
+});
+</script>
+{% endblock %}
