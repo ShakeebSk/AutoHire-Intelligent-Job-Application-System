@@ -1,0 +1,371 @@
+{% extends "base.html" %}
+
+{% block title %}AutoHire - Automated Job Applications Made Easy{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-gradient-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center min-vh-100 ">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold mb-4 animate-fade-in">
+                        Apply to <span class="text-secondary   link-light">Hundreds</span> of Jobs 
+                        <span class="text-secondary link-light">Automatically</span>
+                    </h1>
+                    <p class="lead mb-4 animate-fade-in-delay-1">
+                        AutoHire streamlines your job search by automatically applying to relevant positions across LinkedIn, Indeed, Naukri, and InternShala. Save time, increase applications, land your dream job.
+                    </p>
+                    
+                    <div class="hero-stats mb-4 animate-fade-in-delay-2">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="fw-bold text-secondary link-light">4</h3>
+                                    <p class="small">Platforms</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="fw-bold text-secondary link-light">10</h3>
+                                    <p class="small">Daily Applications</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="fw-bold text-secondary link-light">24/7</h3>
+                                    <p class="small">Automation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons animate-fade-in-delay-3">
+                        <a href="{{ url_for('auth.register') if url_for('auth.register') else '#' }}" class="btn btn-outline-light btn-lg me-3 px-4">
+                            <i class="fas fa-rocket me-2"></i>Get Started Free
+                        </a>
+                        <a href="#how-it-works" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-play-circle me-2"></i>See How It Works
+                        </a>
+                    </div>
+                    
+                    <div class="platform-logos mt-5 animate-fade-in-delay-4">
+                        <p class="small text-light mb-3">Supported Platforms:</p>
+                        <div class="d-flex align-items-center">
+                            <span class="platform-badge me-3">
+                                <i class="fab fa-linkedin me-1"></i>LinkedIn
+                            </span>
+                            <span class="platform-badge me-3">
+                                <i class="fas fa-briefcase me-1"></i>Indeed
+                            </span>
+                            <span class="platform-badge me-3">
+                                <i class="fas fa-user-tie me-1"></i>Naukri
+                            </span>
+                            <span class="platform-badge">
+                                <i class="fas fa-graduation-cap me-1"></i>InternShala
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image text-center animate-slide-in">
+                    <div class="dashboard-preview">
+                        <div class="browser-mockup">
+                            <div class="browser-dots mb-3">
+                                <span class="dot bg-danger"></span>
+                                <span class="dot bg-warning"></span>
+                                <span class="dot bg-success"></span>
+                            </div>
+                            <div class="dashboard-content bg-secondary rounded p-4 text-dark">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="fw-bold mb-0">AutoHire Dashboard</h6>
+                                    <span class="badge bg-success">Active</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 8px;">
+                                    <div class="progress-bar bg-info" style="width: 75%"></div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="dashboard-stat">
+                                            <h5 class="text-light fw-bold">127</h5>
+                                            <small class="text-light">Applied</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="dashboard-stat">
+                                            <h5 class="text-light fw-bold">23</h5>
+                                            <small class="text-light">Responses</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="dashboard-stat">
+                                            <h5 class="text-light fw-bold">5</h5>
+                                            <small class="text-light">Interviews</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-light">Why Choose AutoHire?</h2>
+            <p class="lead  text-light">Powerful features designed to accelerate your job search</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Smart Automation</h4>
+                    <p class="text-light">Our AI-powered system intelligently matches your profile with relevant job openings and applies automatically.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Multi-Platform Support</h4>
+                    <p class="text-light">Apply to jobs across LinkedIn, Indeed, Naukri, and InternShala from a single dashboard.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Application Tracking</h4>
+                    <p class="text-light">Keep track of all your applications with detailed analytics and export reports to Excel.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h4>Resume Management</h4>
+                    <p class="text-light">Upload, modify, or build new resumes. AutoHire automatically uses the best-suited resume for each application.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Time Saving</h4>
+                    <p class="text-light">Save hours of manual work. Apply to up to 10 jobs daily while you focus on interview preparation.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Secure & Private</h4>
+                    <p class="text-light">Your credentials are encrypted and stored securely. We prioritize your privacy and data protection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-light">How AutoHire Works</h2>
+            <p class="lead text-light">Get started in just 3 simple steps</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="step-card text-center">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h4>Create Account & Setup</h4>
+                    <p class="text-light">Sign up, upload your resume, and connect your job platform accounts securely.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="step-card text-center">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Configure Preferences</h4>
+                    <p class="text-light">Set your job preferences, skills, experience level, and platform priorities.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="step-card text-center">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Let AutoHire Work</h4>
+                    <p class="text-light">Sit back and relax while AutoHire applies to relevant jobs automatically.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('auth.register') if url_for('auth.register') else '#' }}" class="btn btn-light btn-lg px-5">
+                Start Your Job Hunt Today
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-light">Frequently Asked Questions</h2>
+            <p class="lead text-light">Everything you need to know about AutoHire</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How does AutoHire ensure my credentials are safe?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We use industry-standard encryption to store your credentials securely. Your passwords are hashed and never stored in plain text. We also implement strict security measures to protect your data.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What happens if AutoHire encounters an error during application?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                If AutoHire encounters any difficulty it cannot solve, it will pause the process and alert you immediately. You can then handle the issue manually and restart the automation.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Can I control which platforms AutoHire applies to?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes! You can set platform priorities and choose which platforms you want AutoHire to focus on. You have full control over the application process.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                How many jobs will AutoHire apply to daily?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                AutoHire applies to a maximum of 10 jobs per day to avoid platform restrictions and maintain quality applications. This limit ensures your applications don't appear spammy.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Do I need to have accounts on all job platforms?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, you need to have fully set up accounts on LinkedIn, Indeed, Naukri, and InternShala before using AutoHire. Make sure your profiles are complete and professional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section  text-white py-5">
+    <div class="container txtbtnarea">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-3">Ready to Automate Your Job Search?</h2>
+                <p class="lead mb-0">Join thousands of job seekers who have already accelerated their career with AutoHire.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('auth.register') if url_for('auth.register') else '#' }}" class="btn btn-light btn-lg px-5">
+                    <i class="fas fa-arrow-right me-2"></i>Get Started Now
+                </a>
+            </div> 
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add animation classes on scroll
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.feature-card, .step-card');
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('animate-fade-in-up');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Initial check
+</script>
+{% endblock %}
