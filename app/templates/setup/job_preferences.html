@@ -1,0 +1,779 @@
+{% extends "base.html" %}
+
+{% block title %}Job Preferences Setup - AutoHire{% endblock %}
+
+{% block content %}
+<div class="setup-container">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+                <!-- Progress Header -->
+                <div class="setup-header text-center mb-5">
+                    <div class="setup-progress">
+                        <div class="progress-step active">
+                            <div class="step-circle">1</div>
+                            <span>Job Preferences</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">
+                            <div class="step-circle">2</div>
+                            <span>Resume Upload</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">
+                            <div class="step-circle">3</div>
+                            <span>Start Applying</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="setup-title mt-4">Set Up Your Job Search Preferences</h1>
+                    <p class="setup-subtitle text-secondary link-light">
+                        Help AutoHire find the perfect jobs for you by telling us what you're looking for
+                    </p>
+                </div>
+
+                <!-- Setup Form -->
+                <div class="card setup-card">
+                    <div class="card-body p-4">
+                        <form method="POST" enctype="multipart/form-data" class="setup-form">
+                            {{ form.hidden_tag() }}
+                            
+                            <!-- Section 1: Job Search Basics -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title text-light">
+                                        <i class="fas fa-search text-light me-2"></i>
+                                        What Jobs Are You Looking For?
+                                    </h3>
+                                    <p class="section-subtitle text-secondary link-light">Tell us about your ideal job</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.preferred_job_titles.label(class="form-label fw-bold") }}
+                                            {{ form.preferred_job_titles(class="form-control", rows="4") }}
+                                            <div class="form-text">Enter one job title per line</div>
+                                            {% if form.preferred_job_titles.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.preferred_job_titles.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.preferred_locations.label(class="form-label fw-bold") }}
+                                            {{ form.preferred_locations(class="form-control", rows="4") }}
+                                            <div class="form-text">Enter one location per line (include "Remote" if applicable)</div>
+                                            {% if form.preferred_locations.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.preferred_locations.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            {{ form.work_type.label(class="form-label fw-bold") }}
+                                            {{ form.work_type(class="form-select") }}
+                                            {% if form.work_type.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.work_type.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            {{ form.work_mode.label(class="form-label fw-bold") }}
+                                            {{ form.work_mode(class="form-select custom-dropdown") }}
+                                            {% if form.work_mode.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.work_mode.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            {{ form.experience_level.label(class="form-label fw-bold") }}
+                                            {{ form.experience_level(class="form-select") }}
+                                            {% if form.experience_level.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.experience_level.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2: Skills & Experience -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-code text-success me-2"></i>
+                                        Your Skills & Expertise
+                                    </h3>
+                                    <p class="section-subtitle">Help us match you with relevant opportunities</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.required_skills.label(class="form-label fw-bold") }}
+                                            {{ form.required_skills(class="form-control", rows="3") }}
+                                            <div class="form-text">Skills you definitely want to use (comma separated)</div>
+                                            {% if form.required_skills.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.required_skills.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.preferred_skills.label(class="form-label fw-bold") }}
+                                            {{ form.preferred_skills(class="form-control", rows="3") }}
+                                            <div class="form-text">Skills you'd like to learn or use more (comma separated)</div>
+                                            {% if form.preferred_skills.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.preferred_skills.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 3: Salary & Benefits -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-rupee-sign text-warning me-2"></i>
+                                        Salary Expectations
+                                    </h3>
+                                    <p class="section-subtitle">Set your salary range to find suitable opportunities</p>
+                                </div>
+                                
+                                <div class="row g-4 align-items-end">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            {{ form.min_salary.label(class="form-label fw-bold") }}
+                                            <div class="input-group">
+                                                <span class="input-group-text">₹</span>
+                                                {{ form.min_salary(class="form-control") }}
+                                                <span class="input-group-text">LPA</span>
+                                            </div>
+                                            {% if form.min_salary.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.min_salary.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            {{ form.max_salary.label(class="form-label fw-bold") }}
+                                            <div class="input-group">
+                                                <span class="input-group-text">₹</span>
+                                                {{ form.max_salary(class="form-control") }}
+                                                <span class="input-group-text">LPA</span>
+                                            </div>
+                                            {% if form.max_salary.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.max_salary.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            {{ form.salary_negotiable(class="form-check-input") }}
+                                            {{ form.salary_negotiable.label(class="form-check-label") }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 4: Company & Industry Preferences -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-building text-info me-2"></i>
+                                        Company Preferences
+                                    </h3>
+                                    <p class="section-subtitle">Tell us about your ideal workplace</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.preferred_industries.label(class="form-label fw-bold") }}
+                                            {{ form.preferred_industries(class="form-select") }}
+                                            {% if form.preferred_industries.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.preferred_industries.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.company_size_preference.label(class="form-label fw-bold") }}
+                                            {{ form.company_size_preference(class="form-select") }}
+                                            {% if form.company_size_preference.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.company_size_preference.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 5: Application Settings -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-cogs text-secondary me-2"></i>
+                                        Application Settings
+                                    </h3>
+                                    <p class="section-subtitle">Configure how AutoHire applies to jobs for you</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.max_applications_per_day.label(class="form-label fw-bold") }}
+                                            {{ form.max_applications_per_day(class="form-control text-light") }}
+                                            <div class="form-text">Recommended: 5-15 applications per day</div>
+                                            {% if form.max_applications_per_day.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.max_applications_per_day.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.application_priority.label(class="form-label fw-bold") }}
+                                            {{ form.application_priority(class="form-select") }}
+                                            <div class="form-text">Quality focuses on better matches</div>
+                                            {% if form.application_priority.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.application_priority.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 6: Platform Priorities -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-list-ol text-primary me-2"></i>
+                                        Platform Priorities
+                                    </h3>
+                                    <p class="section-subtitle">Set which job platforms AutoHire should prioritize</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-3">
+                                        <div class="platform-priority-card">
+                                            <div class="platform-icon linkedin">
+                                                <i class="fab fa-linkedin"></i>
+                                            </div>
+                                            <h6>LinkedIn</h6>
+                                            {{ form.linkedin_priority(class="form-select form-select-sm") }}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="platform-priority-card">
+                                            <div class="platform-icon indeed">
+                                                <i class="fas fa-briefcase"></i>
+                                            </div>
+                                            <h6>Indeed</h6>
+                                            {{ form.indeed_priority(class="form-select form-select-sm") }}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="platform-priority-card">
+                                            <div class="platform-icon naukri">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <h6>Naukri</h6>
+                                            {{ form.naukri_priority(class="form-select form-select-sm") }}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="platform-priority-card">
+                                            <div class="platform-icon internshala">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>
+                                            <h6>InternShala</h6>
+                                            {{ form.internshala_priority(class="form-select form-select-sm") }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 7: Availability -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-calendar text-success me-2"></i>
+                                        Availability
+                                    </h3>
+                                    <p class="section-subtitle">When can you start working?</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            {{ form.notice_period.label(class="form-label fw-bold") }}
+                                            <div class="input-group">
+                                                {{ form.notice_period(class="form-control text-light") }}
+                                                <span class="input-group-text">days</span>
+                                            </div>
+                                            <div class="form-text">How much notice do you need to give your current employer?</div>
+                                            {% if form.notice_period.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.notice_period.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 8: Resume Upload -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-file-alt text-danger me-2"></i>
+                                        Upload Your Resume
+                                    </h3>
+                                    <p class="section-subtitle">AutoHire will use this resume for job applications</p>
+                                </div>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            {{ form.resume_file.label(class="form-label fw-bold ms-1") }}
+                                            {{ form.resume_file(class="form-control text-secondary ") }}
+                                            <div class="form-text">Supported formats: PDF, DOC, DOCX (Max 5MB)</div>
+                                            {% if form.resume_file.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.resume_file.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            {{ form.resume_name.label(class="form-label fw-bold") }}
+                                            {{ form.resume_name(class="form-control") }}
+                                            {% if form.resume_name.errors %}
+                                                <div class="invalid-feedback d-block">
+                                                    {% for error in form.resume_name.errors %}{{ error }}{% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 9: Agreements -->
+                            <div class="setup-section mb-5">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Final Agreements
+                                    </h3>
+                                    <p class="section-subtitle">Please review and accept our terms</p>
+                                </div>
+                                
+                                <div class="agreement-section">
+                                    <div class="form-check mb-3">
+                                        {{ form.terms_agreement(class="form-check-input") }}
+                                        {{ form.terms_agreement.label(class="form-check-label") }}
+                                        {% if form.terms_agreement.errors %}
+                                            <div class="invalid-feedback d-block">
+                                                {% for error in form.terms_agreement.errors %}{{ error }}{% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    
+                                    <div class="form-check mb-4">
+                                        {{ form.auto_apply_consent(class="form-check-input") }}
+                                        {{ form.auto_apply_consent.label(class="form-check-label") }}
+                                        {% if form.auto_apply_consent.errors %}
+                                            <div class="invalid-feedback d-block">
+                                                {% for error in form.auto_apply_consent.errors %}{{ error }}{% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Form Actions -->
+                            <div class="form-actions text-center">
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <a href="{{ url_for('setup.skip_setup') }}" class="btn btn-secondary btn-lg px-4">
+                                        <i class="fas fa-skip-forward me-2"></i>Skip for Now
+                                    </a>
+                                    {{ form.submit(class="btn btn-light btn-lg px-5") }}
+                                </div>
+                                <div class="mt-3">
+                                    <small class="text-muted">
+                                        You can always modify these preferences later from your dashboard settings.
+                                    </small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.setup-container {
+    background: var(--main-content);
+    min-height: 100vh;
+    padding-top: 10px; /* Account for fixed navbar */
+}
+
+.setup-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #6c757d;
+}
+
+.progress-step.active {
+    color: #007bff;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.progress-step.active .step-circle {
+    background: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.progress-line {
+    width: 100px;
+    height: 2px;
+    background: #dee2e6;
+    margin: 0 1rem;
+    margin-top: -20px;
+}
+
+.setup-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:  rgba(39, 38, 38, 1);
+}
+
+.setup-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.setup-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.2rem;
+}
+
+.setup-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.setup-section {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 2rem;
+}
+
+.setup-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #c8d2daff;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label.fw-bold {
+    color: #ffffffff;
+    margin-bottom: 0.75rem;
+}
+
+.form-control{
+    background: #3c3e41ff;
+    border: 1px solid #ced4da;
+}
+
+.form-control, .form-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ffffffff;
+    background: rgba(98, 93, 93, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(194, 199, 205, 0.25);
+    outline: none;
+    color: #feffffda;
+}
+.form-control::placeholder {
+    color: #feffffff;
+    opacity: 1;
+}
+
+.form-select{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ced4da;
+    color: #feffffb7;
+    cursor: pointer;
+}
+
+.form-select.option {
+    background: rgba(255, 255, 255, 0.1);
+    color: #16a9a9b7;
+}
+
+
+
+.platform-priority-card {
+    background: rgba(60, 60, 60, 0.8);
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.platform-priority-card:hover {
+    border-color: #ffffffff;
+    background: #5b5858ff;
+}
+
+.platform-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.platform-icon.linkedin { background: #0077b5; }
+.platform-icon.indeed { background: #2164f3; }
+.platform-icon.naukri { background: #ff6b35; }
+.platform-icon.internshala { background: #00d4aa; }
+
+.agreement-section {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    color: #feffffb7;
+    margin-bottom: 2rem;
+}
+
+
+
+.input-group-text {
+    background: rgba(111, 109, 109, 0.1);
+    border-color: #ced4da;
+    font-weight: 500;
+    color: #feffffb7;
+}
+
+.form-text {
+    color: #c3c7ccff;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .setup-title {
+        font-size: 2rem;
+    }
+    
+    .setup-subtitle {
+        font-size: 1rem;
+    }
+    
+    .progress-line {
+        width: 50px;
+    }
+    
+    .progress-step span {
+        font-size: 0.875rem;
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Auto-resize textareas
+    document.querySelectorAll('textarea').forEach(function(textarea) {
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    });
+    
+    // File upload feedback
+    const fileInput = document.getElementById('resume_file');
+    if (fileInput) {
+        fileInput.addEventListener('change', function() {
+            const fileName = this.files[0] ? this.files[0].name : '';
+            const fileSize = this.files[0] ? (this.files[0].size / (1024 * 1024)).toFixed(2) : 0;
+            
+            if (fileName) {
+                AutoHire.showNotification(`File selected: ${fileName} (${fileSize} MB)`, 'info', 3000);
+            }
+        });
+    }
+    
+    // Platform priority change feedback
+    document.querySelectorAll('.platform-priority-card select').forEach(function(select) {
+        select.addEventListener('change', function() {
+            const card = this.closest('.platform-priority-card');
+            const platform = card.querySelector('h6').textContent;
+            const priority = this.options[this.selectedIndex].text;
+            
+            // Visual feedback
+            card.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                card.style.transform = 'scale(1)';
+            }, 200);
+        });
+    });
+    
+    // Form validation enhancement
+    const form = document.querySelector('.setup-form');
+    form.addEventListener('submit', function(e) {
+        const requiredFields = form.querySelectorAll('[required]');
+        let isValid = true;
+        
+        requiredFields.forEach(function(field) {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('is-invalid');
+            } else {
+                field.classList.remove('is-invalid');
+            }
+        });
+        
+        if (!isValid) {
+            e.preventDefault();
+            AutoHire.showNotification('Please fill in all required fields', 'error');
+            
+            // Scroll to first invalid field
+            const firstInvalid = form.querySelector('.is-invalid');
+            if (firstInvalid) {
+                firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        } else {
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            AutoHire.showLoadingState(submitBtn, 'Setting up your preferences...');
+        }
+    });
+    
+    // Salary validation
+    const minSalary = document.getElementById('min_salary');
+    const maxSalary = document.getElementById('max_salary');
+    
+    function validateSalary() {
+        const min = parseFloat(minSalary.value) || 0;
+        const max = parseFloat(maxSalary.value) || 0;
+        
+        if (min > 0 && max > 0 && min >= max) {
+            maxSalary.setCustomValidity('Maximum salary must be greater than minimum salary');
+        } else {
+            maxSalary.setCustomValidity('');
+        }
+    }
+    
+    if (minSalary && maxSalary) {
+        minSalary.addEventListener('input', validateSalary);
+        maxSalary.addEventListener('input', validateSalary);
+    }
+});
+</script>
+{% endblock %}
