@@ -1,0 +1,303 @@
+{% extends "base.html" %}
+
+{% block title %}Job Preferences - AutoHire{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="h3 mb-0">Job Preferences</h1>
+                    <p class="text-muted mb-0">Configure your job search criteria and platform priorities</p>
+                </div>
+                <a href="{{ url_for('dashboard.settings') }}" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-1"></i>Back to Settings
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <form method="POST" action="{{ url_for('dashboard.job_preferences') }}">
+                {{ form.hidden_tag() }}
+                
+                <div class="row g-4">
+                    <!-- Job Search Criteria -->
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header bg-transparent border-0 pb-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-search text-primary me-2"></i>
+                                    <h5 class="card-title mb-0">Job Search Criteria</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <!-- Job Titles -->
+                                    <div class="col-12">
+                                        {{ form.preferred_job_titles.label(class="form-label fw-bold") }}
+                                        {{ form.preferred_job_titles(class="form-control", rows="3", placeholder="Software Engineer\nPython Developer\nFull Stack Developer\n(One per line)") }}
+                                        <div class="form-text">Enter job titles you're looking for, one per line</div>
+                                        {% if form.preferred_job_titles.errors %}
+                                            <div class="text-danger small mt-1">
+                                                {% for error in form.preferred_job_titles.errors %}
+                                                    <div>{{ error }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <!-- Locations -->
+                                    <div class="col-12">
+                                        {{ form.preferred_locations.label(class="form-label fw-bold") }}
+                                        {{ form.preferred_locations(class="form-control", rows="3", placeholder="Mumbai\nBangalore\nRemote\n(One per line)") }}
+                                        <div class="form-text">Enter preferred job locations, one per line</div>
+                                        {% if form.preferred_locations.errors %}
+                                            <div class="text-danger small mt-1">
+                                                {% for error in form.preferred_locations.errors %}
+                                                    <div>{{ error }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <!-- Work Type and Experience -->
+                                    <div class="col-md-6">
+                                        {{ form.work_type.label(class="form-label fw-bold") }}
+                                        {{ form.work_type(class="form-select") }}
+                                        {% if form.work_type.errors %}
+                                            <div class="text-danger small mt-1">
+                                                {% for error in form.work_type.errors %}
+                                                    <div>{{ error }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        {{ form.experience_level.label(class="form-label fw-bold") }}
+                                        {{ form.experience_level(class="form-select") }}
+                                        {% if form.experience_level.errors %}
+                                            <div class="text-danger small mt-1">
+                                                {% for error in form.experience_level.errors %}
+                                                    <div>{{ error }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <!-- Salary Range -->
+                                    <div class="col-md-6">
+                                        {{ form.min_salary.label(class="form-label fw-bold") }}
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            {{ form.min_salary(class="form-control", placeholder="5.0") }}
+                                            <span class="input-group-text">LPA</span>
+                                        </div>
+                                        {% if form.min_salary.errors %}
+                                            <div class="text-danger small mt-1">
+                                                {% for error in form.min_salary.errors %}
+                                                    <div>{{ error }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        {{ form.max_salary.label(class="form-label fw-bold") }}
+                                        <div class="input-group">
+                                            <span class="input-group-text">₹</span>
+                                            {{ form.max_salary(class="form-control", placeholder="15.0") }}
+                                            <span class="input-group-text">LPA</span>
+                                        </div>
+                                        {% if form.max_salary.errors %}
+                                            <div class="text-danger small mt-1">
+                                                {% for error in form.max_salary.errors %}
+                                                    <div>{{ error }}</div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Platform Priorities -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header bg-transparent border-0 pb-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-sort-numeric-down text-success me-2"></i>
+                                    <h5 class="card-title mb-0">Platform Priorities</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <small class="text-muted">Set the order in which platforms should be used for job applications</small>
+                                </div>
+
+                                <!-- LinkedIn Priority -->
+                                <div class="platform-priority-item mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fab fa-linkedin text-primary me-2"></i>
+                                        <span class="fw-bold">LinkedIn</span>
+                                    </div>
+                                    {{ form.linkedin_priority(class="form-select form-select-sm") }}
+                                </div>
+
+                                <!-- Indeed Priority -->
+                                <div class="platform-priority-item mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-briefcase text-info me-2"></i>
+                                        <span class="fw-bold">Indeed</span>
+                                    </div>
+                                    {{ form.indeed_priority(class="form-select form-select-sm") }}
+                                </div>
+
+                                <!-- Naukri Priority -->
+                                <div class="platform-priority-item mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-user-tie text-warning me-2"></i>
+                                        <span class="fw-bold">Naukri</span>
+                                    </div>
+                                    {{ form.naukri_priority(class="form-select form-select-sm") }}
+                                </div>
+
+                                <!-- InternShala Priority -->
+                                <div class="platform-priority-item mb-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-graduation-cap text-success me-2"></i>
+                                        <span class="fw-bold">InternShala</span>
+                                    </div>
+                                    {{ form.internshala_priority(class="form-select form-select-sm") }}
+                                </div>
+
+                                <div class="alert alert-light border mt-3" role="alert">
+                                    <small>
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        <strong>Priority Guide:</strong><br>
+                                        • High: Apply first<br>
+                                        • Medium: Apply second<br>
+                                        • Low: Apply last<br>
+                                        • Disabled: Skip platform
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-muted">
+                                        <small>
+                                            <i class="fas fa-save me-1"></i>
+                                            These preferences will be used for automated job applications
+                                        </small>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-outline-secondary me-2" onclick="resetForm()">
+                                            <i class="fas fa-undo me-1"></i>Reset
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary me-2" onclick="history.back()">
+                                            Cancel
+                                        </button>
+                                        {{ form.submit(class="btn btn-primary") }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.platform-priority-item {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.alert-light {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+
+.form-text {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function resetForm() {
+    if (confirm('Are you sure you want to reset all preferences to default values?')) {
+        // Reset text areas
+        document.querySelector('textarea[name="preferred_job_titles"]').value = '';
+        document.querySelector('textarea[name="preferred_locations"]').value = '';
+        
+        // Reset selects to first option
+        document.querySelector('select[name="work_type"]').selectedIndex = 0;
+        document.querySelector('select[name="experience_level"]').selectedIndex = 0;
+        
+        // Reset salary fields
+        document.querySelector('input[name="min_salary"]').value = '';
+        document.querySelector('input[name="max_salary"]').value = '';
+        
+        // Reset priorities to default
+        document.querySelector('select[name="linkedin_priority"]').value = '1';
+        document.querySelector('select[name="indeed_priority"]').value = '2';
+        document.querySelector('select[name="naukri_priority"]').value = '3';
+        document.querySelector('select[name="internshala_priority"]').value = '3';
+    }
+}
+
+// Auto-save draft functionality (optional)
+let saveTimeout;
+function autoSave() {
+    clearTimeout(saveTimeout);
+    saveTimeout = setTimeout(() => {
+        // Could implement auto-save to localStorage here
+        console.log('Auto-saving preferences...');
+    }, 2000);
+}
+
+// Add auto-save listeners to form inputs
+document.addEventListener('DOMContentLoaded', function() {
+    const formInputs = document.querySelectorAll('input, select, textarea');
+    formInputs.forEach(input => {
+        input.addEventListener('change', autoSave);
+        input.addEventListener('input', autoSave);
+    });
+});
+</script>
+{% endblock %}
