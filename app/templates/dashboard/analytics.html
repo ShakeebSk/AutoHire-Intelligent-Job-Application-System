@@ -1,0 +1,585 @@
+{% extends "base.html" %}
+
+{% block title %}Analytics - AutoHire{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="h3 mb-0">Analytics & Reports</h1>
+                    <p class="text-muted mb-0">Detailed insights into your job application performance</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-primary me-2" onclick="exportReport()">
+                        <i class="fas fa-download me-1"></i>Export Report
+                    </button>
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar me-1"></i>Last 30 Days
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="changeDateRange('7')">Last 7 Days</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeDateRange('30')">Last 30 Days</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeDateRange('90')">Last 90 Days</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeDateRange('365')">Last Year</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Metrics Row -->
+    <div class="row g-4 mb-4">
+        <div class="col-xl-3 col-md-6">
+            <div class="card metric-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h2 class="h4 mb-0 fw-bold text-primary">0</h2>
+                            <p class="text-muted mb-0 small">Total Applications</p>
+                            <small class="text-success">
+                                <i class="fas fa-arrow-up me-1"></i>+0% from last period
+                            </small>
+                        </div>
+                        <div class="metric-icon bg-primary">
+                            <i class="fas fa-paper-plane text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card metric-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h2 class="h4 mb-0 fw-bold text-success">0%</h2>
+                            <p class="text-muted mb-0 small">Response Rate</p>
+                            <small class="text-muted">
+                                <i class="fas fa-minus me-1"></i>No change
+                            </small>
+                        </div>
+                        <div class="metric-icon bg-success">
+                            <i class="fas fa-chart-line text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card metric-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h2 class="h4 mb-0 fw-bold text-info">0</h2>
+                            <p class="text-muted mb-0 small">Interviews</p>
+                            <small class="text-muted">
+                                <i class="fas fa-minus me-1"></i>No interviews yet
+                            </small>
+                        </div>
+                        <div class="metric-icon bg-info">
+                            <i class="fas fa-handshake text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card metric-card border-0 h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h2 class="h4 mb-0 fw-bold text-warning">0</h2>
+                            <p class="text-muted mb-0 small">Job Offers</p>
+                            <small class="text-muted">
+                                <i class="fas fa-trophy me-1"></i>Keep applying!
+                            </small>
+                        </div>
+                        <div class="metric-icon bg-warning">
+                            <i class="fas fa-trophy text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Applications Over Time Chart -->
+        <div class="col-xl-8">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-chart-area text-primary me-2"></i>
+                        <h5 class="card-title mb-0">Applications Over Time</h5>
+                    </div>
+                    <div class="chart-controls">
+                        <button class="btn btn-sm btn-outline-secondary active" onclick="toggleChartType('line')">Line</button>
+                        <button class="btn btn-sm btn-outline-secondary" onclick="toggleChartType('bar')">Bar</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="applicationsChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Platform Performance -->
+        <div class="col-xl-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-transparent border-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-globe text-success me-2"></i>
+                        <h5 class="card-title mb-0">Platform Performance</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container mb-4">
+                        <canvas id="platformChart" height="250"></canvas>
+                    </div>
+                    
+                    <!-- Platform Stats -->
+                    <div class="platform-stats">
+                        <div class="platform-stat-item">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-linkedin text-primary me-2"></i>
+                                    <span class="fw-medium">LinkedIn</span>
+                                </div>
+                                <span class="badge bg-light text-dark">0 apps</span>
+                            </div>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-primary" style="width: 0%"></div>
+                            </div>
+                            <small class="text-muted">0% success rate</small>
+                        </div>
+
+                        <div class="platform-stat-item">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase text-info me-2"></i>
+                                    <span class="fw-medium">Indeed</span>
+                                </div>
+                                <span class="badge bg-light text-dark">0 apps</span>
+                            </div>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-info" style="width: 0%"></div>
+                            </div>
+                            <small class="text-muted">0% success rate</small>
+                        </div>
+
+                        <div class="platform-stat-item">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-user-tie text-warning me-2"></i>
+                                    <span class="fw-medium">Naukri</span>
+                                </div>
+                                <span class="badge bg-light text-dark">0 apps</span>
+                            </div>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" style="width: 0%"></div>
+                            </div>
+                            <small class="text-muted">0% success rate</small>
+                        </div>
+
+                        <div class="platform-stat-item">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-graduation-cap text-success me-2"></i>
+                                    <span class="fw-medium">InternShala</span>
+                                </div>
+                                <span class="badge bg-light text-dark">0 apps</span>
+                            </div>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" style="width: 0%"></div>
+                            </div>
+                            <small class="text-muted">0% success rate</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Analytics Row -->
+    <div class="row g-4 mt-1">
+        <!-- Application Status Breakdown -->
+        <div class="col-xl-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-transparent border-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-pie-chart text-info me-2"></i>
+                        <h5 class="card-title mb-0">Application Status Breakdown</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="statusChart" height="200"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="status-legend">
+                                <div class="legend-item">
+                                    <span class="legend-dot bg-primary"></span>
+                                    <span class="legend-label">Applied</span>
+                                    <span class="legend-value">0</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot bg-success"></span>
+                                    <span class="legend-label">Interview</span>
+                                    <span class="legend-value">0</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot bg-warning"></span>
+                                    <span class="legend-label">Under Review</span>
+                                    <span class="legend-value">0</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot bg-danger"></span>
+                                    <span class="legend-label">Rejected</span>
+                                    <span class="legend-value">0</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-dot bg-secondary"></span>
+                                    <span class="legend-label">Error</span>
+                                    <span class="legend-value">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Job Titles -->
+        <div class="col-xl-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-transparent border-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-list-alt text-warning me-2"></i>
+                        <h5 class="card-title mb-0">Top Applied Job Titles</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="empty-state text-center py-4">
+                        <i class="fas fa-briefcase fa-3x text-muted mb-3"></i>
+                        <h6 class="text-muted">No applications yet</h6>
+                        <p class="text-muted small">Start applying to jobs to see analytics here</p>
+                        <a href="{{ url_for('dashboard.index') }}" class="btn btn-primary btn-sm">
+                            <i class="fas fa-play me-1"></i>Start Automation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Timeline -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent border-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-timeline text-secondary me-2"></i>
+                        <h5 class="card-title mb-0">Recent Application Timeline</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="timeline-empty text-center py-5">
+                        <i class="fas fa-clock fa-3x text-muted mb-3"></i>
+                        <h6 class="text-muted">No application history available</h6>
+                        <p class="text-muted">Your application timeline will appear here once you start applying for jobs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.metric-card {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+}
+
+.metric-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.chart-container {
+    position: relative;
+    min-height: 300px;
+}
+
+.platform-stat-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.platform-stat-item:last-child {
+    border-bottom: none;
+}
+
+.progress-sm {
+    height: 4px;
+    margin-bottom: 8px;
+}
+
+.status-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legend-label {
+    flex: 1;
+    font-weight: 500;
+}
+
+.legend-value {
+    font-weight: bold;
+    color: #495057;
+}
+
+.chart-controls .btn {
+    margin-left: 5px;
+    padding: 4px 12px;
+}
+
+.chart-controls .btn.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.empty-state {
+    padding: 60px 0;
+}
+
+.timeline-empty {
+    padding: 80px 0;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.card-header {
+    padding: 1.5rem 1.5rem 0.75rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+let applicationsChart, platformChart, statusChart;
+
+// Initialize charts when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCharts();
+});
+
+function initializeCharts() {
+    // Applications Over Time Chart
+    const applicationsCtx = document.getElementById('applicationsChart').getContext('2d');
+    applicationsChart = new Chart(applicationsCtx, {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Applications',
+                data: [],
+                borderColor: '#0d6efd',
+                backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                tension: 0.4,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    });
+
+    // Platform Performance Chart
+    const platformCtx = document.getElementById('platformChart').getContext('2d');
+    platformChart = new Chart(platformCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['LinkedIn', 'Indeed', 'Naukri', 'InternShala'],
+            datasets: [{
+                data: [0, 0, 0, 0],
+                backgroundColor: [
+                    '#0077b5',
+                    '#2164f3', 
+                    '#ff6b35',
+                    '#00d4aa'
+                ],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+
+    // Status Breakdown Chart
+    const statusCtx = document.getElementById('statusChart').getContext('2d');
+    statusChart = new Chart(statusCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Applied', 'Interview', 'Under Review', 'Rejected', 'Error'],
+            datasets: [{
+                data: [0, 0, 0, 0, 0],
+                backgroundColor: [
+                    '#0d6efd',
+                    '#28a745',
+                    '#ffc107',
+                    '#dc3545',
+                    '#6c757d'
+                ],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+}
+
+function toggleChartType(type) {
+    // Update chart type
+    applicationsChart.config.type = type;
+    applicationsChart.update();
+    
+    // Update button states
+    document.querySelectorAll('.chart-controls .btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
+
+function changeDateRange(days) {
+    console.log('Changing date range to last', days, 'days');
+    // Here you would typically fetch new data and update charts
+    // For now, we'll just update the button text
+    const dateRangeBtn = document.querySelector('.dropdown-toggle');
+    const ranges = {
+        '7': 'Last 7 Days',
+        '30': 'Last 30 Days',
+        '90': 'Last 90 Days',
+        '365': 'Last Year'
+    };
+    dateRangeBtn.innerHTML = `<i class="fas fa-calendar me-1"></i>${ranges[days]}`;
+}
+
+function exportReport() {
+    // Simulate report export
+    const btn = event.target;
+    const originalText = btn.innerHTML;
+    
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Exporting...';
+    btn.disabled = true;
+    
+    setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-check me-1"></i>Downloaded!';
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+        }, 2000);
+    }, 2000);
+}
+
+// Simulate real-time data updates (remove in production)
+function simulateDataUpdate() {
+    // This would be replaced with actual API calls
+    const currentDate = new Date();
+    const dateStr = currentDate.toLocaleDateString();
+    
+    // Update applications chart with mock data
+    if (applicationsChart.data.labels.length === 0) {
+        // Initialize with empty data for demo
+        const dates = [];
+        const data = [];
+        for (let i = 29; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            dates.push(date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
+            data.push(0);
+        }
+        applicationsChart.data.labels = dates;
+        applicationsChart.data.datasets[0].data = data;
+        applicationsChart.update();
+    }
+}
+
+// Initialize demo data
+simulateDataUpdate();
+</script>
+{% endblock %}
