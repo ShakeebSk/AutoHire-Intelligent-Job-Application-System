@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+
+{% block title %}Login - AutoHire{% endblock %}
+
+{% block content %}
+<section class="auth-section min-vh-100 d-flex align-items-center py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-7">
+                <div class="auth-card">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-light link-light">Welcome Back</h2>
+                        <p class="text-secondary link-light">Sign in to your AutoHire account</p>
+                    </div>
+                    
+                    <form method="POST" class="needs-validation" novalidate>
+                        {{ form.hidden_tag() }}
+                        
+                        <div class="mb-3">
+                            {{ form.email.label(class="form-label") }}
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                {{ form.email(class="form-control form-design", placeholder="Enter your email") }}
+                                {% if form.email.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.email.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            {{ form.password.label(class="form-label") }}
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                {{ form.password(class="form-control form-design", id="password", placeholder="Enter your password") }}
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                {% if form.password.errors %}
+                                    <div class="invalid-feedback d-block">
+                                        {% for error in form.password.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-check text-light">
+                                    {{ form.remember_me(class="form-check-input") }}
+                                    {{ form.remember_me.label(class="form-check-label") }}
+                                </div>
+                            </div>
+                            <div class="col-6 text-end">
+                                <a href="#" class="text-decoration-none small text-light">Forgot password?</a>
+                            </div>
+                        </div>
+                        
+                        {{ form.submit(class="text-center btn btn-outline-light btn-lg w-100 mb-3") }}
+                        
+                        <div class="divider">
+                            <span class="text-light">or continue with</span>
+                        </div>
+                        
+                        <div class="row g-2 mb-3">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-google w-100 social-btn" onclick="loginWithGoogle()">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-facebook w-100 social-btn" onclick="loginWithFacebook()">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-apple w-100 social-btn" onclick="loginWithApple()">
+                                    <i class="fab fa-apple"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="mb-0 text-light">Don't have an account? 
+                                <a href="{{ url_for('auth.register') }}" class="text-decoration-none fw-bold">Sign up</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .auth-section {
+        background: linear-gradient(135deg, rgb(31, 31, 31) 0%, #000000 100%);
+    }
+
+    .auth-card {
+        background: black;
+        padding: 3rem 2.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+    }
+
+    .input-group-text {
+        background: transparent;
+        border-right: none;
+        color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
+        border-right: none;
+        transition: all 0.3s ease;
+    }
+
+    .form-design {
+        background: transparent !important;
+        color: white !important;
+        border: 2px solid var(--secondary-color);
+        border-left: none;
+        padding-left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .form-design::placeholder {
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+
+    .input-group:hover .form-design {
+        background: rgba(64, 64, 64, 0.3) !important;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .input-group:hover .input-group-text {
+        background: rgba(64, 64, 64, 0.3) !important;
+        border-color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .form-control:focus {
+        border-color: var(--light-color) !important;
+        box-shadow: none;
+        background: rgba(64, 64, 64, 0.2) !important;
+        color: white !important;
+    }
+
+    .btn-outline-light {
+        border: 1px solid var(--secondary-color);
+        color: var(--light-color);
+        transition: all 0.3s ease;
+    }
+
+    .btn-outline-light:hover {
+        border: 1px solid var(--light-color) !important;
+        background: rgba(64, 64, 64, 0.3) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .divider {
+        position: relative;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .divider::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #e9ecef;
+    }
+
+    .divider span {
+        background: black;
+        padding: 0 1rem;
+        color: var(--secondary-color);
+        font-size: 0.875rem;
+    }
+
+    /* Social Buttons same as register */
+    .social-btn { padding: 0.75rem; border-radius: 0.5rem; font-size: 1.1rem; transition: all 0.3s ease; }
+    .social-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .btn-google { background: #fff; border: 2px solid #fff; color: #000; }
+    .btn-google:hover { background: #000; color: #fff !important; border-color: #fff; }
+    .btn-facebook { background: #fff; border: 2px solid #000; color: #000; }
+    .btn-facebook:hover { background: #000; color: #fff !important; border-color: #fff; }
+    .btn-apple { background: #fff; border: 2px solid #000; color: #000; }
+    .btn-apple:hover { background: #000; color: #fff !important; border-color: #fff; }
+
+    .form-label { color: white !important; font-weight: 500; }
+
+    .invalid-feedback { color: #dc3545 !important; }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Social login functions (global scope)
+function loginWithGoogle() {
+    AutoHire.showNotification('🚀 Google login will be implemented soon! Click OK to continue.', 'info');
+}
+
+function loginWithFacebook() {
+    AutoHire.showNotification('🚀 Facebook login will be implemented soon! Click OK to continue.', 'info');
+}
+
+function loginWithApple() {
+    AutoHire.showNotification('🚀 Apple login will be implemented soon! Click OK to continue.', 'info');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Password toggle functionality
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    
+    if (togglePassword && passwordInput) {
+        togglePassword.addEventListener('click', function() {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-eye');
+            icon.classList.toggle('fa-eye-slash');
+        });
+    }
+
+    // Form validation (removed preventDefault to allow actual submission)
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        if (!form.checkValidity()) {
+            e.preventDefault();
+            form.classList.add('was-validated');
+        }
+    });
+});
+</script>
+{% endblock %}
