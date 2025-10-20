@@ -1,0 +1,402 @@
+{% extends "base.html" %}
+
+{% block title %}Applications - AutoHire{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="h3 mb-0 text-light">Job Applications</h1>
+                    <p class="text-secondary link-light mb-0">Track and manage all your job applications</p>
+                </div>
+                <div>
+                    <button class="btn btn-success" onclick="startAutomation()">
+                        <i class="fas fa-play me-1"></i>Start Applying
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filters -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <form method="GET" class="row g-3">
+                        <div class="col-md-3">
+                            <label class="form-label">Status</label>
+                            <select name="status" class="form-select">
+                                <option value="">All Statuses</option>
+                                {% for status in statuses %}
+                                <option value="{{ status }}" {{ 'selected' if status == current_status else '' }}>
+                                    {{ status.title() }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Platform</label>
+                            <select name="platform" class="form-select">
+                                <option value="">All Platforms</option>
+                                {% for platform in platforms %}
+                                <option value="{{ platform }}" {{ 'selected' if platform == current_platform else '' }}>
+                                    {{ platform.title() }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">&nbsp;</label>
+                            <div>
+                                <button type="submit" class="btn btn-light">
+                                    <i class="fas fa-filter me-1"></i>Filter
+                                </button>
+                                <a href="{{ url_for('dashboard.applications') }}" class="btn btn-outline-light">
+                                    <i class="fas fa-times me-1"></i>Clear
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">&nbsp;</label>
+                            <div>
+                                <button type="button" class="btn  btn-outline-light">
+                                    <i class="fas fa-download me-1"></i>Export
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Applications Table -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-des">
+                <div class="card-body card-des p-0">
+                    {% if applications.items %}
+                    <div class="table-responsive">
+                        <table class="table table-des table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Job Title</th>
+                                    <th>Company</th>
+                                    <th>Platform</th>
+                                    <th>Status</th>
+                                    <th>Applied Date</th>
+                                    <th>Salary</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for app in applications.items %}
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <strong>{{ app.job_title }}</strong>
+                                            {% if app.work_type %}
+                                            <small class="text-muted d-block">{{ app.work_type.title() }}</small>
+                                            {% endif %}
+                                            {% if app.location %}
+                                            <small class="text-muted d-block">
+                                                <i class="fas fa-map-marker-alt me-1"></i>{{ app.location }}
+                                            </small>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{ app.company_name or 'N/A' }}
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-platform badge-{{ app.platform }}">
+                                            {% if app.platform == 'linkedin' %}
+                                                <i class="fab fa-linkedin me-1"></i>
+                                            {% elif app.platform == 'indeed' %}
+                                                <i class="fas fa-briefcase me-1"></i>
+                                            {% elif app.platform == 'naukri' %}
+                                                <i class="fas fa-user-tie me-1"></i>
+                                            {% elif app.platform == 'internshala' %}
+                                                <i class="fas fa-graduation-cap me-1"></i>
+                                            {% endif %}
+                                            {{ app.platform.title() }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="badge status-badge status-{{ app.status }}">
+                                            {% if app.status == 'applied' %}
+                                                <i class="fas fa-paper-plane me-1"></i>
+                                            {% elif app.status == 'interview' %}
+                                                <i class="fas fa-handshake me-1"></i>
+                                            {% elif app.status == 'hired' %}
+                                                <i class="fas fa-trophy me-1"></i>
+                                            {% elif app.status == 'rejected' %}
+                                                <i class="fas fa-times me-1"></i>
+                                            {% elif app.status == 'error' %}
+                                                <i class="fas fa-exclamation-triangle me-1"></i>
+                                            {% endif %}
+                                            {{ app.status.title() }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            {{ app.application_date.strftime('%b %d, %Y') if app.application_date else 'N/A' }}
+                                            {% if app.application_date %}
+                                            <small class="text-muted d-block">
+                                                {{ app.application_date.strftime('%I:%M %p') }}
+                                            </small>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{ app.salary or 'N/A' }}
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            <a href="{{ url_for('dashboard.application_detail', id=app.id) }}" 
+                                               class="btn btn-outline-primary btn-sm" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            {% if app.job_url %}
+                                            <a href="{{ app.job_url }}" target="_blank" 
+                                               class="btn btn-outline-secondary btn-sm" title="View Original Job">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            {% endif %}
+                                            <button class="btn btn-outline-success btn-sm" 
+                                                    onclick="updateStatus({{ app.id }}, 'interview')" 
+                                                    title="Mark as Interview">
+                                                <i class="fas fa-handshake"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    {% if applications.pages > 1 %}
+                    <div class="card-footer">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination mb-0">
+                                {% if applications.has_prev %}
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ url_for('dashboard.applications', page=applications.prev_num, status=current_status, platform=current_platform) }}">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                
+                                {% for page_num in applications.iter_pages() %}
+                                    {% if page_num %}
+                                        {% if page_num != applications.page %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="{{ url_for('dashboard.applications', page=page_num, status=current_status, platform=current_platform) }}">
+                                                {{ page_num }}
+                                            </a>
+                                        </li>
+                                        {% else %}
+                                        <li class="page-item active">
+                                            <span class="page-link">{{ page_num }}</span>
+                                        </li>
+                                        {% endif %}
+                                    {% else %}
+                                    <li class="page-item disabled">
+                                        <span class="page-link">...</span>
+                                    </li>
+                                    {% endif %}
+                                {% endfor %}
+                                
+                                {% if applications.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ url_for('dashboard.applications', page=applications.next_num, status=current_status, platform=current_platform) }}">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                        
+                        <div class="text-muted mt-2">
+                            Showing {{ applications.per_page * (applications.page - 1) + 1 }} to 
+                            {{ applications.per_page * applications.page if applications.page < applications.pages else applications.total }} 
+                            of {{ applications.total }} applications
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% else %}
+                    <div class="text-center py-5">
+                        <i class="fas fa-file-alt fa-3x text-light mb-3"></i>
+                        <h5 class="text-light">No applications found</h5>
+                        <p class="text-light">Start the automation to begin applying to jobs!</p>
+                        <button class="btn btn-outline-light" onclick="startAutomation()">
+                            <i class="fas fa-play me-1"></i>Start Applying Now
+                        </button>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.badge-platform {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+}
+
+.badge-linkedin { background-color: #0077b5; color: white; }
+.badge-indeed { background-color: #2164f3; color: white; }
+.badge-naukri { background-color: #ff6b35; color: white; }
+.badge-internshala { background-color: #00d4aa; color: white; }
+
+.status-badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+}
+
+.status-applied { background-color: #007bff; color: white; }
+.status-interview { background-color: #28a745; color: white; }
+.status-hired { background-color: #ffc107; color: black; }
+.status-rejected { background-color: #dc3545; color: white; }
+.status-error { background-color: #6c757d; color: white; }
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-ds{
+    background: rgb(60,60,60)
+}
+
+.btn-group .btn {
+    border-radius: 4px;
+    margin-right: 2px;
+}
+.card{
+    background: rgb(40,40,40);
+    color: white;
+}
+
+.card-des {
+    background: rgb(50,50,50);
+    color: white;
+}
+
+.btn-group .btn:last-child {
+    margin-right: 0;
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function startAutomation() {
+    if (confirm('Are you sure you want to start the automation process?')) {
+        // Show loading state on all start automation buttons
+        const buttons = document.querySelectorAll('[onclick="startAutomation()"]');
+        const originalTexts = [];
+        
+        buttons.forEach((btn, index) => {
+            originalTexts[index] = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Starting...';
+            btn.disabled = true;
+        });
+        
+        fetch('{{ url_for("dashboard.start_automation_process") }}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': '{{ csrf_token() if csrf_token else "" }}'
+            }
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Reset button states
+            buttons.forEach((btn, index) => {
+                btn.innerHTML = originalTexts[index];
+                btn.disabled = false;
+            });
+            location.reload();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Reset button states on error
+            buttons.forEach((btn, index) => {
+                btn.innerHTML = originalTexts[index];
+                btn.disabled = false;
+            });
+            alert('Failed to start automation. Please try again.');
+        });
+    }
+}
+
+function updateStatus(applicationId, status) {
+    if (confirm(`Are you sure you want to mark this application as ${status}?`)) {
+        // Show loading on the button
+        const button = event.target.closest('button');
+        const originalContent = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+        button.disabled = true;
+        
+        fetch(`/dashboard/application/${applicationId}/update_status`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': document.querySelector('meta[name=csrf-token]')?.getAttribute('content') || ''
+            },
+            body: JSON.stringify({ status: status })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showStatusAlert(data.message, 'success');
+                // Reload page to show updated status
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                showStatusAlert(data.message, 'danger');
+                // Reset button
+                button.innerHTML = originalContent;
+                button.disabled = false;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showStatusAlert('Failed to update status. Please try again.', 'danger');
+            // Reset button
+            button.innerHTML = originalContent;
+            button.disabled = false;
+        });
+    }
+}
+
+// Helper function to show status alerts
+function showStatusAlert(message, type = 'info') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; max-width: 400px;';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.appendChild(alertDiv);
+    
+    // Auto remove after 4 seconds
+    setTimeout(() => {
+        if (alertDiv.parentNode) {
+            alertDiv.remove();
+        }
+    }, 4000);
+}
+</script>
+{% endblock %}
