@@ -1,0 +1,462 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to AutoHire{% endblock %}
+
+{% block content %}
+<div class="welcome-container">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="welcome-card text-center">
+                    <div class="welcome-header">
+                        <div class="welcome-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h1 class="welcome-title text-light">Welcome to AutoHire!</h1>
+                        <p class="welcome-subtitle text-secondary link-light">
+                            Let's set up your job search automation in just a few minutes
+                        </p>
+                    </div>
+                    
+                    <div class="welcome-content">
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-4">
+                                <div class="feature-preview">
+                                    <div class="feature-icon bg-primary">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <h5 class="text-light">Smart Job Matching</h5>
+                                    <p class="text-light">
+                                        We'll find jobs that perfectly match your skills and preferences
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="feature-preview">
+                                    <div class="feature-icon bg-success">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </div>
+                                    <h5 class="text-light">Auto Applications</h5>
+                                    <p class="text-light">
+                                        Automatically apply to relevant jobs across multiple platforms
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="feature-preview">
+                                    <div class="feature-icon bg-info">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h5 class="text-light">Track Progress</h5>
+                                    <p class="text-light">
+                                        Monitor your applications and get detailed analytics
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="setup-steps mb-5">
+                            <h4 class="mb-4 text-secondary link-light">What we'll help you set up:</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="step-item text-secondary link-light">
+                                        <i class="fas fa-briefcase text-primary me-3"></i>
+                                        <span>Job preferences and criteria</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step-item text-secondary link-lightt">
+                                        <i class="fas fa-map-marker-alt text-success me-3"></i>
+                                        <span>Preferred locations and work type</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step-item text-secondary link-light">
+                                        <i class="fas fa-code text-warning me-3"></i>
+                                        <span>Skills and experience level</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step-item text-secondary link-light">
+                                        <i class="fas fa-rupee-sign text-info me-3"></i>
+                                        <span>Salary expectations</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step-item text-secondary link-light">
+                                        <i class="fas fa-file-alt text-danger me-3"></i>
+                                        <span>Resume upload and optimization</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step-item text-secondary link-light">
+                                        <i class="fas fa-cogs text-secondary me-3"></i>
+                                        <span>Platform priorities and settings</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="time-estimate mb-5">
+                            <div class="estimate-card">
+                                <i class="fas fa-clock  me-2"></i>
+                                <strong>Estimated time:</strong> 5-10 minutes
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <a href="{{ url_for('setup.job_preferences') }}" class="btn btn-light btn-lg px-5 me-3">
+                                <i class="fas fa-play me-2"></i>Let's Get Started
+                            </a>
+                            <a href="{{ url_for('setup.skip_setup') }}" class="btn btn-secondary btn-lg px-4">
+                                <i class="fas fa-skip-forward me-2"></i>Skip for Now
+                            </a>
+                        </div>
+                        
+                        <div class="help-text mt-4">
+                            <p class="text-muted mb-0">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Don't worry, you can always modify these settings later from your dashboard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Side Benefits -->
+            <div class="col-lg-4">
+                <div class="benefits-sidebar">
+                    <h5 class="benefits-title text-light">
+                        <i class="fas fa-star text-light me-2"></i>
+                        Why Set Up Now?
+                    </h5>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h6 class="text-light">Start Immediately</h6>
+                            <p>Begin applying to jobs right after setup completion</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h6 class="text-light">Better Matches</h6>
+                            <p>More accurate job matching with detailed preferences</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h6 class="text-light">Safe & Secure</h6>
+                            <p>Your data is encrypted and stored securely</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h6 class="text-light">Support Available</h6>
+                            <p>Get help whenever you need it during setup</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-support mt-4 p-3  rounded">
+                        <h6 class="mb-2 text-light">Need Help?</h6>
+                        <p class="small text-secondary link-light mb-2">
+                            Our support team is here to help you get started
+                        </p>
+                        <button class="btn btn-outline-primary btn-sm" onclick="showSupportModal()">
+                            <i class="fas fa-comments me-1"></i>Contact Support
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.welcome-container {
+    background: var(--main-content);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.welcome-card {
+    background:  rgba(39, 38, 38, 1);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.welcome-header {
+    margin-bottom: 3rem;
+}
+
+.welcome-icon {
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    font-size: 3rem;
+    color: white;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.welcome-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.welcome-subtitle {
+    font-size: 1.3rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.feature-preview {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #e9ecef;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.time-estimate {
+    display: flex;
+    justify-content: center;
+}
+
+.estimate-card {
+    background: #ffffffff;
+    border: 1px solid #bbdefb;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: #000000ff;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.estimate-card:hover{
+    background: #000000ff;
+    border: 1px solid #bbdefb;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: #ffffffff;
+    font-size: 1.1rem;
+    transform: translateY(-5px);
+}
+
+.benefits-sidebar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.benefits-title {
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.benefit-item:hover {
+    background: #484848ff;
+    color: #ffffff; 
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #5f5f5fff 0%, #1e1e1eff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.benefit-content h6 {
+    margin-bottom: 0.25rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.benefit-content p {
+    margin-bottom: 0;
+    color: #b6bdc3ff;
+    font-size: 0.9rem;
+}
+
+.action-buttons .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.help-text {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1.5rem;
+}
+
+.contact-support {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 2rem
+    text-align: center;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-support:hover{
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+@media (max-width: 992px) {
+    .benefits-sidebar {
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .action-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function showSupportModal() {
+    // In a real implementation, this would open a support chat or modal
+    AutoHire.showNotification('Support chat will be available soon! For now, you can contact us at support@autohire.com', 'info', 5000);
+}
+
+// Add some interactive animations
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate feature cards on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    
+    document.querySelectorAll('.feature-preview, .benefit-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+    
+    // Add click analytics (placeholder)
+    document.querySelector('a[href*="job_preferences"]')?.addEventListener('click', function() {
+        console.log('User started job preferences setup');
+    });
+    
+    document.querySelector('a[href*="skip_setup"]')?.addEventListener('click', function() {
+        console.log('User skipped initial setup');
+    });
+});
+</script>
+{% endblock %}
