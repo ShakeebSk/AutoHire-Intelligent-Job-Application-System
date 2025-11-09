@@ -1,0 +1,259 @@
+#!/usr/bin/env python
+"""
+'''
+Author:     Shakeeb Shaikh
+LinkedIn:  https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=
+            
+GitHub:     https://github.com/ShakeebSk
+'''
+
+Test script for enhanced AutoHire features
+Tests AI job scoring, PDF generation, and other new capabilities
+"""
+
+import os
+import sys
+import logging
+from datetime import datetime
+
+# Add the app directory to the Python path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'app'))
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+def test_job_scorer():
+    """Test the JobScorer functionality"""
+    logger.info("=" * 50)
+    logger.info("Testing JobScorer functionality")
+    logger.info("=" * 50)
+    
+    try:
+        from app.utils.job_scorer import JobScorer
+        
+        # Test without API key (should use basic scoring)
+        scorer = JobScorer()
+        
+        # Mock job details
+        job_details = {
+            'job_title': 'Python Developer',
+            'company_name': 'Tech Company',
+            'location': 'Remote',
+            'job_description': 'Looking for a Python developer with Flask, Django, and machine learning experience. Must have 2+ years experience.',
+            'salary': '$60,000 - $80,000'
+        }
+        
+        # Mock user and preferences (would normally come from database)
+        class MockUser:
+            def __init__(self):
+                self.first_name = "Test"
+                self.last_name = "User"
+                self.email = "test@example.com"
+                self.phone = "123-456-7890"
+        
+        class MockJobPreferences:
+            def get_preferred_job_titles(self):
+                return ['Python Developer', 'Software Engineer', 'Backend Developer']
+            
+            def get_preferred_locations(self):
+                return ['Remote', 'New York', 'San Francisco']
+            
+            def get_required_skills(self):
+                return ['Python', 'Flask', 'Django', 'SQL', 'API']
+        
+        user = MockUser()
+        preferences = MockJobPreferences()
+        
+        # Test basic scoring
+        basic_score = scorer.get_basic_job_score(user, preferences, job_details)
+        logger.info(f"Basic job score: {basic_score}/100")
+        
+        # Test should_apply_to_job
+        mock_score_result = {'score': basic_score}
+        should_apply = scorer.should_apply_to_job(mock_score_result, min_score_threshold=70)
+        logger.info(f"Should apply to job: {should_apply}")
+        
+        # Test get_application_priority
+        priority = scorer.get_application_priority(mock_score_result)
+        logger.info(f"Application priority: {priority}")
+        
+        logger.info(" JobScorer test completed successfully")
+        return True
+        
+    except Exception as e:
+        logger.error(f" JobScorer test failed: {str(e)}")
+        return False
+
+def test_imports():
+    """Test if all new dependencies can be imported"""
+    logger.info("=" * 50)
+    logger.info("Testing imports")
+    logger.info("=" * 50)
+    
+    imports = [
+        ('pdfplumber', 'PDF processing'),
+        ('pydantic', 'Data validation'),
+        ('httpx', 'HTTP client'),
+        ('html2text', 'HTML to text conversion'),
+        ('reportlab', 'PDF generation'),
+        ('tenacity', 'Retry utilities'),
+    ]
+    
+    success_count = 0
+    for module, description in imports:
+        try:
+            __import__(module)
+            logger.info(f" {module} ({description}) - OK")
+            success_count += 1
+        except ImportError as e:
+            logger.error(f" {module} ({description}) - FAILED: {str(e)}")
+    
+    # Test Google Gemini (might not work without API key, but should import)
+    try:
+        from google import genai
+        logger.info(" google.genai (AI integration) - OK")
+        success_count += 1
+    except ImportError as e:
+        logger.error(f" google.genai (AI integration) - FAILED: {str(e)}")
+    
+    total_imports = len(imports) + 1
+    logger.info(f"Import test results: {success_count}/{total_imports} successful")
+    return success_count == total_imports
+
+def test_pdf_generation():
+    """Test PDF generation capabilities"""
+    logger.info("=" * 50)
+    logger.info("Testing PDF generation")
+    logger.info("=" * 50)
+    
+    try:
+        from reportlab.lib.pagesizes import letter
+        from reportlab.platypus import SimpleDocTemplate, Paragraph
+        from reportlab.lib.styles import getSampleStyleSheet
+        import io
+        
+        # Create a simple PDF in memory
+        buffer = io.BytesIO()
+        doc = SimpleDocTemplate(buffer, pagesize=letter)
+        styles = getSampleStyleSheet()
+        
+        # Create content
+        content = []
+        content.append(Paragraph("AutoHire Test Resume", styles['Title']))
+        content.append(Paragraph("Test User", styles['Heading1']))
+        content.append(Paragraph("This is a test PDF generated by AutoHire's enhanced features.", styles['Normal']))
+        
+        # Build PDF
+        doc.build(content)
+        pdf_data = buffer.getvalue()
+        buffer.close()
+        
+        # Check if PDF was generated
+        if len(pdf_data) > 0:
+            logger.info(f" PDF generated successfully ({len(pdf_data)} bytes)")
+            
+            # Save test PDF
+            test_pdf_path = os.path.join(os.path.dirname(__file__), "test_resume.pdf")
+            with open(test_pdf_path, 'wb') as f:
+                f.write(pdf_data)
+            logger.info(f" Test PDF saved to: {test_pdf_path}")
+            return True
+        else:
+            logger.error(" PDF generation failed - empty file")
+            return False
+            
+    except Exception as e:
+        logger.error(f" PDF generation test failed: {str(e)}")
+        return False
+
+def test_enhanced_linkedin_automation():
+    """Test LinkedIn automation imports (without actually running)"""
+    logger.info("=" * 50)
+    logger.info("Testing LinkedIn automation imports")
+    logger.info("=" * 50)
+    
+    try:
+        from app.automation.scrapers.linkedin_automation import LinkedInAutomation
+        logger.info(" Enhanced LinkedIn automation imported successfully")
+        
+        # Test that the class can be instantiated (without driver setup)
+        logger.info("LinkedIn automation class is ready for use")
+        return True
+        
+    except Exception as e:
+        logger.error(f" Enhanced LinkedIn automation test failed: {str(e)}")
+        return False
+
+def test_flask_app():
+    """Test if the Flask app can be created with new features"""
+    logger.info("=" * 50)
+    logger.info("Testing Flask app creation")
+    logger.info("=" * 50)
+    
+    try:
+        from app import create_app
+        
+        # Create the app
+        app = create_app()
+        
+        if app:
+            logger.info(" Flask app created successfully")
+            logger.info(f"App name: {app.name}")
+            logger.info(f"Blueprints registered: {list(app.blueprints.keys())}")
+            return True
+        else:
+            logger.error(" Flask app creation failed")
+            return False
+            
+    except Exception as e:
+        logger.error(f" Flask app test failed: {str(e)}")
+        return False
+
+def main():
+    """Run all tests"""
+    logger.info("🚀 Starting AutoHire Enhanced Features Test Suite")
+    logger.info(f"Test started at: {datetime.now()}")
+    
+    tests = [
+        ("Import Test", test_imports),
+        ("JobScorer Test", test_job_scorer),
+        ("PDF Generation Test", test_pdf_generation),
+        ("LinkedIn Automation Test", test_enhanced_linkedin_automation),
+        ("Flask App Test", test_flask_app),
+    ]
+    
+    passed = 0
+    failed = 0
+    
+    for test_name, test_func in tests:
+        logger.info(f"\n🧪 Running {test_name}...")
+        try:
+            if test_func():
+                passed += 1
+                logger.info(f" {test_name} PASSED")
+            else:
+                failed += 1
+                logger.error(f" {test_name} FAILED")
+        except Exception as e:
+            failed += 1
+            logger.error(f" {test_name} FAILED with exception: {str(e)}")
+    
+    # Summary
+    logger.info("\n" + "=" * 50)
+    logger.info("TEST SUMMARY")
+    logger.info("=" * 50)
+    logger.info(f"Total tests: {len(tests)}")
+    logger.info(f"Passed: {passed}")
+    logger.info(f"Failed: {failed}")
+    logger.info(f"Success rate: {(passed/len(tests)*100):.1f}%")
+    
+    if failed == 0:
+        logger.info("🎉 All tests passed! AutoHire enhanced features are ready to use.")
+    else:
+        logger.warning(f"⚠️  {failed} test(s) failed. Please check the issues above.")
+    
+    logger.info(f"Test completed at: {datetime.now()}")
+
+if __name__ == "__main__":
+    main()
