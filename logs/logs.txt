@@ -1,0 +1,3298 @@
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for ethnicity. Expecting a value from ['Decline', 'Hispanic/Latino', 'American Indian or Alaska Native', 'Asian', 'Black or African American', 'Native Hawaiian or Other Pacific Islander', 'White', 'Other'], not Indian!
+2025-09-08 22:57:52.221383
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Obstacles are those frightful things you see when you take your eyes off your goal. - Henry Ford
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Seems like either... 
+
+1. Chrome is already running. 
+A. Close all Chrome windows and try again. 
+
+2. Google Chrome or Chromedriver is out dated. 
+A. Update browser and Chromedriver (You can run "windows-setup.bat" in /setup folder for Windows PC to update Chromedriver)! 
+
+3. If error occurred when using "stealth_mode", try reinstalling undetected-chromedriver. 
+A. Open a terminal and use commands "pip uninstall undetected-chromedriver" and "pip install undetected-chromedriver". 
+
+
+If issue persists, try Safe Mode. Set, safe_mode = True in config.py 
+
+Please check GitHub discussions/support for solutions https://github.com/ShakeebSk/AutoHire-Intelligent-Job-Application-System
+                                   OR 
+Reach out in discord (https://discord.com/users/1403434612184842321 )
+In Opening Chrome
+Message: unknown error: JavaScript code failed
+from unknown command: 'Runtime.evaluate' wasn't found
+  (Session info: chrome=140.0.7339.81)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff62b31fca5+79861]
+	GetHandleVerifier [0x0x7ff62b31fd00+79952]
+	(No symbol) [0x0x7ff62b09cada]
+	(No symbol) [0x0x7ff62b0893c0]
+	(No symbol) [0x0x7ff62b087a8d]
+	(No symbol) [0x0x7ff62b08835b]
+	(No symbol) [0x0x7ff62b0b3d3b]
+	(No symbol) [0x0x7ff62b0a7180]
+	(No symbol) [0x0x7ff62b0a701c]
+	(No symbol) [0x0x7ff62b07880e]
+	(No symbol) [0x0x7ff62b076823]
+	(No symbol) [0x0x7ff62b15d4d9]
+	(No symbol) [0x0x7ff62b11cada]
+	(No symbol) [0x0x7ff62b144f8b]
+	(No symbol) [0x0x7ff62b11c8b3]
+	(No symbol) [0x0x7ff62b0e5272]
+	(No symbol) [0x0x7ff62b0e6043]
+	GetHandleVerifier [0x0x7ff62b5db9dd+2946349]
+	GetHandleVerifier [0x0x7ff62b5d5c5a+2922410]
+	GetHandleVerifier [0x0x7ff62b5f59e7+3052855]
+	GetHandleVerifier [0x0x7ff62b33aa8e+189918]
+	GetHandleVerifier [0x0x7ff62b342a2f+222591]
+	GetHandleVerifier [0x0x7ff62b328ac4+116244]
+	GetHandleVerifier [0x0x7ff62b328c79+116681]
+	GetHandleVerifier [0x0x7ff62b30f058+11176]
+	BaseThreadInitThunk [0x0x7fffb174e8d7+23]
+	RtlUserThreadStart [0x0x7fffb1ae8d9c+44]
+
+2025-09-08 22:59:06.117542
+In Applier Main
+Invalid input for llm_api_url. Expecting a String of length at least 5!
+2025-09-08 22:59:22.949164
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The road to success and the road to failure are almost exactly the same. The difference is perseverance.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for us_citizenship. Expecting a value from ['U.S. Citizen/Permanent Resident', 'Non-citizen allowed to work for any employer', 'Non-citizen allowed to work for current employer', 'Non-citizen seeking work authorization', 'Canadian Citizen/Permanent Resident', 'Other'], not Indian Citizen/Permanent Resident!
+2025-09-08 23:09:47.325331
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Obstacles are those frightful things you see when you take your eyes off your goal. - Henry Ford
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for us_citizenship. Expecting a value from ['U.S. Citizen/Permanent Resident', 'Non-citizen allowed to work for any employer', 'Non-citizen allowed to work for current employer', 'Non-citizen seeking work authorization', 'Canadian Citizen/Permanent Resident', 'Other'], not U.S Citizen/Permanent Resident!
+2025-09-08 23:11:10.457291
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for llm_api_url. Expecting a String of length at least 5!
+2025-09-08 23:11:34.775019
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for llm_api_url. Expecting a String of length at least 5!
+2025-09-08 23:15:07.219901
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+You're one step closer than before.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for llm_api_url. Expecting a String of length at least 5!
+2025-09-10 20:39:24.981396
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Opportunities don't happen, you create them. - Chris Grosser
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for llm_api_url. Expecting a String of length at least 5!
+2025-09-10 22:23:23.159131
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for ai_provider. Expecting a value from ['openai', 'deepseek'], not gemini!
+2025-09-10 22:25:00.202780
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The road to success and the road to failure are almost exactly the same. The difference is perseverance.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+In Applier Main
+Invalid input for ai_provider. Expecting a value from ['openai', 'deepseek'], not gemini!
+2025-09-10 22:26:20.083991
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The road to success and the road to failure are almost exactly the same. The difference is perseverance.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-10 22:27:38.916137
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+The CSV file 'all excels/all_applied_applications_history.csv' does not exist.
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Python Developer | Arcot Grou" job. Job ID: 4281090192
+HR info was not given for "Python Developer" with Job ID: 4281090192!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Do you have experience on celery? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('Do you have experience on Websockets? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('what is your current ctc?', '300000', 'text', ''), ('mobile phone number', '8779678947', 'text', '8779678947'), ('Do you have experience with Gen AI? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('We must fill this position urgently. Can you start immediately? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Do you have experience on langchain? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('how many years of work experience do you have?', '0', 'text', ''), ('Are you fine travelling to Turbhe Navi Mumbai Office? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('Do you have experience on AIML? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('what is your expected ctc?', '500000', 'text', ''), ('Do you have experience on Django? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Python Developer | Arcot Grou" job. Job ID: 4281090192 info
+
+-@-
+
+Trying to Apply to "Junior Software Developer | Upscrap" job. Job ID: 4298348964
+HR info was not given for "Junior Software Developer" with Job ID: 4298348964!
+
+About the job
+Location: Remote / India preferred (flexible)
+Type: Full-time / Contract (Immediate start)
+Salary: Competitive - decided based on performance during interview
+
+About the role:
+We are looking for a Junior Software Developer who can learn quickly, switch between tasks, and solve problems in real time. You’ll work directly with senior developers, get daily guidance, and contribute to real projects.
+
+Important: The entire interview will be live on Zoom. No written tests or take-home tasks. Be ready to share your screen, answer questions, and solve problems on the spot. If you do well, you will be hired the same day.
+
+What you'll do:
+Support senior developers with ongoing work
+Write and maintain code in Node.js, Python, and Go (familiarity with at least one required)
+Debug and troubleshoot issues in real time
+Work comfortably in Linux (basic terminal and system tasks)
+Assist with basic networking and simple cybersecurity tasks
+Use AI tools (ChatGPT, Gemini, etc.) to research and solve problems quickly
+Learn and improve daily with feedback from senior developers
+
+What we'll expect from you:
+Good understanding of basic programming concepts
+Hands-on experience with Node.js, Python, or Go
+Comfortable using Linux regularly
+Basic knowledge of networking (ports, SSH, curl, etc.); cybersecurity is a plus
+Ability to stay calm and solve problems under pressure
+Resourceful - able to use documentation, forums, and AI tools effectively
+Clear communication skills
+Willingness to learn and take feedback
+
+Nice-to-have:
+Experience with Docker, Kubernetes, or CI/CD
+Knowledge of databases (Postgres, MySQL, Redis)
+Familiarity with logs, monitoring, or tracing tools
+Some exposure to cybersecurity tools or networking diagnostics
+
+
+Interview Process:
+Format: Live Zoom call
+Steps:
+Short introduction
+Live technical Q&A (programming, Linux, networking)
+Screen sharing for problem-solving tasks (debugging, small coding tasks)
+You may use any tools you like (editor, terminal, ChatGPT, Gemini) but you must solve the problem live
+Hiring decision made the same day
+
+Note:
+No written exam
+No take-home assignment
+Only apply if you’re confident in your basics and can handle live problem-solving
+
+Why Join Us:
+Daily mentorship from senior developers
+Exposure to different programming languages and tools
+Real learning through hands-on work
+Growth opportunities based on performance
+
+How to Apply:
+Send your resume (1 page is fine) and a short note with: the language you’re strongest in and one technical problem you solved recently.
+Apply only if you:
+Can solve problems live on Zoom
+Are comfortable using AI tools as support
+Want to learn and grow quickly
+
+
+One last thing - straight talk:
+If you need extra time, written tests, or step-by-step instructions, this job may not be for you. We are looking for candidates who can think on their feet and solve problems in real time. If that sounds like you, come prepared - we’re hiring today.
+
+Good luck. Bring coffee (or whatever keeps you human).
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+
+
+Total runs:                     1
+Jobs Easy Applied:              1
+External job links collected:   0
+                              ----------
+Total applied or collected:     1
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Opportunities don't happen, you create them. - Chris Grosser
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-10 22:42:52.119177
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-10 22:44:00.876251
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Junior Software Developer | Upscrap" job. Job ID: 4298348964
+HR info was not given for "Junior Software Developer" with Job ID: 4298348964!
+
+About the job
+Location: Remote / India preferred (flexible)
+Type: Full-time / Contract (Immediate start)
+Salary: Competitive - decided based on performance during interview
+
+About the role:
+We are looking for a Junior Software Developer who can learn quickly, switch between tasks, and solve problems in real time. You’ll work directly with senior developers, get daily guidance, and contribute to real projects.
+
+Important: The entire interview will be live on Zoom. No written tests or take-home tasks. Be ready to share your screen, answer questions, and solve problems on the spot. If you do well, you will be hired the same day.
+
+What you'll do:
+Support senior developers with ongoing work
+Write and maintain code in Node.js, Python, and Go (familiarity with at least one required)
+Debug and troubleshoot issues in real time
+Work comfortably in Linux (basic terminal and system tasks)
+Assist with basic networking and simple cybersecurity tasks
+Use AI tools (ChatGPT, Gemini, etc.) to research and solve problems quickly
+Learn and improve daily with feedback from senior developers
+
+What we'll expect from you:
+Good understanding of basic programming concepts
+Hands-on experience with Node.js, Python, or Go
+Comfortable using Linux regularly
+Basic knowledge of networking (ports, SSH, curl, etc.); cybersecurity is a plus
+Ability to stay calm and solve problems under pressure
+Resourceful - able to use documentation, forums, and AI tools effectively
+Clear communication skills
+Willingness to learn and take feedback
+
+Nice-to-have:
+Experience with Docker, Kubernetes, or CI/CD
+Knowledge of databases (Postgres, MySQL, Redis)
+Familiarity with logs, monitoring, or tracing tools
+Some exposure to cybersecurity tools or networking diagnostics
+
+
+Interview Process:
+Format: Live Zoom call
+Steps:
+Short introduction
+Live technical Q&A (programming, Linux, networking)
+Screen sharing for problem-solving tasks (debugging, small coding tasks)
+You may use any tools you like (editor, terminal, ChatGPT, Gemini) but you must solve the problem live
+Hiring decision made the same day
+
+Note:
+No written exam
+No take-home assignment
+Only apply if you’re confident in your basics and can handle live problem-solving
+
+Why Join Us:
+Daily mentorship from senior developers
+Exposure to different programming languages and tools
+Real learning through hands-on work
+Growth opportunities based on performance
+
+How to Apply:
+Send your resume (1 page is fine) and a short note with: the language you’re strongest in and one technical problem you solved recently.
+Apply only if you:
+Can solve problems live on Zoom
+Are comfortable using AI tools as support
+Want to learn and grow quickly
+
+
+One last thing - straight talk:
+If you need extra time, written tests, or step-by-step instructions, this job may not be for you. We are looking for candidates who can think on their feet and solve problems in real time. If that sounds like you, come prepared - we’re hiring today.
+
+Good luck. Bring coffee (or whatever keeps you human).
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Done'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.81); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65ebbfc95+79861]
+	GetHandleVerifier [0x0x7ff65ebbfcf0+79952]
+	(No symbol) [0x0x7ff65e93cada]
+	(No symbol) [0x0x7ff65e94461a]
+	(No symbol) [0x0x7ff65e94770f]
+	(No symbol) [0x0x7ff65e9477cf]
+	(No symbol) [0x0x7ff65e9966cd]
+	(No symbol) [0x0x7ff65e9872a3]
+	(No symbol) [0x0x7ff65e9bcada]
+	(No symbol) [0x0x7ff65e986bc6]
+	(No symbol) [0x0x7ff65e9bccf0]
+	(No symbol) [0x0x7ff65e9e4f8b]
+	(No symbol) [0x0x7ff65e9bc8b3]
+	(No symbol) [0x0x7ff65e985272]
+	(No symbol) [0x0x7ff65e986043]
+	GetHandleVerifier [0x0x7ff65ee7b9cd+2946349]
+	GetHandleVerifier [0x0x7ff65ee75c4a+2922410]
+	GetHandleVerifier [0x0x7ff65ee959d7+3052855]
+	GetHandleVerifier [0x0x7ff65ebdaa7e+189918]
+	GetHandleVerifier [0x0x7ff65ebe2a1f+222591]
+	GetHandleVerifier [0x0x7ff65ebc8ab4+116244]
+	GetHandleVerifier [0x0x7ff65ebc8c69+116681]
+	GetHandleVerifier [0x0x7ff65ebaf048+11176]
+	BaseThreadInitThunk [0x0x7ffdaf67e8d7+23]
+	RtlUserThreadStart [0x0x7ffdb1888d9c+44]
+
+2025-09-10 22:45:00.441513
+Click Failed! Didn't find 'Discard'
+
+-@-
+
+Trying to Apply to "Python Developer | Vaultiz" job. Job ID: 4292166388
+HR info was not given for "Python Developer" with Job ID: 4292166388!
+
+About the job
+Company Description
+ Vaultize is a leading enterprise file security platform that ensures the safety and protection of corporate files, wherever they are accessed or used. It offers Enterprise Digital Rights Management (DRM), Enterprise file sync & share (EFSS), VPN-free access, and Endpoint Data Protection. Vaultize's end-to-end file security, combined with source encryption and de-duplication, provides unmatched data security and efficiency for businesses. The platform enables employees to securely access and control corporate data from any device, with a focus on mitigating security, data loss, and compliance risks. Vaultize serves numerous large enterprises, including those in regulated and security-conscious industries.
+ Role Description
+ This is a full-time remote role for a Python Developer. The Python Developer will be responsible for designing, developing, and maintaining back-end components, participating in software development lifecycle activities, and collaborating with cross-functional teams to deliver high-quality software solutions. The role involves the utilization of object-oriented programming principles and working with databases to ensure efficient data management and storage.
+ Qualifications
+  Proficiency in Back-End Web Development and Software Development
+Strong understanding of Object-Oriented Programming (OOP) and general Programming skills
+Experience with Databases and data management
+Excellent problem-solving skills and attention to detail
+Ability to work collaboratively in a remote team environment
+Bachelor's degree in Computer Science, Engineering, or a related field
+Familiarity with enterprise file security solutions is a plus
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('how many years of work experience do you have with python (programming language)?', '0', 'text', ''), ('Are you willing to undergo a background check, in accordance with local law/regulations? [  "Yes"<Yes>, "No"<No>, ]', 'Yes', 'radio', None), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Have you completed the following level of education: Bachelor\'s Degree? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('Are you comfortable working in a remote setting? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('We must fill this position urgently. Can you start immediately? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Python Developer | Vaultiz" job. Job ID: 4292166388 info
+
+-@-
+
+Trying to Apply to "Software Engineer Intern | Pulchritude® Fashion Studi" job. Job ID: 4298439767
+HR info was not given for "Software Engineer Intern" with Job ID: 4298439767!
+
+About the job
+Join Our Visionary Team at Pulchritude Fashion!
+
+Location: Remote
+
+About Pulchritude Fashion:
+Pulchritude Fashion is an innovative startup blending fashion, film, and artificial intelligence to create virtual, cinematic fashion experiences. Our platform utilizes digital avatars and advanced video-generation technologies to produce immersive, ticketed virtual runway films, enabling audiences to interact with AI-driven models and designers.
+
+We Are Looking For:
+Creative, talented, and ambitious individuals passionate about the intersection of fashion, film, and technology. We invite you to apply if your background aligns with any of the following areas:
+• Fashion Design and Styling
+• Marketing and Social Media
+• Software Engineering and AI Development
+• Product Management and Development
+• Business Strategy and Operations
+• Customer Engagement and Experience
+• Film Production and Editing
+• Digital Content Creation and Graphic Design
+• Public Relations and Communications
+• Administrative and Operational Support
+
+Key Qualifications:
+• Relevant educational or professional experience in your field
+• Strong communication and collaboration skills
+• Creative problem-solving and adaptability
+• Passion for innovation and emerging technologies
+
+What We Offer:
+• An inclusive, diverse, and creative remote work environment
+• Opportunities for professional development and growth
+• Competitive compensation and performance-based incentives
+• A collaborative culture that fosters creativity, innovation, and excellence
+
+How to Apply:
+Submit your resume along with a brief cover letter highlighting your specific area of interest and explaining how your skills and experiences align with Pulchritude Fashion’s unique mission.
+
+Pulchritude Fashion is an equal opportunity employer. We actively seek diversity and encourage individuals from all backgrounds to apply, fostering an inclusive environment where everyone can thrive.
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('phone', '8779678947', 'text', '8779678947'), ('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Engineer Intern | Pulchritude® Fashion Studi" job. Job ID: 4298439767 info
+
+-@-
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              2
+External job links collected:   0
+                              ----------
+Total applied or collected:     2
+
+Failed jobs:                    1
+Irrelevant jobs skipped:        0
+
+
+Obstacles are those frightful things you see when you take your eyes off your goal. - Henry Ford
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-13 23:23:07.257524
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Software Engineer | PrimeX Met" job. Job ID: 4297778071
+HR info was not given for "Software Engineer" with Job ID: 4297778071!
+
+About the job
+Company Description
+ PrimeX Meta, based in Dubai, is a leading AI-powered IT solutions partner. We specialize in building scalable software, mobile applications, AI automation, and cloud solutions tailored to meet the needs of businesses. We pride ourselves on leveraging cutting-edge technology to deliver customized solutions that drive efficiency and innovation.
+ Role Description
+ This is a full-time remote role for a Software Engineer. The Software Engineer will be responsible for designing, developing, and maintaining high-quality software solutions. Daily tasks include writing clean and efficient code, collaborating with cross-functional teams, troubleshooting and debugging software issues, and participating in code reviews. The role also involves staying updated with the latest industry trends and best practices to ensure the delivery of robust and scalable software solutions.
+ Qualifications
+  Strong foundation in Computer Science
+Experience in Back-End Web Development and Software Development
+Proficiency in Programming and Object-Oriented Programming (OOP)
+Excellent problem-solving skills and attention to detail
+Ability to work independently and remotely
+Effective communication and teamwork skills
+Experience in AI and cloud solutions is a plus
+Bachelor's degree in Computer Science, Software Engineering, or related field
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Obstacles are those frightful things you see when you take your eyes off your goal. - Henry Ford
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-16 14:20:34.853723
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+Browser window closed or session is invalid. Ending application process.
+Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f56dfc95+79861]
+	GetHandleVerifier [0x0x7ff6f56dfcf0+79952]
+	(No symbol) [0x0x7ff6f545cada]
+	(No symbol) [0x0x7ff6f5448995]
+	(No symbol) [0x0x7ff6f546dbda]
+	(No symbol) [0x0x7ff6f54e4346]
+	(No symbol) [0x0x7ff6f55048c2]
+	(No symbol) [0x0x7ff6f54dc8b3]
+	(No symbol) [0x0x7ff6f54a5272]
+	(No symbol) [0x0x7ff6f54a6043]
+	GetHandleVerifier [0x0x7ff6f599b9cd+2946349]
+	GetHandleVerifier [0x0x7ff6f5995c4a+2922410]
+	GetHandleVerifier [0x0x7ff6f59b59d7+3052855]
+	GetHandleVerifier [0x0x7ff6f56faa7e+189918]
+	GetHandleVerifier [0x0x7ff6f5702a1f+222591]
+	GetHandleVerifier [0x0x7ff6f56e8ab4+116244]
+	GetHandleVerifier [0x0x7ff6f56e8c69+116681]
+	GetHandleVerifier [0x0x7ff6f56cf048+11176]
+	BaseThreadInitThunk [0x0x7ffdf8b5e8d7+23]
+	RtlUserThreadStart [0x0x7ffdf9b28d9c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f56dfc95+79861]
+	GetHandleVerifier [0x0x7ff6f56dfcf0+79952]
+	(No symbol) [0x0x7ff6f545cada]
+	(No symbol) [0x0x7ff6f5448995]
+	(No symbol) [0x0x7ff6f546dbda]
+	(No symbol) [0x0x7ff6f54e4346]
+	(No symbol) [0x0x7ff6f55048c2]
+	(No symbol) [0x0x7ff6f54dc8b3]
+	(No symbol) [0x0x7ff6f54a5272]
+	(No symbol) [0x0x7ff6f54a6043]
+	GetHandleVerifier [0x0x7ff6f599b9cd+2946349]
+	GetHandleVerifier [0x0x7ff6f5995c4a+2922410]
+	GetHandleVerifier [0x0x7ff6f59b59d7+3052855]
+	GetHandleVerifier [0x0x7ff6f56faa7e+189918]
+	GetHandleVerifier [0x0x7ff6f5702a1f+222591]
+	GetHandleVerifier [0x0x7ff6f56e8ab4+116244]
+	GetHandleVerifier [0x0x7ff6f56e8c69+116681]
+	GetHandleVerifier [0x0x7ff6f56cf048+11176]
+	BaseThreadInitThunk [0x0x7ffdf8b5e8d7+23]
+	RtlUserThreadStart [0x0x7ffdf9b28d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Didn't find Sign in link, so assuming user is logged in!
+Browser window closed or session is invalid. Exiting.
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6570130f5+79493]
+	GetHandleVerifier [0x0x7ff657013150+79584]
+	(No symbol) [0x0x7ff656d901ba]
+	(No symbol) [0x0x7ff656d68271]
+	(No symbol) [0x0x7ff656e17d2e]
+	(No symbol) [0x0x7ff656e21590]
+	(No symbol) [0x0x7ff656e106d0]
+	(No symbol) [0x0x7ff656dd8e92]
+	(No symbol) [0x0x7ff656dd9c63]
+	GetHandleVerifier [0x0x7ff6572d0dbd+2954061]
+	GetHandleVerifier [0x0x7ff6572cb02a+2930106]
+	GetHandleVerifier [0x0x7ff6572eb357+3061991]
+	GetHandleVerifier [0x0x7ff65702d60e+187294]
+	GetHandleVerifier [0x0x7ff65703557f+219919]
+	GetHandleVerifier [0x0x7ff65701c294+116772]
+	GetHandleVerifier [0x0x7ff65701c449+117209]
+	GetHandleVerifier [0x0x7ff657002618+11176]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Browser window closed or session is invalid. Exiting.
+Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b29230f5+79493]
+	GetHandleVerifier [0x0x7ff7b2923150+79584]
+	(No symbol) [0x0x7ff7b26a01ba]
+	(No symbol) [0x0x7ff7b268a54b]
+	(No symbol) [0x0x7ff7b268ba4b]
+	(No symbol) [0x0x7ff7b26a0c5f]
+	(No symbol) [0x0x7ff7b2677c8d]
+	(No symbol) [0x0x7ff7b2732748]
+	(No symbol) [0x0x7ff7b27206d0]
+	(No symbol) [0x0x7ff7b26e8e92]
+	(No symbol) [0x0x7ff7b26e9c63]
+	GetHandleVerifier [0x0x7ff7b2be0dbd+2954061]
+	GetHandleVerifier [0x0x7ff7b2bdb02a+2930106]
+	GetHandleVerifier [0x0x7ff7b2bfb357+3061991]
+	GetHandleVerifier [0x0x7ff7b293d60e+187294]
+	GetHandleVerifier [0x0x7ff7b294557f+219919]
+	GetHandleVerifier [0x0x7ff7b292c294+116772]
+	GetHandleVerifier [0x0x7ff7b292c449+117209]
+	GetHandleVerifier [0x0x7ff7b2912618+11176]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The road to success and the road to failure are almost exactly the same. The difference is perseverance.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-19 21:29:47.113025
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+Search Location input was not given!
+Setting the preferences failed!
+Browser window closed or session is invalid. Ending application process.
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d51930f5+79493]
+	GetHandleVerifier [0x0x7ff7d5193150+79584]
+	(No symbol) [0x0x7ff7d4f101ba]
+	(No symbol) [0x0x7ff7d4ee8271]
+	(No symbol) [0x0x7ff7d4f97d2e]
+	(No symbol) [0x0x7ff7d4fb84c2]
+	(No symbol) [0x0x7ff7d4f904e3]
+	(No symbol) [0x0x7ff7d4f58e92]
+	(No symbol) [0x0x7ff7d4f59c63]
+	GetHandleVerifier [0x0x7ff7d5450dbd+2954061]
+	GetHandleVerifier [0x0x7ff7d544b02a+2930106]
+	GetHandleVerifier [0x0x7ff7d546b357+3061991]
+	GetHandleVerifier [0x0x7ff7d51ad60e+187294]
+	GetHandleVerifier [0x0x7ff7d51b557f+219919]
+	GetHandleVerifier [0x0x7ff7d519c294+116772]
+	GetHandleVerifier [0x0x7ff7d519c449+117209]
+	GetHandleVerifier [0x0x7ff7d5182618+11176]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d51930f5+79493]
+	GetHandleVerifier [0x0x7ff7d5193150+79584]
+	(No symbol) [0x0x7ff7d4f101ba]
+	(No symbol) [0x0x7ff7d4ee8271]
+	(No symbol) [0x0x7ff7d4f97d2e]
+	(No symbol) [0x0x7ff7d4fb84c2]
+	(No symbol) [0x0x7ff7d4f904e3]
+	(No symbol) [0x0x7ff7d4f58e92]
+	(No symbol) [0x0x7ff7d4f59c63]
+	GetHandleVerifier [0x0x7ff7d5450dbd+2954061]
+	GetHandleVerifier [0x0x7ff7d544b02a+2930106]
+	GetHandleVerifier [0x0x7ff7d546b357+3061991]
+	GetHandleVerifier [0x0x7ff7d51ad60e+187294]
+	GetHandleVerifier [0x0x7ff7d51b557f+219919]
+	GetHandleVerifier [0x0x7ff7d519c294+116772]
+	GetHandleVerifier [0x0x7ff7d519c449+117209]
+	GetHandleVerifier [0x0x7ff7d5182618+11176]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+All the best with your future interviews.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-19 23:55:18.726378
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Python Developer | Tekva" job. Job ID: 4300640157
+HR info was not given for "Python Developer" with Job ID: 4300640157!
+
+About the job
+Company Description
+ At Tekvan, we specialize in delivering customized solutions tailored to meet the unique needs of our clients. Our mission is to provide innovative, client-specific solutions that drive success and satisfaction. We pride ourselves on our ability to understand our customers' challenges and deliver bespoke solutions that exceed expectations.
+ Role Description
+ This is a full-time on-site role located in Mumbai for a Python Developer. The Python Developer will be responsible for back-end web development, software development, working with databases, programming, and object-oriented programming (OOP). Day-to-day tasks include coding, debugging, and collaborating with team members to create efficient and scalable solutions.
+ Qualifications
+ 
+Back-End Web Development and Software Development skills
+Proficiency in Object-Oriented Programming (OOP) and Programming skills
+Experience with Databases
+Excellent problem-solving and analytical skills
+Strong communication and teamwork skills
+Bachelor’s degree in Computer Science, Information Systems, or related field
+Experience with Python frameworks such as Django or Flask is a plus
+Experience in Agile or Scrum methodologies is a plus
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Done'
+Successfully saved "Python Developer | Tekva" job. Job ID: 4300640157 info
+
+-@-
+
+Trying to Apply to "Python Developer | NeoDocs (YC S21" job. Job ID: 4300637640
+HR info was not given for "Python Developer" with Job ID: 4300637640!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Have you completed the following level of education: Bachelor\'s Degree? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('Are you comfortable commuting to this job\'s location? [  "Yes"<Yes>, "No"<No>, ]', 'Yes', 'radio', None), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Python Developer | NeoDocs (YC S21" job. Job ID: 4300637640 info
+
+-@-
+
+Trying to Apply to "Software Engineer Intern | Emire" job. Job ID: 4302454254
+HR info was not given for "Software Engineer Intern" with Job ID: 4302454254!
+Failed to calculate the date posted!
+Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6bc5630f5+79493]
+	GetHandleVerifier [0x0x7ff6bc563150+79584]
+	(No symbol) [0x0x7ff6bc2dffdc]
+	(No symbol) [0x0x7ff6bc327fad]
+	(No symbol) [0x0x7ff6bc3605d2]
+	(No symbol) [0x0x7ff6bc35afa4]
+	(No symbol) [0x0x7ff6bc35a059]
+	(No symbol) [0x0x7ff6bc2aa755]
+	GetHandleVerifier [0x0x7ff6bc820dbd+2954061]
+	GetHandleVerifier [0x0x7ff6bc81b02a+2930106]
+	GetHandleVerifier [0x0x7ff6bc83b357+3061991]
+	GetHandleVerifier [0x0x7ff6bc57d60e+187294]
+	GetHandleVerifier [0x0x7ff6bc58557f+219919]
+	(No symbol) [0x0x7ff6bc2a970c]
+	GetHandleVerifier [0x0x7ff6bc955458+4217320]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+Unable to extract job description!
+Failed to find Job listings!
+In Applier
+cannot access local variable 'skip' where it is not associated with a value
+2025-09-19 23:56:18.056647
+Failed to get page source, browser might have crashed. Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6bc5630f5+79493]
+	GetHandleVerifier [0x0x7ff6bc563150+79584]
+	(No symbol) [0x0x7ff6bc2dffdc]
+	(No symbol) [0x0x7ff6bc327fad]
+	(No symbol) [0x0x7ff6bc3605d2]
+	(No symbol) [0x0x7ff6bc35afa4]
+	(No symbol) [0x0x7ff6bc35a059]
+	(No symbol) [0x0x7ff6bc2aa755]
+	GetHandleVerifier [0x0x7ff6bc820dbd+2954061]
+	GetHandleVerifier [0x0x7ff6bc81b02a+2930106]
+	GetHandleVerifier [0x0x7ff6bc83b357+3061991]
+	GetHandleVerifier [0x0x7ff6bc57d60e+187294]
+	GetHandleVerifier [0x0x7ff6bc58557f+219919]
+	(No symbol) [0x0x7ff6bc2a970c]
+	GetHandleVerifier [0x0x7ff6bc955458+4217320]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6bc5630f5+79493]
+	GetHandleVerifier [0x0x7ff6bc563150+79584]
+	(No symbol) [0x0x7ff6bc2dffdc]
+	(No symbol) [0x0x7ff6bc327fad]
+	(No symbol) [0x0x7ff6bc3605d2]
+	(No symbol) [0x0x7ff6bc35afa4]
+	(No symbol) [0x0x7ff6bc35a059]
+	(No symbol) [0x0x7ff6bc2aa755]
+	GetHandleVerifier [0x0x7ff6bc820dbd+2954061]
+	GetHandleVerifier [0x0x7ff6bc81b02a+2930106]
+	GetHandleVerifier [0x0x7ff6bc83b357+3061991]
+	GetHandleVerifier [0x0x7ff6bc57d60e+187294]
+	GetHandleVerifier [0x0x7ff6bc58557f+219919]
+	(No symbol) [0x0x7ff6bc2a970c]
+	GetHandleVerifier [0x0x7ff6bc955458+4217320]
+	BaseThreadInitThunk [0x0x7ffeba29e8d7+23]
+	RtlUserThreadStart [0x0x7ffebb4a8d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              2
+External job links collected:   0
+                              ----------
+Total applied or collected:     2
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-20 11:29:31.631039
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Power Builder Developer | PracticeSuite, Inc" job. Job ID: 4302291008
+
+About the job
+Role Description:
+
+We are seeking a talented PowerBuilder and PowerServer Developer to join our dynamic team. The successful candidate will be responsible for designing, developing, testing, and maintaining applications utilizing PowerBuilder and PowerServer technologies. The role requires strong technical skills, a solid understanding of software development principles, and the ability to collaborate effectively with cross-functional teams.
+
+Key Responsibilities:
+
+1. Design, develop, and maintain software applications using PowerBuilder and PowerServer.
+2. Work closely with business analysts and stakeholders to gather and analyze requirements.
+3. Translate business requirements into technical specifications and designs.
+4. Write clean, efficient, and maintainable code following best practices.
+5. Conduct thorough unit testing and debugging to ensure software meets functional requirements.
+6. Troubleshoot and resolve technical issues reported by end-users.
+7. Collaborate with quality assurance teams to ensure software quality and reliability.
+8. Participate in code reviews to ensure adherence to coding standards and best practices.
+9. Keep abreast of new technologies and industry trends related to PowerBuilder and PowerServer development.
+10. Document software designs, technical specifications, and deployment procedures.
+11. Assist in the deployment and maintenance of applications in production environments.
+12. Provide technical guidance and support to other team members as needed.
+
+Qualifications:
+
+1. Bachelor’s degree in computer science, Engineering, or related field.
+2. Proven experience in developing software applications using PowerBuilder and PowerServer.
+3. Strong proficiency in SQL and database design concepts.
+4. Solid understanding of object-oriented programming principles.
+5. Excellent problem-solving and analytical skills.
+6. Ability to work effectively both independently and as part of a team.
+7. Strong communication skills, both written and verbal.
+8. Attention to detail and a commitment to delivering high-quality software.
+9. Familiarity with Agile software development methodologies is a plus.
+
+Preferred Qualifications:
+
+1. Knowledge of web development technologies such as HTML, CSS, and JavaScript.
+2. Experience with software development tools such as JIRA, Jenkins, and Docker.
+3. Familiarity with integrating third-party APIs and services.
+4. Understanding of software security best practices.
+
+Job Location: Navi Mumbai (Ghansoli) (Complete WFO)
+Shift: 2 PM - 11 PM (IST)
+
+Interested candidates can share resume at yashashree@practicesuite.com
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Submit application'
+Since, Submit Application failed, discarding the job application...
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=140.0.7339.186); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6fff530f5+79493]
+	GetHandleVerifier [0x0x7ff6fff53150+79584]
+	(No symbol) [0x0x7ff6ffcd01ba]
+	(No symbol) [0x0x7ff6ffcd7cfe]
+	(No symbol) [0x0x7ff6ffcdadef]
+	(No symbol) [0x0x7ff6ffcdaeaf]
+	(No symbol) [0x0x7ff6ffd2d1e7]
+	(No symbol) [0x0x7ff6ffd2aac1]
+	(No symbol) [0x0x7ff6ffd299b0]
+	(No symbol) [0x0x7ff6ffd1b2f5]
+	(No symbol) [0x0x7ff6ffd5070a]
+	(No symbol) [0x0x7ff6ffd1a7e6]
+	(No symbol) [0x0x7ff6ffd50920]
+	(No symbol) [0x0x7ff6ffd78b8b]
+	(No symbol) [0x0x7ff6ffd504e3]
+	(No symbol) [0x0x7ff6ffd18e92]
+	(No symbol) [0x0x7ff6ffd19c63]
+	GetHandleVerifier [0x0x7ff700210dbd+2954061]
+	GetHandleVerifier [0x0x7ff70020b02a+2930106]
+	GetHandleVerifier [0x0x7ff70022b357+3061991]
+	GetHandleVerifier [0x0x7ff6fff6d60e+187294]
+	GetHandleVerifier [0x0x7ff6fff7557f+219919]
+	GetHandleVerifier [0x0x7ff6fff5c294+116772]
+	GetHandleVerifier [0x0x7ff6fff5c449+117209]
+	GetHandleVerifier [0x0x7ff6fff42618+11176]
+	BaseThreadInitThunk [0x0x7ffc1d64e8d7+23]
+	RtlUserThreadStart [0x0x7ffc1e788d9c+44]
+
+2025-09-20 11:30:09.773946
+
+-@-
+
+Trying to Apply to "Python Developer | QualityKiosk Technologies Pvt. Ltd" job. Job ID: 4301083253
+
+About the job
+Role: Python Developer
+
+Job Location: Mumbai- BKC
+No. of openings: 10
+
+Job description:
+Possess a strong foundation in at least one programming language (preferably Python)
+Have a solid understanding of the product development lifecycle and automation through selenium
+Demonstrate strong technical and problem-solving skills
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('how many years of work experience do you have with programming languages?', '0', 'text', ''), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('how many years of work experience do you have with python (programming language)?', '0', 'text', '0'), ('how many years of work experience do you have with selenium?', '2', 'text', '2')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Python Developer | QualityKiosk Technologies Pvt. Ltd" job. Job ID: 4301083253 info
+
+-@-
+
+Already applied to "Python Developer | TIH | IIT Bomba" job. Job ID: 4301276915!
+
+-@-
+
+Already applied to "Python Developer | Response Informatic" job. Job ID: 4302896892!
+
+-@-
+
+Already applied to "Software Engineer | GenesisCipher Lab" job. Job ID: 4302758751!
+
+-@-
+
+Already applied to "Software Developer II - Python/Django | Angel and Geni" job. Job ID: 4302282310!
+
+-@-
+
+Already applied to "Python Developer | Tekva" job. Job ID: 4300640157!
+
+-@-
+
+Trying to Apply to "Jr. Full Stack Developer | Kel" job. Job ID: 4302128463
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('Are you based out of Mumbai? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('how many years of relevant experience do you have? (0 in case of freshers)', '0', 'text', ''), ('Have you completed your graduation? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('how soon can you join us? (in days) (0 in case of immediate joiners)', '0', 'text', '')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Jr. Full Stack Developer | Kel" job. Job ID: 4302128463 info
+
+-@-
+
+Trying to Apply to "Back End Developer | Pixeldust Technologie" job. Job ID: 4298591195
+
+About the job
+Role Overview:
+We are seeking an experienced and talented Back-End Developer with expertise in Python, Django and FastAPI to join our growing team. The ideal candidate will work on designing, developing, and maintaining scalable back-end services, APIs, and databases, particularly focused on handling complex graph data. You will contribute to the optimization and evolution of our data systems, supporting real-time data analysis, recommendation engines, and other graph-based applications.
+
+Key Responsibilities:
+
+1) Back-End Development with Python:
+Develop, deploy, and maintain scalable, high-performance back-end services and RESTful APIs using Python.
+Integrate the back-end with front-end systems and third-party services.
+
+2) Database Design and Optimization:
+Design efficient, scalable databases and perform necessary optimizations to ensure high performance and reliability.
+Work with relational (PostgreSQL, MySQL) and NoSQL (MongoDB, Cassandra) databases, with a strong focus on graph databases.
+
+3) Collaborate with Cross-Functional Teams:
+Work closely with data scientists, front-end developers, and product managers to ensure seamless integration of data models and services.
+Contribute to defining architecture and choosing appropriate technology stacks for graph data use cases.
+
+4) Code Quality and Documentation:
+Write clean, maintainable code and adhere to coding best practices and design principles.
+Develop and maintain comprehensive documentation for services, systems, and APIs.
+
+5) Performance Tuning:
+Optimize and fine-tune existing back-end systems, focusing on the efficient handling and querying of graph data.
+Analyze and address performance bottlenecks in both database queries and back-end service execution.
+
+Required Skills and Qualification:
+
+1) Proficiency in Python:
+Solid experience in Python development, especially in building back-end systems and APIs.
+2) Web Development and APIs:
+Experience with RESTful API design and implementation.
+Familiarity with Django or Flask frameworks for building Python web applications.
+3) Database and Query Optimization:
+Experience in designing, managing, and optimizing relational and NoSQL databases.
+Hands-on experience in writing efficient queries, both SQL and graph-based.
+4) Version Control:
+Proficiency with Git and collaborative development workflows.
+5) Cloud Platforms:
+Familiarity with cloud-based technologies (AWS, GCP, or Azure), particularly those supporting graph data storage or processing.
+
+What We Offer:
+Competitive salary and benefits package.
+Opportunity to work on cutting-edge security challenges.
+A collaborative and growth-oriented work environment with opportunities for career development.
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('how many years of work experience do you have with fastapi?', '0', 'text', ''), ('how many years of work experience do you have with python (programming language)?', '0', 'text', '0')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Back End Developer | Pixeldust Technologie" job. Job ID: 4298591195 info
+
+-@-
+
+Failed to click "Low Code / No Code Developer | Best Roadways Limite" job on details button. Job ID: 4299521630!
+Trying to Apply to "Low Code / No Code Developer | Best Roadways Limite" job. Job ID: 4299521630
+
+About the job
+Role Overview:
+We are seeking an experienced and talented Back-End Developer with expertise in Python, Django and FastAPI to join our growing team. The ideal candidate will work on designing, developing, and maintaining scalable back-end services, APIs, and databases, particularly focused on handling complex graph data. You will contribute to the optimization and evolution of our data systems, supporting real-time data analysis, recommendation engines, and other graph-based applications.
+
+Key Responsibilities:
+
+1) Back-End Development with Python:
+Develop, deploy, and maintain scalable, high-performance back-end services and RESTful APIs using Python.
+Integrate the back-end with front-end systems and third-party services.
+
+2) Database Design and Optimization:
+Design efficient, scalable databases and perform necessary optimizations to ensure high performance and reliability.
+Work with relational (PostgreSQL, MySQL) and NoSQL (MongoDB, Cassandra) databases, with a strong focus on graph databases.
+
+3) Collaborate with Cross-Functional Teams:
+Work closely with data scientists, front-end developers, and product managers to ensure seamless integration of data models and services.
+Contribute to defining architecture and choosing appropriate technology stacks for graph data use cases.
+
+4) Code Quality and Documentation:
+Write clean, maintainable code and adhere to coding best practices and design principles.
+Develop and maintain comprehensive documentation for services, systems, and APIs.
+
+5) Performance Tuning:
+Optimize and fine-tune existing back-end systems, focusing on the efficient handling and querying of graph data.
+Analyze and address performance bottlenecks in both database queries and back-end service execution.
+
+Required Skills and Qualification:
+
+1) Proficiency in Python:
+Solid experience in Python development, especially in building back-end systems and APIs.
+2) Web Development and APIs:
+Experience with RESTful API design and implementation.
+Familiarity with Django or Flask frameworks for building Python web applications.
+3) Database and Query Optimization:
+Experience in designing, managing, and optimizing relational and NoSQL databases.
+Hands-on experience in writing efficient queries, both SQL and graph-based.
+4) Version Control:
+Proficiency with Git and collaborative development workflows.
+5) Cloud Platforms:
+Familiarity with cloud-based technologies (AWS, GCP, or Azure), particularly those supporting graph data storage or processing.
+
+What We Offer:
+Competitive salary and benefits package.
+Opportunity to work on cutting-edge security challenges.
+A collaborative and growth-oriented work environment with opportunities for career development.
+
+Couldn't find experience requirement in About the Job!
+Easy apply failed I guess!
+
+-@-
+
+Failed to click "Software Engineer | Innova ES" job on details button. Job ID: 4303034087!
+Click Failed! Didn't find 'Discard'
+Trying to Apply to "Software Engineer | Innova ES" job. Job ID: 4303034087
+
+About the job
+About the Company
+We are a leading technology company dedicated to innovation and excellence. Our mission is to create cutting-edge solutions that empower businesses and enhance user experiences. We foster a collaborative culture that values diversity and encourages professional growth.
+
+
+About the Role
+We are seeking a talented Software Engineer to join our dynamic team. In this role, you will be responsible for developing high-quality software solutions that meet our clients' needs.
+
+
+Responsibilities
+Design, develop, and maintain software applications.
+Collaborate with cross-functional teams to define, design, and ship new features.
+Ensure the performance, quality, and responsiveness of applications.
+Identify and correct bottlenecks and fix bugs.
+Help maintain code quality, organization, and automation.
+
+ Qualifications
+Bachelor's degree in Computer Science or a related field.
+Proven experience as a Software Engineer or similar role.
+
+ Required Skills
+Proficiency in programming languages such as Java, C++, or Python.
+Experience with web development frameworks.
+Strong understanding of algorithms and data structures.
+
+ Preferred Skills
+Familiarity with cloud services (AWS, Azure, etc.).
+Experience with Agile development methodologies.
+Knowledge of database management systems.
+
+Equal Opportunity Statement
+We are an equal opportunity employer and are committed to creating a diverse and inclusive workplace. We encourage applications from all qualified individuals.
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('how many years of work experience do you have with c++?', '0', 'text', ''), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Have you completed the following level of education: Bachelor\'s Degree? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('how many years of work experience do you have with amazon web services (aws)?', '0', 'text', '0'), ('We must fill this position urgently. Can you start immediately? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Engineer | Innova ES" job. Job ID: 4303034087 info
+
+-@-
+
+Already applied to "Snowflake Developer | NMS Consultan" job. Job ID: 4301304690!
+
+-@-
+
+Failed to click "Software Engineer Intern | Taskif" job on details button. Job ID: 4300655100!
+Click Failed! Didn't find 'Discard'
+Trying to Apply to "Software Engineer Intern | Taskif" job. Job ID: 4300655100
+HR info was not given for "Software Engineer Intern" with Job ID: 4300655100!
+Found the word "master" in 
+About the job
+Role: Software Engineer
+
+Summary
+We are seeking a talented Software Engineer Intern to join our engineering team and drive the design, development, and deployment of AI-powered solutions. This role is ideal for professionals passionate about artificial intelligence, machine learning, and software engineering who want to make a tangible impact on real-world applications.
+
+As an AI Software Engineer, you will collaborate with engineers, data scientists, and product managers to build, optimize, and scale AI models and systems. You will work with cutting-edge tools and frameworks while applying your expertise in algorithms, data processing, and system integration to deliver high-performance AI solutions.
+
+Key Responsibilities
+Design, develop, test, and deploy AI/ML models and applications.
+Build data pipelines for preprocessing, cleaning, and transforming large datasets.
+Train, evaluate, and fine-tune machine learning models for production use.
+Integrate AI models into applications and production systems.
+Research and implement new AI frameworks, tools, and methodologies to enhance capabilities.
+Debug, optimize, and scale algorithms to improve system performance.
+Collaborate with cross-functional teams (data science, product, engineering) to deliver end-to-end AI solutions.
+Contribute to technical documentation, code reviews, and best practices.
+
+Qualifications
+Bachelor’s or Master’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.
+Strong programming skills in Python, Java, or C++.
+Solid understanding of machine learning concepts (classification, regression, NLP, computer vision, deep learning).
+Hands-on experience with frameworks such as TensorFlow, PyTorch, or scikit-learn.
+Proficiency in algorithms, data structures, and object-oriented programming.
+Experience building and deploying AI applications in real-world environments.
+Strong analytical, problem-solving, and debugging skills.
+
+Preferred Qualifications
+Experience with large-scale data pipelines and distributed systems.
+Familiarity with cloud platforms (AWS, Azure, or GCP).
+Knowledge of APIs, microservices, and containerization (Docker, Kubernetes).
+Exposure to MLOps practices and continuous integration/continuous deployment (CI/CD).
+Strong interest in applied AI and innovation in emerging technologies.
+
+Apply Now!
+
+About the job
+Role: Software Engineer
+
+Summary
+We are seeking a talented Software Engineer Intern to join our engineering team and drive the design, development, and deployment of AI-powered solutions. This role is ideal for professionals passionate about artificial intelligence, machine learning, and software engineering who want to make a tangible impact on real-world applications.
+
+As an AI Software Engineer, you will collaborate with engineers, data scientists, and product managers to build, optimize, and scale AI models and systems. You will work with cutting-edge tools and frameworks while applying your expertise in algorithms, data processing, and system integration to deliver high-performance AI solutions.
+
+Key Responsibilities
+Design, develop, test, and deploy AI/ML models and applications.
+Build data pipelines for preprocessing, cleaning, and transforming large datasets.
+Train, evaluate, and fine-tune machine learning models for production use.
+Integrate AI models into applications and production systems.
+Research and implement new AI frameworks, tools, and methodologies to enhance capabilities.
+Debug, optimize, and scale algorithms to improve system performance.
+Collaborate with cross-functional teams (data science, product, engineering) to deliver end-to-end AI solutions.
+Contribute to technical documentation, code reviews, and best practices.
+
+Qualifications
+Bachelor’s or Master’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field.
+Strong programming skills in Python, Java, or C++.
+Solid understanding of machine learning concepts (classification, regression, NLP, computer vision, deep learning).
+Hands-on experience with frameworks such as TensorFlow, PyTorch, or scikit-learn.
+Proficiency in algorithms, data structures, and object-oriented programming.
+Experience building and deploying AI applications in real-world environments.
+Strong analytical, problem-solving, and debugging skills.
+
+Preferred Qualifications
+Experience with large-scale data pipelines and distributed systems.
+Familiarity with cloud platforms (AWS, Azure, or GCP).
+Knowledge of APIs, microservices, and containerization (Docker, Kubernetes).
+Exposure to MLOps practices and continuous integration/continuous deployment (CI/CD).
+Strong interest in applied AI and innovation in emerging technologies.
+
+Apply Now!
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('phone', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Engineer Intern | Taskif" job. Job ID: 4300655100 info
+
+>-> Now on Page 2 
+
+Browser window closed or session is invalid. Exiting.
+Message: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6fff530f5+79493]
+	GetHandleVerifier [0x0x7ff6fff53150+79584]
+	(No symbol) [0x0x7ff6ffccffdc]
+	(No symbol) [0x0x7ff6ffcbd3fc]
+	(No symbol) [0x0x7ff6ffcbafcc]
+	(No symbol) [0x0x7ff6ffcbba4b]
+	(No symbol) [0x0x7ff6ffccb1af]
+	(No symbol) [0x0x7ff6ffce0cb1]
+	(No symbol) [0x0x7ff6ffce7f4a]
+	(No symbol) [0x0x7ff6ffcbc1fe]
+	(No symbol) [0x0x7ff6ffce04a2]
+	(No symbol) [0x0x7ff6ffd78a62]
+	(No symbol) [0x0x7ff6ffd504e3]
+	(No symbol) [0x0x7ff6ffd18e92]
+	(No symbol) [0x0x7ff6ffd19c63]
+	GetHandleVerifier [0x0x7ff700210dbd+2954061]
+	GetHandleVerifier [0x0x7ff70020b02a+2930106]
+	GetHandleVerifier [0x0x7ff70022b357+3061991]
+	GetHandleVerifier [0x0x7ff6fff6d60e+187294]
+	GetHandleVerifier [0x0x7ff6fff7557f+219919]
+	GetHandleVerifier [0x0x7ff6fff5c294+116772]
+	GetHandleVerifier [0x0x7ff6fff5c449+117209]
+	GetHandleVerifier [0x0x7ff6fff42618+11176]
+	BaseThreadInitThunk [0x0x7ffc1d64e8d7+23]
+	RtlUserThreadStart [0x0x7ffc1e788d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              5
+External job links collected:   0
+                              ----------
+Total applied or collected:     5
+
+Failed jobs:                    1
+Irrelevant jobs skipped:        0
+
+
+
+Questions randomly answered:
+  ('How soon can you join us? (in days) (0 in case of immediate joiners)', 'text')  
+
+
+
+The road to success and the road to failure are almost exactly the same. The difference is perseverance.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-09-20 12:21:40.714451
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Software Engineer | GenesisCipher Lab" job. Job ID: 4302758751
+HR info was not given for "Software Engineer" with Job ID: 4302758751!
+
+About the job
+Company Description
+ GenesisCipher Labs is a FinTech infrastructure startup dedicated to building secure blockchain protocols. Our projects include stablecoins, oracles, and payment systems designed to make finance transparent, decentralized, and accessible. We aim to revolutionize the financial sector by leveraging blockchain technology to provide secure and efficient solutions.
+ Role Description
+ This is a temporary and remote role for a Software Engineer. The Software Engineer will be responsible for developing and maintaining back-end systems, writing efficient code, programming, and implementing object-oriented programming principles. The role will involve collaborating with a remote team to ensure the stability and security of blockchain protocols.
+ Qualifications
+  Strong skills in Computer Science and Software Development
+Experience in Back-End Web Development and Programming
+Proficiency in Object-Oriented Programming (OOP)
+Excellent problem-solving abilities and analytical skills
+Ability to work independently and in a remote team environment
+Experience with blockchain technology is a plus
+Bachelor's degree in Computer Science or related field is preferred
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('phone', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Engineer | GenesisCipher Lab" job. Job ID: 4302758751 info
+
+-@-
+
+Trying to Apply to "Python Developer | Response Informatic" job. Job ID: 4302896892
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('how many years of work experience do you have with python (programming language)?', '0', 'text', '0'), ('how many years of work experience do you have with amazon web services (aws)?', '0', 'text', '0'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Python Developer | Response Informatic" job. Job ID: 4302896892 info
+
+-@-
+
+Trying to Apply to "Software Developer II - Python/Django | Angel and Geni" job. Job ID: 4302282310
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('We must fill this position urgently. Can you start immediately? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('how many years of work experience do you have with python (programming language)?', '0', 'text', '0'), ('Do you have B.Tech/ BE (Computer science/ Electronics & Communication/ Electrical) degree? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('Are you comfortable commuting to this job\'s location? [  "Yes"<Yes>, "No"<No>, ]', 'Yes', 'radio', None), ('Is your degree from Tier 1 college (IITs/ NITs/ top engineering colleges)? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('how many years of work experience do you have with django?', '0', 'text', ''), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('how many years of work experience do you have with back-end web development?', '0', 'text', ''), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Developer II - Python/Django | Angel and Geni" job. Job ID: 4302282310 info
+
+-@-
+
+Trying to Apply to "Python Developer | TIH | IIT Bomba" job. Job ID: 4301276915
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('phone', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Review'
+Successfully saved "Python Developer | TIH | IIT Bomba" job. Job ID: 4301276915 info
+
+-@-
+
+Trying to Apply to "Low Code / No Code Developer | Best Roadways Limite" job. Job ID: 4299521630
+HR info was not given for "Low Code / No Code Developer" with Job ID: 4299521630!
+Failed to calculate the date posted!
+Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff700b230f5+79493]
+	GetHandleVerifier [0x0x7ff700b23150+79584]
+	(No symbol) [0x0x7ff7008a01ba]
+	(No symbol) [0x0x7ff70088c085]
+	(No symbol) [0x0x7ff7008b12ca]
+	(No symbol) [0x0x7ff700927f76]
+	(No symbol) [0x0x7ff7009484c2]
+	(No symbol) [0x0x7ff7009204e3]
+	(No symbol) [0x0x7ff7008e8e92]
+	(No symbol) [0x0x7ff7008e9c63]
+	GetHandleVerifier [0x0x7ff700de0dbd+2954061]
+	GetHandleVerifier [0x0x7ff700ddb02a+2930106]
+	GetHandleVerifier [0x0x7ff700dfb357+3061991]
+	GetHandleVerifier [0x0x7ff700b3d60e+187294]
+	GetHandleVerifier [0x0x7ff700b4557f+219919]
+	GetHandleVerifier [0x0x7ff700b2c294+116772]
+	GetHandleVerifier [0x0x7ff700b2c449+117209]
+	GetHandleVerifier [0x0x7ff700b12618+11176]
+	BaseThreadInitThunk [0x0x7ffc1d64e8d7+23]
+	RtlUserThreadStart [0x0x7ffc1e788d9c+44]
+
+Unable to extract job description!
+Failed to find Job listings!
+In Applier
+cannot access local variable 'skip' where it is not associated with a value
+2025-09-20 12:23:08.427001
+Failed to get page source, browser might have crashed. Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff700b230f5+79493]
+	GetHandleVerifier [0x0x7ff700b23150+79584]
+	(No symbol) [0x0x7ff70089ffdc]
+	(No symbol) [0x0x7ff7008e7fad]
+	(No symbol) [0x0x7ff7009205d2]
+	(No symbol) [0x0x7ff70091afa4]
+	(No symbol) [0x0x7ff70091a059]
+	(No symbol) [0x0x7ff70086a755]
+	GetHandleVerifier [0x0x7ff700de0dbd+2954061]
+	GetHandleVerifier [0x0x7ff700ddb02a+2930106]
+	GetHandleVerifier [0x0x7ff700dfb357+3061991]
+	GetHandleVerifier [0x0x7ff700b3d60e+187294]
+	GetHandleVerifier [0x0x7ff700b4557f+219919]
+	(No symbol) [0x0x7ff70086970c]
+	GetHandleVerifier [0x0x7ff700f15458+4217320]
+	BaseThreadInitThunk [0x0x7ffc1d64e8d7+23]
+	RtlUserThreadStart [0x0x7ffc1e788d9c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7ff700b230f5+79493]
+	GetHandleVerifier [0x0x7ff700b23150+79584]
+	(No symbol) [0x0x7ff70089ffdc]
+	(No symbol) [0x0x7ff7008e7fad]
+	(No symbol) [0x0x7ff7009205d2]
+	(No symbol) [0x0x7ff70091afa4]
+	(No symbol) [0x0x7ff70091a059]
+	(No symbol) [0x0x7ff70086a755]
+	GetHandleVerifier [0x0x7ff700de0dbd+2954061]
+	GetHandleVerifier [0x0x7ff700ddb02a+2930106]
+	GetHandleVerifier [0x0x7ff700dfb357+3061991]
+	GetHandleVerifier [0x0x7ff700b3d60e+187294]
+	GetHandleVerifier [0x0x7ff700b4557f+219919]
+	(No symbol) [0x0x7ff70086970c]
+	GetHandleVerifier [0x0x7ff700f15458+4217320]
+	BaseThreadInitThunk [0x0x7ffc1d64e8d7+23]
+	RtlUserThreadStart [0x0x7ffc1e788d9c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              4
+External job links collected:   0
+                              ----------
+Total applied or collected:     4
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-10-13 18:36:35.572758
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Full Stack Engineer | Helo.ai by VivaConnec" job. Job ID: 4312008526
+
+About the job
+Join Our Team as a Full stack Developer . Grow, Upscale at Helo.ai by VivaConnect 
+
+Location: Mumbai, India 
+Type: Full-Time 
+About Helo.ai At Helo.ai by VivaConnect, we’re transforming how businesses communicate with their customers. From SMS, WhatsApp, RCS, Voice, to Contact Centre Solutions, we enable brands to build impactful connections. With over 24+ years of industry expertise, handling 30+ billion engagements annually, and partnerships with Meta, Google, and leading telecom operators, we’re not just another company—we’re trailblazers in business communication. If you’re looking to kickstart your journey with an organization that’s all about growth, innovation, and meaningful impact, your search ends here! 
+About the Role Are you passionate about building seamless, efficient, and scalable web applications? We’re looking for a Fullstack Developer who thrives in a dynamic environment and loves solving challenges. In this role, you will develop back-end APIs, work on modern front-end frameworks, and help shape the technical backbone of our projects. This is your chance to contribute to real-world applications and grow with a team that values innovation, collaboration, and cutting-edge tech solutions. 
+
+Your Day-to-Day Responsibilities ❖ Back-End Development: • Design and develop robust back-end APIs in Node.JS for new and existing projects. • Write clean, testable, and efficient code following best software development practices. ❖ Requirement Gathering & Execution: • Collaborate with cross-functional teams to gather and refine technical specifications. • Translate business requirements into scalable technical solutions. ❖ Team Collaboration: • Foster a productive team culture aligned with risk controls and compliance standards. • Communicate project goals, tasks, and responsibilities clearly to ensure team alignment. ❖ Compliance & Risk Management: • Adhere to business controls to ensure compliance with risk and regulatory requirements. ❖ Documentation: • Create and maintain software documentation to support ongoing projects and future developments. 
+Your Growth @ Helo.ai Fast-Track Growth At VivaConnect, growth isn’t just a word—it’s a mindset. Here’s what’s in store for you: • Gain real-world experience working on live projects alongside experienced mentors. • Work on cutting-edge tech and high-impact projects that challenge and inspire you every day. Skill Set Development • Master technologies like Node.JS, ReactJS, MongoDB, and AWS. • Progress from Fullstack Developer to roles like Senior Developer, Tech Lead, or even Architect as you build your expertise. • Access resources, certifications, and mentorship to level up your skills. Personality Development • Enhance your communication, leadership, and decision-making skills while working with industry leaders. • Be part of a team that delivers real value to businesses worldwide — your code will make a difference. 
+
+🛠 Knowledge & Skill-set Required • Back-End Expertise: • Strong experience in Node.JS and developing REST APIs. • Experience with authenticated, customer-focused applications. • Familiarity with Object-Oriented Programming (OOP) and Functional Design principles. • Front-End Skills: • Proficiency in HTML, CSS, SASS, and responsive design. • Experience with at least one modern JavaScript framework, preferably ReactJS. • Production Knowledge: • Experience in deploying and maintaining production-ready Node.JS servers. • Understanding of industry best practices in software development. • Bonus Skills (Preferred): • Basic knowledge of PHP and .NET. 
+Our Core Technologies • Backend: NodeJS, Python • Frontend: ReactJS, AngularJS • Frameworks: Django, Django REST Framework • Database: MongoDB, MySQL • Servers: RabbitMQ, Redis, NginX, Apache • Tools & Platforms: Docker, AWS, Kannel SMS Gateway 
+
+Why Helo.ai? • Growth Playground: Be part of India’s $2 billion CPaaS market and contribute to a booming global industry. • Big Impact: Work on high-ticket deals and partner with some of the biggest brands across sectors. • A supportive and inclusive work environment that celebrates YOU. • Opportunities to work on exciting projects, engage with people, and make an impact. • Employee Engagement Programs that make Mondays fun (yes, it’s possible!). • Our Clients as a CPAAS giant : HDFC Bank ltd, State bank of India, Bajaj finance limited, Reliance brands, Motilal Oswal and many more • Endless Learning: Work closely with experts and access opportunities to enhance your skills. 
+
+Equal Opportunity Employer At Helo.ai, we celebrate diversity and are committed to building an inclusive and collaborative environment for all. If you’ve got the passion, we’ve got the platform to help you shine.
+
+Contains bad word ".NET". Skipping this job!
+
+
+-@-
+
+Trying to Apply to "Full Stack Engineer ( Full-time at a Fortune 500 tech MNC ) | HAR" job. Job ID: 4310712109
+HR info was not given for "Full Stack Engineer ( Full-time at a Fortune 500 tech MNC )" with Job ID: 4310712109!
+
+About the job
+Job Description:
+ Develop, maintain, and extend Java J2EE applications utilizing Spring Boot web services using Agile methodology, with distributed processing and relational or NoSQL database backend. Collaborate on front-end development using Angular and integrate seamlessly with RESTful APIs and cloud infrastructure (AWS).
+Primary Responsibilities Include:
+Analyze business requirements, develop software applications, code and debug.
+Conduct unit, regression, and load tests.
+Document procedures and write analysis/design documents as necessary.
+Perform software development and unit testing tasks using J2EE and open-source technologies.
+Work collaboratively with a team of software professionals to develop new functionality and correct defects.
+Follow detailed lifecycle processes, applying best practices for configuration control and development.
+Conduct software analysis, programming, testing, and debugging.
+Recommend changes to improve established processes.
+Transform requirements into technical specifications and identify both production and non-production application issues.
+What You Will Need to Succeed in the Role:
+Strong hands-on Java J2EE development experience using Spring Boot.
+Experience with Spring-based applications (Spring Integration, Spring Security).
+Solid experience in Angular (Angular 8+ preferred), TypeScript, HTML5, CSS3, and RxJS.
+Good understanding of RESTful API integration between front-end and back-end.
+Experience with database interaction using Spring Framework, preferably with Oracle or any RDBMS.
+Agile development methodology experience.
+Experience with build tools like Maven or Gradle.
+Version control using Git; experience with RTC is a plus.
+TDD (Test Driven Development) experience using JUnit, Mockito, and Wiremock.
+Hands-on experience with CI/CD tools like Jenkins.
+Proficiency in using JIRA and Confluence.
+Good communication and collaboration skills to work with stakeholders, BA, QA, and team members.
+Experience with AWS cloud services and deployment pipelines.
+Must-Have Skills:
+Back-End: Java 8+, Spring Boot, Spring MVC, Spring Security, JPA/Hibernate
+Front-End: Angular 8+, TypeScript, RxJS, HTML5, CSS3
+Cloud: AWS (EC2, S3, Lambda, RDS, API Gateway, etc.)
+DevOps: CI/CD pipelines using Jenkins, Git, Maven/Gradle
+Testing: JUnit, Mockito, Wiremock
+Containerization: Docker, Kubernetes (preferred)
+Project Tools: JIRA, Confluence
+Methodology: Agile/Scrum
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Submit application'
+Click Failed! Didn't find 'Done'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76d8fe955+80021]
+	GetHandleVerifier [0x0x7ff76d8fe9b0+80112]
+	(No symbol) [0x0x7ff76d68060f]
+	(No symbol) [0x0x7ff76d68816a]
+	(No symbol) [0x0x7ff76d68b26f]
+	(No symbol) [0x0x7ff76d68b32f]
+	(No symbol) [0x0x7ff76d6dae5d]
+	(No symbol) [0x0x7ff76d6d9f60]
+	(No symbol) [0x0x7ff76d6cbb6c]
+	(No symbol) [0x0x7ff76d70122a]
+	(No symbol) [0x0x7ff76d6cb056]
+	(No symbol) [0x0x7ff76d701440]
+	(No symbol) [0x0x7ff76d72968a]
+	(No symbol) [0x0x7ff76d701003]
+	(No symbol) [0x0x7ff76d6c95d1]
+	(No symbol) [0x0x7ff76d6ca3f3]
+	GetHandleVerifier [0x0x7ff76dbbdd0d+2960461]
+	GetHandleVerifier [0x0x7ff76dbb7fca+2936586]
+	GetHandleVerifier [0x0x7ff76dbd8a07+3070279]
+	GetHandleVerifier [0x0x7ff76d91843e+185214]
+	GetHandleVerifier [0x0x7ff76d91fe8f+216527]
+	GetHandleVerifier [0x0x7ff76d907b94+117460]
+	GetHandleVerifier [0x0x7ff76d907d4f+117903]
+	GetHandleVerifier [0x0x7ff76d8edc28+11112]
+	BaseThreadInitThunk [0x0x7fffe62be8d7+23]
+	RtlUserThreadStart [0x0x7fffe7e6c53c+44]
+
+2025-10-13 18:38:40.893214
+
+-@-
+
+Trying to Apply to "Gen AI - Engineer | BharatGe" job. Job ID: 4313274233
+Found the word "master" in 
+About the job
+About Us:
+We are looking for a Gen AI - Engineer to join our growing team to help design, build, fine-tune, and deploy cutting - edge generative AI models and agentic systems. You will work on the full lifecycle of foundational model development - involving both large and small language models (LLMs and SLMs) - to create scalable AI solutions that address diverse needs across different business domains. This role is ideal for proactive individuals with a strong foundation in machine learning and an experimental mindset, who are passionate about driving transformative advancements in generative AI from research to real-world production impact.
+
+Key Responsibilities:
+Develop and train foundational generative AI models across modalities such as text-to-text, text-to-speech, automatic speech recognition, and vision language.
+Fine-tune and adapt models for specific tasks and domains.
+Build and maintain pipelines for data curation, preprocessing, training, evaluation, and continuous improvement of models.
+Implement debugging, CI/CD, and observability to ensure reliability and efficiency across the development lifecycle.
+Develop retrieval-augmented generation (RAG) pipelines and optimize prompt engineering strategies.
+Optimize training and inference performance through quantization, distributed training/inference, GPU/TPU acceleration.
+Monitor, benchmark, and improve model performance with a focus on accuracy, efficiency, and reducing hallucinations.
+Collaborate with cross-functional teams to build robust AI stacks and integrate them seamlessly into production pipelines for deployment.
+Document technical processes, AI model architectures, and experimental results, while maintaining well-structured, version-controlled code repositories.
+Stay current with advancements in transformer architectures, open-source releases, and AI tooling.
+
+
+Minimum Qualifications and Experience:
+Bachelor’s or Master’s in Computer Science, AI/ML, Data Science or any related field with 2 to 5 years of industry experience in applied machine learning or AI development.
+
+Required Expertise: 
+Proficiency in Python programming with solid foundation in computer science fundamentals such as data structures and algorithms.
+Strong problem-solving skills and demonstrated ability to lead projects.
+Hands-on experience with a few of the tools listed below: 
+One or more model libraries and ML frameworks such as TensorFlow, PyTorch, HF Transformers, NeMo, etc.
+AI application libraries and orchestration frameworks such as DSPy, Langgraph, Langchain, Llamaindex, etc.
+GPU/TPU based training and inference using libraries such as vLLM.
+Distributed training tools such as SLURM, Ray, Pytorch DDP, NCCL, etc.
+Version control, observability systems, and MLOps tools such as Git, DVC, W&B, MLFlow, KubeFlow, etc.
+Data analysis and curation tools such as Dask, Milvus, Apache Spark, Numpy, etc.
+Chunking, embeddings, vector databases (e.g., Pinecone, Weaviate, Milvus), and retrieval-augmented generation (RAG).
+Model context protocol (MCP), Agent to Agent (A2A), and Agent Communication Protocol (ACP).
+Team player with excellent interpersonal skills and ability to collaborate effectively with remote team members.
+Go-getter attitude and ability to flourish in a fast-paced, startup environment.
+Prior experience of building and deploying LLMs or SLMs, experience with multimodal models, and track record of contributions to open-source AI/ML projects would be a big plus.
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76d8fe955+80021]
+	GetHandleVerifier [0x0x7ff76d8fe9b0+80112]
+	(No symbol) [0x0x7ff76d68060f]
+	(No symbol) [0x0x7ff76d68816a]
+	(No symbol) [0x0x7ff76d68b26f]
+	(No symbol) [0x0x7ff76d68b32f]
+	(No symbol) [0x0x7ff76d6e091b]
+	(No symbol) [0x0x7ff76d6de3be]
+	(No symbol) [0x0x7ff76d6db2e1]
+	(No symbol) [0x0x7ff76d6da1a0]
+	(No symbol) [0x0x7ff76d6cb7c8]
+	(No symbol) [0x0x7ff76d70122a]
+	(No symbol) [0x0x7ff76d6cb056]
+	(No symbol) [0x0x7ff76d701440]
+	(No symbol) [0x0x7ff76d72968a]
+	(No symbol) [0x0x7ff76d701003]
+	(No symbol) [0x0x7ff76d6c95d1]
+	(No symbol) [0x0x7ff76d6ca3f3]
+	GetHandleVerifier [0x0x7ff76dbbdd0d+2960461]
+	GetHandleVerifier [0x0x7ff76dbb7fca+2936586]
+	GetHandleVerifier [0x0x7ff76dbd8a07+3070279]
+	GetHandleVerifier [0x0x7ff76d91843e+185214]
+	GetHandleVerifier [0x0x7ff76d91fe8f+216527]
+	GetHandleVerifier [0x0x7ff76d907b94+117460]
+	GetHandleVerifier [0x0x7ff76d907d4f+117903]
+	GetHandleVerifier [0x0x7ff76d8edc28+11112]
+	BaseThreadInitThunk [0x0x7fffe62be8d7+23]
+	RtlUserThreadStart [0x0x7fffe7e6c53c+44]
+
+2025-10-13 18:49:49.711244
+Click Failed! Didn't find 'Discard'
+
+-@-
+
+Trying to Apply to "Fullstack Python Developer | Recruvent" job. Job ID: 4311407681
+HR info was not given for "Fullstack Python Developer" with Job ID: 4311407681!
+Click Failed! Didn't find 'Next'
+Failed to find an option with text "cruvent" for question labelled "Are you comfortable commuting/relocating to the office location in Thane?", answering randomly!
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ("what's your expected ctc (in lpa)?", '500000', 'text', ''), ('how many years of experience do you have in python (flask/django/fastapi)?', '0', 'text', ''), ('how many years of experience do you have in reactjs?', '0', 'text', ''), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('how many years of experience do you have as fullstack python developer?', '0', 'text', ''), ('Are you comfortable commuting/relocating to the office location in Thane? [  "Select an option", "Yes", "No", ]', 'No', 'select', 'Select an option'), ('Are you comfortable with working on Mon to Fri (2 Sat working in a month)? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Job application discarded by user!
+2025-10-13 18:50:12.049581
+
+-@-
+
+Trying to Apply to "C++ Developer_Mumbai | Tata Consultancy Service" job. Job ID: 4313736435
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    3
+Irrelevant jobs skipped:        1
+
+
+
+Questions randomly answered:
+  ('Are you comfortable commuting/relocating to the office location in Thane? [  "Select an option", "Yes", "No", ]', 'select')  
+
+
+
+Keep up with the progress. You got this.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-10-14 08:57:34.197534
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Software Test Engineer (Remote) | Taskif" job. Job ID: 4309583156
+HR info was not given for "Software Test Engineer (Remote)" with Job ID: 4309583156!
+
+About the job
+We're Hiring "Software Test Engineer (Freelance/Remote)" | Earn up to $2500 per month
+
+Location: India (Remote)
+
+What You Will Be Doing:
+Contribute to training and refining cutting-edge AI systems
+Adopt a “user mindset” to produce natural and realistic data for AI development
+Develop rubrics to structure and address user needs effectively
+Evaluate AI-generated outputs by ranking, reviewing, and critiquing reasoning and problem-solving responses
+Work across multiple projects based on skillset and expertise
+
+What We’re Looking For:
+Education: Bachelor’s degree or higher (or currently enrolled)
+Writing Skills: Clear, concise, and engaging writing to explain reasoning and evaluate output
+Analytical & Problem-Solving Skills: Ability to craft complex prompts and assess nuanced AI responses
+Attention to Detail: Commitment to accuracy and structured feedback
+
+Apply Now!
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('phone', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Test Engineer (Remote) | Taskif" job. Job ID: 4309583156 info
+
+-@-
+
+Failed to click "Full Stack Engineer | Strategic Talent Partne" job on details button. Job ID: 4310337991!
+Click Failed! Didn't find 'Discard'
+Browser window closed or session is invalid. Ending application process.
+Message: element click intercepted: Element <a data-control-id="cHqXTRx+fIp7TxRgMfSleg==" tabindex="0" href="/jobs/view/4310337991/?eBP=NON_CHARGEABLE_CHANNEL&amp;refId=yyVJ9RL%2FU46eaEiZCeJDKQ%3D%3D&amp;trackingId=cHqXTRx%2BfIp7TxRgMfSleg%3D%3D&amp;trk=flagship3_search_srp_jobs" id="ember742" class="disabled ember-view job-card-container__link
+                      vSrvMDxDzlDaIZDMnnsQURQqbzEZBDMeK
+                      job-card-list__title--link" aria-label="Full Stack Engineer" dir="ltr">...</a> is not clickable at point (348, 185). Other element would receive the click: <div data-test-modal-container="" data-test-modal-id="easy-apply-modal" aria-hidden="false" id="ember949" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">...</div>
+  (Session info: chrome=141.0.7390.77)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65acf0a39]
+	(No symbol) [0x0x7ff65acee3be]
+	(No symbol) [0x0x7ff65aceb2e1]
+	(No symbol) [0x0x7ff65acea1a0]
+	(No symbol) [0x0x7ff65acdb7c8]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: element click intercepted: Element <a data-control-id="cHqXTRx+fIp7TxRgMfSleg==" tabindex="0" href="/jobs/view/4310337991/?eBP=NON_CHARGEABLE_CHANNEL&amp;refId=yyVJ9RL%2FU46eaEiZCeJDKQ%3D%3D&amp;trackingId=cHqXTRx%2BfIp7TxRgMfSleg%3D%3D&amp;trk=flagship3_search_srp_jobs" id="ember742" class="disabled ember-view job-card-container__link
+                      vSrvMDxDzlDaIZDMnnsQURQqbzEZBDMeK
+                      job-card-list__title--link" aria-label="Full Stack Engineer" dir="ltr">...</a> is not clickable at point (348, 185). Other element would receive the click: <div data-test-modal-container="" data-test-modal-id="easy-apply-modal" aria-hidden="false" id="ember949" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">...</div>
+  (Session info: chrome=141.0.7390.77)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65acf0a39]
+	(No symbol) [0x0x7ff65acee3be]
+	(No symbol) [0x0x7ff65aceb2e1]
+	(No symbol) [0x0x7ff65acea1a0]
+	(No symbol) [0x0x7ff65acdb7c8]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              1
+External job links collected:   0
+                              ----------
+Total applied or collected:     1
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+Every job is a self-portrait of the person who does it. Autograph your work with excellence.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-10-14 08:58:58.778348
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Software Engineer Intern | Readyl" job. Job ID: 4310323966
+
+About the job
+About the Role
+ We are looking for a passionate and motivated Software Engineer Intern to join our engineering team. The ideal candidate will help build high-quality, scalable, and testable applications while gaining hands-on experience with modern technologies and cloud platforms.
+
+Responsibilities
+Develop high-quality, maintainable software and web applications.
+Design, implement, and test scalable features.
+Analyze and enhance existing software systems for performance and reliability.
+Collaborate with cross-functional teams to define, design, and ship new features.
+Identify, troubleshoot, and resolve software defects efficiently.
+
+Qualifications
+Bachelor’s degree (or pursuing) in Computer Science, Information Technology, or a related field.
+Strong understanding of data structures, algorithms, and software design principles.
+Hands-on experience in one or more of the following:
+React.js, Node.js, Python
+AWS Lambda and serverless architectures
+AWS Certification is a plus.
+
+Stipend and Work Hours
+₹25,000 per month
+ Duration: 6 months
+20 hours per week (part-time)
+Exceptional interns may be offered a full-time Software Development Engineer (SDE) role upon successful completion of the internship, with a competitive annual salary package.
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Done'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac9816a]
+	(No symbol) [0x0x7ff65ac9b26f]
+	(No symbol) [0x0x7ff65ac9b32f]
+	(No symbol) [0x0x7ff65aceae5d]
+	(No symbol) [0x0x7ff65ace9f60]
+	(No symbol) [0x0x7ff65acdb7c8]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+2025-10-14 08:59:29.772743
+Click Failed! Didn't find 'Discard'
+
+-@-
+
+Trying to Apply to "Dotnet Developer | Informist Media Pvt Lt" job. Job ID: 4313750018
+
+About the job
+Role & responsibilities
+Design, develop, update and maintain product
+Troubleshooting and debugging code.
+Proficiency in managing SQL Databases and writing optimized queries.
+Should be able to work independently on a project
+Should be ready to adapt new technologies
+
+Desired Skills & Experience
+Minimum 5+ years’ experience as a Software Developer
+Deep knowledge in designing and developing C# .NET based Web applications / Windows / Console applications.
+Should have very good knowledge in React
+Should have very good knowledge in Microsoft .Net ,MVC, ASP.NET, Web API
+Should have very good knowledge in MS SQL/ MySQL Server
+Good working experience with AJAX, jQuery and JavaScript.
+
+Contains bad word ".NET". Skipping this job!
+
+
+-@-
+
+Trying to Apply to "Python AI Engineer - 17852 | Turin" job. Job ID: 4314149829
+HR info was not given for "Python AI Engineer - 17852" with Job ID: 4314149829!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Submit application'
+Since, Submit Application failed, discarding the job application...
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac9816a]
+	(No symbol) [0x0x7ff65ac9b26f]
+	(No symbol) [0x0x7ff65ac9b32f]
+	(No symbol) [0x0x7ff65acec4f1]
+	(No symbol) [0x0x7ff65ace9c8f]
+	(No symbol) [0x0x7ff65acdbb6c]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+2025-10-14 08:59:52.901207
+Click Failed! Didn't find 'Discard'
+
+-@-
+
+Failed to click "Frontend Developer – AI Products, Data Analytics & Business Intelligence | Remote (APAC) | Fresher to 6 Years | PGC Digital (America) Inc: CMMI Level 3 Compan" job on details button. Job ID: 4313627835!
+Trying to Apply to "Frontend Developer – AI Products, Data Analytics & Business Intelligence | Remote (APAC) | Fresher to 6 Years | PGC Digital (America) Inc: CMMI Level 3 Compan" job. Job ID: 4313627835
+
+About the job
+Frontend Developer – AI Products, Data Analytics & Business Intelligence
+Experience: Fresher to 6 Years
+Location: Remote / Hybrid (India | APAC | USA Overlap)
+Work Model: Remote / Hybrid | Immediate Joiners Preferred
+
+About PGC (America) Inc
+PGC (America) Inc, a subsidiary of PGC Digital – PradeepIT Global Consulting Pvt Ltd, is a People-First, Infinity AI technology partner helping global enterprises build scalable AI, Cloud, and Data-driven solutions across SAP, Microsoft, Salesforce, and ServiceNow ecosystems.
+
+We design and deliver world-class products like 10XTA (Talent Intelligence Platform), 10X Recruiter Suite, and advanced AI & Analytics dashboards that empower Fortune 500 clients across the USA, UK, Singapore, UAE, and India.
+
+Role Overview
+The ideal candidate will be responsible for designing, developing, testing, and debugging responsive web and mobile applications for PGC Digital’s AI and Analytics platforms.
+Using JavaScript, HTML, and CSS, you will translate complex user and business needs into functional, scalable, and elegant frontend designs that deliver measurable impact.
+We’re looking for developers (from Freshers to 6 Years of Experience) who combine creativity, precision, and problem-solving to build next-generation AI, analytics, and business intelligence solutions.
+
+Key Responsibilities
+Design, develop, and test UI for mobile and web applications.
+Develop responsive, high-performance web interfaces for AI dashboards, BI platforms, and data visualization tools.
+Build reusable code and component libraries for long-term scalability.
+Collaborate with backend and data engineering teams to integrate APIs, microservices, and real-time analytics.
+Accurately translate user and business needs into functional, pixel-perfect frontend code.
+Ensure UI/UX consistency, accessibility, and performance optimization across browsers and devices.
+Participate in Agile / Scrum sprints, code reviews, and product release cycles.
+
+Skills & Technical Requirements
+Must-Have Skills
+Proficiency in JavaScript (ES6+), HTML5, CSS3, and modern frameworks (React.js / Next.js / Angular / Vue.js).
+Experience building object-oriented web applications and reusable frontend components.
+Familiarity with RESTful APIs, JSON, and frontend data binding techniques.
+Hands-on with Figma / Adobe XD for UI/UX collaboration.
+Understanding of Git / GitHub and version control workflows.
+Good-to-Have Skills
+Exposure to data visualization libraries (Chart.js, D3.js, Recharts).
+Basic knowledge of Python / Node.js for integration with AI pipelines.
+Familiarity with Power BI / Tableau / custom BI dashboards.
+Awareness of frontend performance metrics, accessibility standards, and testing frameworks (Jest, Cypress).
+Qualifications
+Bachelor’s degree or equivalent in Computer Science, Information Technology, or related field.
+2+ years’ experience in frontend development (for experienced roles).
+Familiarity with Scrum / Agile development methodologies.
+Strong analytical thinking, communication, and collaboration skills.
+Freshers with strong projects, portfolios, or internships are highly encouraged to apply.
+What We Offer
+Competitive salary based on skills & experience (USD / INR).
+Opportunity to work on real-world AI & analytics products used by Fortune 500 enterprises.
+Mentorship from global Product & Engineering Leaders in the US and Singapore.
+Career growth from Frontend Developer → Full Stack Engineer → Product Lead.
+People-First, flexible, and innovation-driven work environment.
+How to Apply
+Send your resume or GitHub portfolio to us.career@pgcdigital.ai 
+or apply via LinkedIn with the subject line:
+“Frontend Developer – AI & Analytics | PGC (America) Inc | [Experience Level]”
+
+Experience required 6 > Current Experience 5. Skipping this job!
+
+
+-@-
+
+Trying to Apply to "Cloud Engineer | EETEC" job. Job ID: 4245106453
+HR info was not given for "Cloud Engineer" with Job ID: 4245106453!
+
+About the job
+EETECH SRLS – Cloud IT Consulting Company is currently hiring for the position of:
+Cloud Engineer - Middle
+
+We are looking for individuals with the following skills:
+
+Soft Skills
+Strong team collaboration, problem-solving, and active listening skills, aimed at finding the best solutions for our clients together with the team.
+While we support flexible work, the ability to collaborate with teams and clients remotely is a must-have.
+
+⚠️ Please note: This position is not fully remote. Presence at our Mumbai office is required 3 days a week. (First Floor, Phoenix Paragon Plaza, Phoenix Market City, 2b-26, LBS Marg, Sunder Baug Ln, Kurla West, Kurla, Mumbai, Maharashtra 400070)
+
+Hard Skills
+Excellent knowledge of lean and agile principles and methodologies, which we fully embrace.
+Strong knowledge of Linux.
+Advanced knowledge of core AWS services.
+Proficiency in at least one Infrastructure as Code (IaC) language.
+Familiarity with both relational and NoSQL databases.
+Good knowledge of shell scripting and at least one programming language.
+Solid understanding of Docker and experience with microservices architecture.
+Good networking knowledge, particularly in web environments (HTTP, CDN, DNS, etc.).
+Proficiency in written and spoken English.
+
+Preferred (Not Mandatory) Skills
+Experience with CI/CD pipelines.
+Kubernetes.
+Terraform.
+A passion for teaching and contributing to the community through talks or conferences.
+
+What You’ll Learn and Do
+Work with cloud services—primarily AWS, but also Azure and Google Cloud.
+Apply Infrastructure Automation concepts using IaC methodology and DevOps practices.
+Provide solutions and support for client challenges.
+Collaborate with AWS specialists to reproduce and resolve client issues.
+
+What We Offer
+Opportunity to work in a hybrid model with 3 days/week in our Mumbai office.
+Flexible working hours.
+Growth within a cohesive and efficient team.
+Young and informal work environment.
+Work on highly innovative projects.
+Access to training sessions, courses, and certifications.
+Opportunities to work with both national and international clients.
+
+Contract Type:
+We offer direct employment under a fixed-term contract, with a compensation package (RAL) tailored to the candidate’s experience and expectations.
+
+⚠️ We do not hire on a freelance (Partita IVA) basis.
+
+Eligibility:
+Applicants must be residing and/or domiciled in MUMBAI.
+Location: Mumbai, India (Hybrid – 3 days/week in office)
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Prefisso telefonico Paese [  "Seleziona un’opzione", "India (+91)", "Afghanistan (+93)", "Albania (+355)", "Algeria (+213)", "Andorra (+376)", "Angola (+244)", "Anguilla (+1)", "Antartide (+0)", "Antigua e Barbuda (+1)", "Antille Olandesi (+0)", "Arabia Saudita (+966)", "Argentina (+54)", "Armenia (+374)", "Aruba (+297)", "Australia (+61)", "Austria (+43)", "Azerbaigian (+994)", "Bahamas (+1)", "Bahrain (+973)", "Bangladesh (+880)", "Barbados (+1)", "Belgio (+32)", "Belize (+501)", "Benin (+229)", "Bermuda (+1)", "Bhutan (+975)", "Bielorussia (+375)", "Bolivia (+591)", "Bosnia ed Erzegovina (+387)", "Botswana (+267)", "Brasile (+55)", "Brunei Darussalam (+673)", "Bulgaria (+359)", "Burkina Faso (+226)", "Burundi (+257)", "Cambogia (+855)", "Camerun (+237)", "Canada (+1)", "Capo Verde (+238)", "Ciad (+235)", "Cile (+56)", "Cina (+86)", "Cipro (+357)", "Colombia (+57)", "Congo (+242)", "Corea (+82)", "Corea del Nord (+850)", "Costa Rica (+506)", "Costa d\'Avorio (+225)", "Croazia (+385)", "Cuba (+53)", "Danimarca (+45)", "Dominica (+1)", "Ecuador (+593)", "Egitto (+20)", "El Salvador (+503)", "Emirati Arabi Uniti (+971)", "Eritrea (+291)", "Estonia (+372)", "Etiopia (+251)", "Federazione russa (+7)", "Figi (+679)", "Filippine (+63)", "Finlandia (+358)", "Francia (+33)", "Gabon (+241)", "Gambia (+220)", "Georgia (+995)", "Georgia del Sud e Sandwich Australi (+0)", "Germania (+49)", "Ghana (+233)", "Giamaica (+1)", "Giappone (+81)", "Gibilterra (+350)", "Gibuti (+253)", "Giordania (+962)", "Grecia (+30)", "Grenada (+1)", "Groenlandia (+299)", "Guadalupa (+590)", "Guam (+1)", "Guatemala (+502)", "Guernsey (+44)", "Guinea (+224)", "Guinea Equatoriale (+240)", "Guinea-Bissau (+245)", "Guyana (+592)", "Guyana francese (+594)", "Haiti (+509)", "Heard e McDonald (+0)", "Honduras (+504)", "Hong Kong (+852)", "Indonesia (+62)", "Iran (+98)", "Iraq (+964)", "Irlanda (+353)", "Islanda (+354)", "Isola Bouvet (+0)", "Isola Christmas (+61)", "Isola Norfolk (+672)", "Isola di Man (+44)", "Isole Aland (+358)", "Isole Cayman (+1)", "Isole Cocos (Keeling) (+61)", "Isole Comore (+269)", "Isole Cook (+682)", "Isole Falkland (Isole Malvine) (+500)", "Isole Fær Øer (+298)", "Isole Pitcairn (+0)", "Isole Salomone (+677)", "Isole Turks e Caicos (+1)", "Isole Vergini americane (+1)", "Isole Vergini britanniche (+1)", "Israele (+972)", "Italia (+39)", "Jersey (+44)", "Kazakstan (+7)", "Kenya (+254)", "Kirghizistan (+996)", "Kiribati (+686)", "Kosovo (+383)", "Kuwait (+965)", "Laos (+856)", "Lesotho (+266)", "Lettonia (+371)", "Libano (+961)", "Liberia (+231)", "Libia (+218)", "Liechtenstein (+423)", "Lituania (+370)", "Lussemburgo (+352)", "Macao (+853)", "Macedonia (+389)", "Madagascar (+261)", "Malawi (+265)", "Malaysia (+60)", "Maldive (+960)", "Mali (+223)", "Malta (+356)", "Marianne Settentrionali (+1)", "Marocco (+212)", "Marshall (+692)", "Martinica (+596)", "Mauritania (+222)", "Maurizio (+230)", "Mayotte (+262)", "Messico (+52)", "Moldavia (+373)", "Monaco (+377)", "Mongolia (+976)", "Montenegro (+382)", "Montserrat (+1)", "Mozambico (+258)", "Myanmar (+95)", "Namibia (+264)", "Nauru (+674)", "Nepal (+977)", "Nicaragua (+505)", "Niger (+227)", "Nigeria (+234)", "Niue (+683)", "Norvegia (+47)", "Nuova Caledonia (+687)", "Nuova Zelanda (+64)", "Oman (+968)", "Paesi Bassi (+31)", "Paesi caraibici (+0)", "Pakistan (+92)", "Palau (+680)", "Panama (+507)", "Papua Nuova Guinea (+675)", "Paraguay (+595)", "Perù (+51)", "Polinesia francese (+689)", "Polonia (+48)", "Portogallo (+351)", "Portorico (+1)", "Qatar (+974)", "Regno Unito (+44)", "Repubblica Ceca (+420)", "Repubblica Centrafricana (+236)", "Repubblica Dominicana (+1)", "Repubblica democratica del Congo (+243)", "Repubblica slovacca (+421)", "Riunione (+262)", "Romania (+40)", "Ruanda (+250)", "Sahara Occidentale (+212)", "Saint Kitts e Nevis (+1)", "Saint Lucia (+1)", "Saint Pierre e Miquelon (+508)", "Saint Vincent e Grenadine (+1)", "Samoa (+685)", "Samoa Americane (+1)", "San Marino (+378)", "Sant\'Elena (+290)", "Senegal (+221)", "Serbia (+381)", "Serbia e Montenegro (+0)", "Seychelles (+248)", "Sierra Leone (+232)", "Singapore (+65)", "Siria (+963)", "Slovenia (+386)", "Somalia (+252)", "Spagna (+34)", "Sri Lanka (+94)", "Stati Uniti (+1)", "Stati federati di Micronesia (+691)", "Stato della Città del Vaticano (+39)", "Sudafrica (+27)", "Sudan (+249)", "Sudan del Sud (+211)", "Suriname (+597)", "Svalbard e Jan Mayen (+47)", "Svezia (+46)", "Svizzera (+41)", "Swaziland (+268)", "São Tomé e Príncipe (+239)", "Tagikistan (+992)", "Taiwan (+886)", "Tanzania (+255)", "Terre australi francesi (+0)", "Territorio britannico dell\'Oceano indiano (+246)", "Territorio palestinese (+970)", "Thailandia (+66)", "Timor orientale (+670)", "Togo (+228)", "Tokelau (+690)", "Tonga (+676)", "Trinidad e Tobago (+1)", "Tunisia (+216)", "Turchia (+90)", "Turkmenistan (+993)", "Tuvalu (+688)", "Ucraina (+380)", "Uganda (+256)", "Ungheria (+36)", "Uruguay (+598)", "Uzbekistan (+998)", "Vanuatu (+678)", "Venezuela (+58)", "Vietnam (+84)", "Wallis e Futuna (+681)", "Yemen (+967)", "Zambia (+260)", "Zimbabwe (+263)", ]', 'Yes', 'select', 'India (+91)'), ('Indirizzo email [  "Seleziona un’opzione", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('numero di telefono cellulare', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Submit application'
+Since, Submit Application failed, discarding the job application...
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac9816a]
+	(No symbol) [0x0x7ff65ac9b26f]
+	(No symbol) [0x0x7ff65ac9b32f]
+	(No symbol) [0x0x7ff65aceaacd]
+	(No symbol) [0x0x7ff65ace9a79]
+	(No symbol) [0x0x7ff65acdb7c8]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+2025-10-14 09:00:19.392211
+
+-@-
+
+Trying to Apply to "Backend Engineer | Bytecode Collectiv" job. Job ID: 4312716766
+HR info was not given for "Backend Engineer" with Job ID: 4312716766!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac9816a]
+	(No symbol) [0x0x7ff65ac9b26f]
+	(No symbol) [0x0x7ff65ac9b32f]
+	(No symbol) [0x0x7ff65acf091b]
+	(No symbol) [0x0x7ff65acee3be]
+	(No symbol) [0x0x7ff65aceb2e1]
+	(No symbol) [0x0x7ff65acea1a0]
+	(No symbol) [0x0x7ff65acdb7c8]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+2025-10-14 09:00:32.445000
+Click Failed! Didn't find 'Discard'
+
+-@-
+
+Trying to Apply to "Python Developer | Highbrow Technology In" job. Job ID: 4313778370
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Submit application'
+Since, Submit Application failed, discarding the job application...
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac9816a]
+	(No symbol) [0x0x7ff65ac9b26f]
+	(No symbol) [0x0x7ff65ac9b32f]
+	(No symbol) [0x0x7ff65acec4f1]
+	(No symbol) [0x0x7ff65ace9c8f]
+	(No symbol) [0x0x7ff65acdbb6c]
+	(No symbol) [0x0x7ff65ad1122a]
+	(No symbol) [0x0x7ff65acdb056]
+	(No symbol) [0x0x7ff65ad11440]
+	(No symbol) [0x0x7ff65ad3968a]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+2025-10-14 09:01:00.112514
+
+-@-
+
+Trying to Apply to "Software Engineer | GradientF" job. Job ID: 4310913512
+HR info was not given for "Software Engineer" with Job ID: 4310913512!
+Click Failed! Didn't find 'Next'
+Click Failed! Didn't find 'Review'
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Job application discarded by user!
+2025-10-14 09:01:08.921666
+Browser window closed or session is invalid. Ending application process.
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=141.0.7390.77)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac682f1]
+	(No symbol) [0x0x7ff65ad188be]
+	(No symbol) [0x0x7ff65ad38fa2]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=141.0.7390.77)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff65af0e955+80021]
+	GetHandleVerifier [0x0x7ff65af0e9b0+80112]
+	(No symbol) [0x0x7ff65ac9060f]
+	(No symbol) [0x0x7ff65ac682f1]
+	(No symbol) [0x0x7ff65ad188be]
+	(No symbol) [0x0x7ff65ad38fa2]
+	(No symbol) [0x0x7ff65ad11003]
+	(No symbol) [0x0x7ff65acd95d1]
+	(No symbol) [0x0x7ff65acda3f3]
+	GetHandleVerifier [0x0x7ff65b1cdd0d+2960461]
+	GetHandleVerifier [0x0x7ff65b1c7fca+2936586]
+	GetHandleVerifier [0x0x7ff65b1e8a07+3070279]
+	GetHandleVerifier [0x0x7ff65af2843e+185214]
+	GetHandleVerifier [0x0x7ff65af2fe8f+216527]
+	GetHandleVerifier [0x0x7ff65af17b94+117460]
+	GetHandleVerifier [0x0x7ff65af17d4f+117903]
+	GetHandleVerifier [0x0x7ff65aefdc28+11112]
+	BaseThreadInitThunk [0x0x7ffb06a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffb0770c53c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              0
+External job links collected:   0
+                              ----------
+Total applied or collected:     0
+
+Failed jobs:                    6
+Irrelevant jobs skipped:        2
+
+
+The road to success and the road to failure are almost exactly the same. The difference is perseverance.
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-10-14 09:05:43.530090
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Full Stack MLOps Developer/Engineer | Quantum Integrator" job. Job ID: 4314044515
+
+About the job
+Job Title: Full Stack MLOps Developer/Engineer
+Location: Pune/Nagpur, Maharashtra - (Onsite Office)
+Duration: Full-Time
+Experience: 6 to 8 years
+Working Hours: UK time shift
+Notice Period: Immediate or 15 days max.
+
+Must have:– MLOps, Python/Typescript/Azure/Kubernetes/ Front-end experience (React)
+
+Job Description:
+Seeking a highly skilled Full Stack Engineer with expertise in MLOps, Kubernetes (K8s), Apache Airflow, Python, TypeScript, Kadro, and Azure to join our dynamic team. The ideal candidate will be responsible for designing, developing, and deploying scalable machine learning solutions and cloud-native applications, ensuring seamless integration and automation across platforms.
+
+Key Responsibilities:
+Develop and maintain end-to-end full stack applications with a focus on ML deployment and automation.
+Design, implement, and manage scalable MLOps pipelines utilizing Kubernetes, Airflow, and Azure.
+Collaborate with data scientists and DevOps teams to automate ML workflows and deployment processes.
+Build robust backend services using Python and integrate them with frontend components developed in TypeScript.
+Manage container orchestration and deployment strategies using Kubernetes.
+Develop and enhance cloud infrastructure and services on Azure to support scalable ML solutions.
+Implement monitoring, logging, and alerting for deployed ML models and applications.
+Ensure code quality, security, and best practices are followed throughout the development lifecycle.
+
+Required Skills & Qualifications:
+Proven experience in Full Stack Development with proficiency in Python and TypeScript.
+Strong understanding of MLOps practices and tools.
+Hands-on experience with Kubernetes (K8s) for container orchestration.
+Experience with Apache Airflow for workflow automation.
+Solid knowledge of Azure cloud platform services and infrastructure management.
+Familiarity with Kadro (or equivalent workflow/automation tools).
+Experience in deploying and managing ML models in production environments.
+Strong problem-solving skills and ability to work in a collaborative team environment.
+Excellent communication skills and ability to adapt to evolving project requirements.
+
+Preferred Qualifications:
+Experience with CI/CD pipelines and DevOps practices.
+Knowledge of data engineering and database management.
+Prior experience working in a cloud-native environment.
+
+Interview Approach:
+Strong problem-solving skills
+Approach to solving problems
+Hands-on coding skills
+Use of Copilot or similar tools to write code
+Ability to write unit test cases
+Following a modern development cycle
+
+Experience required 6 > Current Experience 5. Skipping this job!
+
+
+-@-
+
+Trying to Apply to "Database Developer | Sonata Softwar" job. Job ID: 4313739602
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Failed to Easy apply!
+Somewhere in Easy Apply process
+Job application discarded by user!
+2025-10-14 09:06:36.524384
+
+-@-
+
+Trying to Apply to "Software Engineer | Caizi" job. Job ID: 4310706158
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('how many years of work experience do you have with spring boot?', '0', 'text', ''), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('how many years of work experience do you have with microservices?', '0', 'text', ''), ('how many years of work experience do you have with kafka streams?', '0', 'text', ''), ('Can you join in 3 weeks? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Software Engineer | Caizi" job. Job ID: 4310706158 info
+
+-@-
+
+Trying to Apply to "Odoo Developer | Ensigncode Softwar" job. Job ID: 4311494761
+
+About the job
+Company Description
+ Ensigncode Software is a prominent business solution provider, delivering standard IT solutions for enterprises and startups across diverse industries. With a transparent culture among employees and business partners, we pride ourselves on leveraging prominent technologies such as Python, DevOps, and Odoo. Headquartered in Australia with operational presence in Ahmedabad, we offer a process-driven and structured approach. Ensigncode Software welcomes bright talent and offers endless growth opportunities.
+
+ Role Description
+ This is a full-time, on-site role for an Odoo Developer located in Ahmedabad. The Odoo Developer will be responsible for developing and maintaining back-end applications using Odoo framework, programming, and software development. Day-to-day tasks include writing and testing code, implementing software solutions, and collaborating with cross-functional teams to enhance application functionalities.
+
+ Qualifications
+  Proficiency in Computer Science, Programming, and Object-Oriented Programming (OOP)
+Experience in Back-End Web Development and Software Development
+Strong analytical and problem-solving skills
+Excellent communication and collaboration abilities
+Bachelor's degree in Computer Science or related field
+Experience with Odoo framework and related technologies is a plus
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('phone', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Odoo Developer | Ensigncode Softwar" job. Job ID: 4311494761 info
+
+-@-
+
+Trying to Apply to "Software Engineer | BrightEdg" job. Job ID: 4307010049
+
+About the job
+What? Just seeking some good talent!
+
+Where? At BrightEdge, we innovate at the intersection of AI, SEO, and enterprise growth. We’re not just shaping the future of enterprise SEO and content performance; we’re also redefining how digital experiences drive real business results. Trusted by more than 55% of the Fortune 100 and 500, alongside 2000+ enterprise brands, our AI-powered platform transforms content into measurable traffic, engagement, and revenue.
+
+Overview:
+We are looking for a passionate Software Engineer who thrives on architecting and executing migration projects, specifically transitioning codebases from PHP to Python. The ideal candidate enjoys problem-solving, improving legacy systems, and working collaboratively in an agile environment.
+
+Key Responsibilities:
+Participate in migrating existing PHP applications to Python, ensuring functionality, performance, and scalability.
+Write clean, maintainable, and efficient code in Python.
+Collaborate with cross-functional teams, including product, QA, and DevOps, to deliver high-quality software solutions.
+Analyze existing PHP codebases to define migration strategies and identify potential challenges.
+Develop and execute tests to ensure successful migration with minimal disruption.
+Optimize applications for performance and scalability post-migration.
+Document migration processes and architecture changes for team knowledge sharing.
+
+Qualifications:
+Bachelor’s/Master's degree in Computer Science.
+Strong programming experience in PHP with demonstrated ability to understand and work within legacy codebases.
+Proficiency in Python with experience in application development.
+Experience with software migration or refactoring projects.
+Familiarity with database systems, API design, and version control tools (e.g., Git).
+Excellent problem-solving skills and attention to detail.
+Comfortable working in an Agile/Scrum environment and collaborating with diverse teams.
+Good communication skills to articulate technical concepts clearly.
+Experience with cloud platforms (AWS, GCP).
+Knowledge of containerization (Docker, Kubernetes).
+
+Why?
+BrightEdge has a global presence with offices in San Mateo, New York, London, Sydney, Tokyo & more.
+Work with passionate leaders and cutting-edge tech in a fast-paced, high-growth environment.
+Culture built on Customer Success, People Success, Excellence, Urgency, and Winning.
+Be part of a growth-stage SaaS company shaping the future of search and content marketing.
+Remote first, work/manage your schedule as you like it.
+
+Ready to build the future at BrightEdge? Apply now!
+
+Contains bad word "PHP". Skipping this job!
+
+
+-@-
+
+Trying to Apply to "Back End Developer | Velodata Global Pvt Lt" job. Job ID: 4314188192
+HR info was not given for "Back End Developer" with Job ID: 4314188192!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Are you comfortable working in an onsite setting? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('Are you an immediate joiner/ serving notice period for less than 30 days? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('We must fill this position urgently. Can you start immediately? [  "Yes"<Yes>, "No"<No>, ]', '"Yes"<Yes>', 'radio', '"Yes"<Yes>'), ('Are you on bench? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('how many years of work experience do you have with back-end web development?', '0', 'text', '0'), ('how many years of work experience do you have with java?', '0', 'text', ''), ('Are you comfortable commuting to this job\'s location? [  "Yes"<Yes>, "No"<No>, ]', 'Yes', 'radio', None), ('how many years of work experience do you have with kotlin?', '0', 'text', ''), ('mobile phone number', '8779678947', 'text', '8779678947'), ('Is your expected CTC less than 16lpa? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Back End Developer | Velodata Global Pvt Lt" job. Job ID: 4314188192 info
+
+
+Total runs:                     1
+Jobs Easy Applied:              3
+External job links collected:   0
+                              ----------
+Total applied or collected:     3
+
+Failed jobs:                    1
+Irrelevant jobs skipped:        2
+
+
+Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-10-14 10:54:15.654700
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Software Engineer" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Senior Frontend Software Engineer | Gi" job. Job ID: 4314060150
+HR info was not given for "Senior Frontend Software Engineer" with Job ID: 4314060150!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('phone', '8779678947', 'text', '8779678947'), ('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Senior Frontend Software Engineer | Gi" job. Job ID: 4314060150 info
+
+-@-
+
+Already applied to "Data Engineer | VML Enterprise Solution" job. Job ID: 4312007452!
+
+-@-
+
+Already applied to "Software Quality Assurance Engineer | Arcserv" job. Job ID: 4314030179!
+
+-@-
+
+Already applied to "Solutions Engineer, APAC | Lindh Executive Searc" job. Job ID: 4314136428!
+
+-@-
+
+Already applied to "Frontend Developer – AI Products, Data Analytics & Business Intelligence | Remote (APAC) | Fresher to 6 Years | PGC Digital (America) Inc: CMMI Level 3 Compan" job. Job ID: 4313627835!
+
+-@-
+
+Already applied to "Data Engineer | Net Zero Insight" job. Job ID: 4311646063!
+
+-@-
+
+Already applied to "Back End Developer with Product Mindset | CloudEagle.a" job. Job ID: 4314036114!
+
+-@-
+
+Trying to Apply to "Backend Developer | WIN Home Inspectio" job. Job ID: 4314012904
+HR info was not given for "Backend Developer" with Job ID: 4314012904!
+Click Failed! Didn't find 'Next'
+Failed to find an option with text "Yes" for question labelled "Degree", answering randomly!
+Answered the following questions...
+{('first name', 'Shakib', 'text', 'Shakib'), ('Are you currently working with a product based organization? [  "Yes"<true>, "No"<false>, ]', '"Yes"<true>', 'radio', '"Yes"<true>'), ('unknown ([X] I currently attend this institution)', True, 'checkbox', False), ('what is your current location?', 'Mumbai', 'text', 'Mumbai'), ('reason for change?', '', 'textarea', ''), ('Are you able to join us immediately or within 30 days? [  "Yes"<true>, "No"<false>, ]', '"Yes"<true>', 'radio', '"Yes"<true>'), ('Are you able to join us immediately or within 30 days? [  "Yes"<true>, "No"<false>, ]', 'Yes', 'radio', None), ('what is your expected ctc (in lpa)?', '500000', 'text', '500000'), ('what is your expected ctc (in lpa)?', '500000', 'text', ''), ('what is your current ctc (in lpa)?', '300000', 'text', '300000'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('what is your current location?', 'Mumbai', 'text', ''), ('what is your notice period (in days)? if you are serving notice period, please provide days remaining in notice period.', '30', 'text', ''), ('reason for change?', '', 'textarea', 'l'), ('Are you currently working with a product based organization? [  "Yes"<true>, "No"<false>, ]', 'Yes', 'radio', None), ('last name', 'Shaikh', 'text', 'Shaikh'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Degree [  "Select an option", "High School", "Associate\'s Degree", "Bachelor\'s Degree", "Master\'s Degree", "Master of Business Administration (M.B.A.)", "Juris Doctor (J.D.)", "Doctor of Medicine (M.D.)", "Doctor of Philosophy (Ph.D.)", "Engineer\'s Degree", "Other", ]', "Engineer's Degree", 'select', 'Select an option'), ('what is your notice period (in days)? if you are serving notice period, please provide days remaining in notice period.', '30', 'text', '30'), ('what is your current ctc (in lpa)?', '300000', 'text', ''), ('Dates attended [  "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ]', 'Yes', 'select', 'January')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Backend Developer | WIN Home Inspectio" job. Job ID: 4314012904 info
+
+-@-
+
+Trying to Apply to "Data Engineer | AAA Globa" job. Job ID: 4314113152
+Found the word "master" in 
+About the job
+Data Engineer | Mumbai
+
+Location: India
+Industry: Proprietary Trading / Financial Markets
+Experience: 4+ years
+Employment Terms: Full-time, Permanent
+Compensation: Competitive, market-aligned
+
+Introduction
+We are seeking an experienced Data Engineer to strengthen our core Data Engineering team. In this key role, you will ensure the secure, scalable, and efficient management of trading data that supports all analytics, reporting, and decision-making across the firm.
+
+The Role
+Responsibilities and Priorities
+Manage and monitor distributed systems, high-capacity storage, and data processing platforms including HDFS, Kubernetes, and proprietary data pipelines.
+Drive systems automation, CI/CD integration, and rapid deployment of new hardware and software solutions.
+Partner with systems and network engineers, traders, and developers to resolve operational queries swiftly.
+Research emerging tools and technologies, then evaluate and implement improvements to maintain industry-leading standards.
+
+The Profile
+Experience, Ability and Knowledge
+Proven track record managing multi-petabyte data infrastructure in fast-paced environments.
+Advanced Linux administration skills; mastery of system internals and troubleshooting.
+Deep proficiency in one or more of Kafka, Spark, Cassandra/Scylla, or HDFS.
+Strong container orchestration skills with Docker, Kubernetes, Helm.
+Experience with data access tools (Dremio, Presto) and workflow orchestration (Airflow, Prefect).
+Exposure to cloud platforms (AWS, GCP, Azure).
+Understanding of data security, governance, and compliance best practices.
+Tools, Tech, and Platform Capabilities
+Distributed data technologies
+Containerization & orchestration platforms
+CI/CD automation pipelines
+Version control systems (Git)
+Storage and data protection architectures
+Qualifications, Licenses and Academic Achievements
+Degree in Computer Science, Information Systems, or related field preferred
+Relevant industry certifications (Linux, Kubernetes, cloud certifications) advantageous
+
+Apply above or connect directly:
+isha@aaaglobal.co.uk I info@aaaglobal.co.uk
+www.aaaglobal.co.uk
+Discreet conversations are always welcome.
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('mobile phone number', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Data Engineer | AAA Globa" job. Job ID: 4314113152 info
+
+-@-
+
+Trying to Apply to "Full-Stack Product Engineer | Proximity Work" job. Job ID: 4314137676
+HR info was not given for "Full-Stack Product Engineer" with Job ID: 4314137676!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('first name', 'Shakib', 'text', 'Shakib'), ('Have you built a product or feature from scratch (0→1), handling both frontend and backend? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('Have you built production-grade applications using Next.js? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('Do you have experience building or optimizing media/video workflows (e.g., streaming, upload progress indicators, compression, or playback)? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('Have you worked on projects beyond internal CRUD or dashboard applications? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('expected ctc', '500000', 'text', '500000'), ('Have you built production-grade applications using Next.js? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('current ctc', '300000', 'text', ''), ('expected ctc', '500000', 'text', ''), ('Have you built and shipped a product end-to-end from development to public release (e.g., Product Hunt, App Store, or live user rollout)? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('in an ideal world, what sort of job would you have? think in terms of the work you would be doing, and also in terms of the company, team setup, work-life balance, etc. how does proximity fit into these expectations?', '', 'textarea', ''), ('Have you worked with or integrated AI/ML features into a product (e.g., via APIs, inference models, or MLOps pipelines)? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('do you have public links to live products, github projects, or demos you’ve built or contributed to? (if yes, please share below.)', 'https://github.com/ShakeebSk', 'text', 'https://github.com/ShakeebSk'), ('do you have public links to live products, github projects, or demos you’ve built or contributed to? (if yes, please share below.)', 'https://github.com/ShakeebSk', 'text', ''), ('current ctc', '300000', 'text', '300000'), ('Do you have 4 or more years of experience as a Full-Stack Product Engineer? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('Are you familiar with deploying or managing infrastructure on Google Cloud Platform (GCP)? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('last name', 'Shaikh', 'text', 'Shaikh'), ('Do you have 4 or more years of experience as a Full-Stack Product Engineer? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('Have you built a product or feature from scratch (0→1), handling both frontend and backend? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('Do you have experience building or optimizing media/video workflows (e.g., streaming, upload progress indicators, compression, or playback)? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('Are you familiar with deploying or managing infrastructure on Google Cloud Platform (GCP)? [  "Yes"<yes>, "No"<no>, ]', 'Yes', 'radio', None), ('Have you worked on projects beyond internal CRUD or dashboard applications? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('mobile phone number', '8779678947', 'text', '8779678947'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Have you built and shipped a product end-to-end from development to public release (e.g., Product Hunt, App Store, or live user rollout)? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>'), ('Have you worked with or integrated AI/ML features into a product (e.g., via APIs, inference models, or MLOps pipelines)? [  "Yes"<yes>, "No"<no>, ]', '"Yes"<yes>', 'radio', '"Yes"<yes>')}
+Click Failed! Didn't find 'Review'
+
+
+Total runs:                     1
+Jobs Easy Applied:              3
+External job links collected:   0
+                              ----------
+Total applied or collected:     3
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        0
+
+
+
+Questions randomly answered:
+  ('In an ideal world, what sort of job would you have? Think in terms of the work you would be doing, and also in terms of the company, team setup, work-life balance, etc. How does Proximity fit into these expectations?', 'textarea');
+('Reason for change?', 'textarea');
+('Degree [  "Select an option", "High School", "Associate\'s Degree", "Bachelor\'s Degree", "Master\'s Degree", "Master of Business Administration (M.B.A.)", "Juris Doctor (J.D.)", "Doctor of Medicine (M.D.)", "Doctor of Philosophy (Ph.D.)", "Engineer\'s Degree", "Other", ]', 'select')  
+
+
+
+Obstacles are those frightful things you see when you take your eyes off your goal. - Henry Ford
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
+IF YOU HAVE MORE THAN 10 TABS OPENED, PLEASE CLOSE OR BOOKMARK THEM! Or it's highly likely that application will just open browser and not do anything!
+SAFE MODE: Will login with a guest profile, browsing history will not be saved in the browser!
+Login successful!
+
+########################################################################################################################
+
+Date and Time: 2025-10-14 10:58:38.082813
+Cycle number: 1
+Currently looking for jobs posted within 'Past week' and sorting them by ''
+
+________________________________________________________________________________________________________________________
+
+
+>>>> Now searching for "Assistant professor" <<<<
+
+
+Setting search location as: "Mumbai"
+
+-@-
+
+Trying to Apply to "Academic Tech Faculty Lecturer Professor | TeamLease Edtec" job. Job ID: 4312140278
+Found the word "master" in 
+About the job
+TeamLease EdTech is a leading Indian learning‑and‑employability solutions provider that enables universities to create and manage online, distance, and blended programs via a mobile‑first, cloud‑based platform. It has exclusive partnerships with about 65 major universities across 16 states, offering over 200 accredited degree, diploma, and certificate programs in nine Indian languages, and served around 10 lakh learners so far, engaging with approximately 3000 corporates for upskilling initiatives.
+
+Location - Borivali
+Availability: Immediate
+Working hours: Flexible
+
+Faculty Sourcing
+Job role: Faculty/Lecturer for Management and Technical Programs 
+Qualifications: Master's (Mandatory), Ph.D. degree (pursuing/ completed)
+10+ years of experience in higher education teaching
+
+About the role:
+Deliver and record engaging and high-quality video lectures for Management and Technical Subjects [e.g. Data Science, Marketing Analytics, Data Structures using C, Financial Accounting etc.]
+
+Desired Skills:
+Exceptional on-camera presence and delivery skills.
+Demonstrated ability to work independently and manage project timelines effectively.
+Experience in creating and delivering digital educational video content.
+
+About the job
+TeamLease EdTech is a leading Indian learning‑and‑employability solutions provider that enables universities to create and manage online, distance, and blended programs via a mobile‑first, cloud‑based platform. It has exclusive partnerships with about 65 major universities across 16 states, offering over 200 accredited degree, diploma, and certificate programs in nine Indian languages, and served around 10 lakh learners so far, engaging with approximately 3000 corporates for upskilling initiatives.
+
+Location - Borivali
+Availability: Immediate
+Working hours: Flexible
+
+Faculty Sourcing
+Job role: Faculty/Lecturer for Management and Technical Programs 
+Qualifications: Master's (Mandatory), Ph.D. degree (pursuing/ completed)
+10+ years of experience in higher education teaching
+
+About the role:
+Deliver and record engaging and high-quality video lectures for Management and Technical Subjects [e.g. Data Science, Marketing Analytics, Data Structures using C, Financial Accounting etc.]
+
+Desired Skills:
+Exceptional on-camera presence and delivery skills.
+Demonstrated ability to work independently and manage project timelines effectively.
+Experience in creating and delivering digital educational video content.
+
+Experience required 10 > Current Experience 7. Skipping this job!
+
+
+-@-
+
+Trying to Apply to "Mathematics Faculty (IGCSE | Grades 9–12 | Online Teaching) | Facultyzone Talent Acquisitio" job. Job ID: 4311051790
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('phone', '8779678947', 'text', '8779678947'), ('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Mathematics Faculty (IGCSE | Grades 9–12 | Online Teaching) | Facultyzone Talent Acquisitio" job. Job ID: 4311051790 info
+
+-@-
+
+Trying to Apply to "IES Faculty (Economics) | Ecoholics - Largest Platform for Economic" job. Job ID: 4314122009
+HR info was not given for "IES Faculty (Economics)" with Job ID: 4314122009!
+
+About the job
+🔹 Designation: IES Faculty (Economics)
+📍 Mode: Remote
+🕒 Type: Part-Time 
+
+Key Responsibilities:
+Deliver clear, engaging online lectures on Microeconomics, international economics, indian economy, finance, growth and development, etc
+Design and deliver high-quality content, including presentations, notes, and question papers.
+Address student queries and provide one-on-one academic support as needed.
+Mentor students preparing for competitive exams like UGC NET, IES, and others.
+
+Essential Requirements:
+Must have qualified UGC NET in Economics.
+Strong command over instructional design and content delivery.
+Preference given to candidates who have appeared for the Indian Economic Services (IES) exam.
+Expertise in topics like Applied Economics, Welfare Economics, and Microeconomic Theory.
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('how many years of work experience do you have with economics?', '0', 'text', ''), ('Email address [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com'), ('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('Have you prepared or given IES Exam/RBI Grade B depr? [  "Select an option", "Yes", "No", ]', 'Yes', 'select', 'Select an option'), ('mobile phone number', '8779678947', 'text', '8779678947')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "IES Faculty (Economics) | Ecoholics - Largest Platform for Economic" job. Job ID: 4314122009 info
+
+-@-
+
+Trying to Apply to "Visiting Professor | Bodhe Institute for Entrepreneurshi" job. Job ID: 4310273865
+
+About the job
+Company Description
+Bodhe Institute for Entrepreneurship is India's first and only entrepreneurship-focused program accredited by Mumbai University. Our mission is to disrupt the education system and create awareness for enterprise creation to make individuals more self-reliant. With over a decade of experience in content creation, business growth, and improving quality standards through professional up-gradation, we aim to produce net contributors to social and economic development. Our focus is on instilling an entrepreneurial mindset, skills, and abilities in every aspect of education to increase self-employment opportunities and contribute to economic growth.
+
+Role Description
+This is a full-time, on-site role located in Thane for a Visiting Professor at Bodhe Institute for Entrepreneurship. The Visiting Professor will be responsible for delivering lectures, conducting workshops, developing curriculum, mentoring students, and collaborating on research projects. The role involves fostering an entrepreneurial mindset among students, guiding them in business planning, and helping them in enterprise creation. The candidate will also participate in academic committees, attend events, and engage in community outreach.
+
+College - Thakur College (Kandivali) & SIES college Nerul 
+Practical & Theory lectures 
+ #graphicdesign #merger&acquisition #finance #costmanagement #CA #entrepreneurship #businesssimulation #Riskmanagement 
+
+Qualifications
+Strong teaching skills and experience in developing and delivering lectures and workshops
+Experience in curriculum development and instructional design
+Mentoring skills to guide students in their entrepreneurial journeys
+Research skills with the ability to collaborate on academic projects
+Excellent written and verbal communication skills
+Ability to work independently in an on-site, academic setting
+Experience in entrepreneurship, business growth, or related fields is a plus
+Advanced degree in Business, Entrepreneurship, Education, or a related field
+
+Couldn't find experience requirement in About the Job!
+Click Failed! Didn't find 'Next'
+Answered the following questions...
+{('Phone country code [ "List of phone country codes" ]', 'Yes', 'select', 'India (+91)'), ('phone', '8779678947', 'text', '8779678947'), ('Email [  "Select an option", "ty.cs.student2025@gmail.com", ]', 'Yes', 'select', 'ty.cs.student2025@gmail.com')}
+Click Failed! Didn't find 'Review'
+Click Failed! Didn't find 'Done'
+Successfully saved "Visiting Professor | Bodhe Institute for Entrepreneurshi" job. Job ID: 4310273865 info
+
+-@-
+
+Failed to click "Cyber Security Faculty | Mrwebsecure Infosolutions Private Limite" job on details button. Job ID: 4270173526!
+Click Failed! Didn't find 'Discard'
+Browser window closed or session is invalid. Ending application process.
+Message: element click intercepted: Element <a data-control-id="FZr+e/gHBRKN+s9dSHPCZw==" tabindex="0" href="/jobs/view/4270173526/?eBP=NON_CHARGEABLE_CHANNEL&amp;refId=DcKxxBJWd98DJFBFXUF7xw%3D%3D&amp;trackingId=FZr%2Be%2FgHBRKN%2Bs9dSHPCZw%3D%3D&amp;trk=flagship3_search_srp_jobs" id="ember757" class="disabled ember-view job-card-container__link
+                      vSrvMDxDzlDaIZDMnnsQURQqbzEZBDMeK
+                      job-card-list__title--link" aria-label="Cyber Security Faculty" dir="ltr">...</a> is not clickable at point (359, 185). Other element would receive the click: <div data-test-modal-container="" data-test-modal-id="easy-apply-modal" aria-hidden="false" id="ember1374" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">...</div>
+  (Session info: chrome=141.0.7390.77)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d531e955+80021]
+	GetHandleVerifier [0x0x7ff7d531e9b0+80112]
+	(No symbol) [0x0x7ff7d50a060f]
+	(No symbol) [0x0x7ff7d5100a39]
+	(No symbol) [0x0x7ff7d50fe3be]
+	(No symbol) [0x0x7ff7d50fb2e1]
+	(No symbol) [0x0x7ff7d50fa1a0]
+	(No symbol) [0x0x7ff7d50eb7c8]
+	(No symbol) [0x0x7ff7d512122a]
+	(No symbol) [0x0x7ff7d50eb056]
+	(No symbol) [0x0x7ff7d5121440]
+	(No symbol) [0x0x7ff7d514968a]
+	(No symbol) [0x0x7ff7d5121003]
+	(No symbol) [0x0x7ff7d50e95d1]
+	(No symbol) [0x0x7ff7d50ea3f3]
+	GetHandleVerifier [0x0x7ff7d55ddd0d+2960461]
+	GetHandleVerifier [0x0x7ff7d55d7fca+2936586]
+	GetHandleVerifier [0x0x7ff7d55f8a07+3070279]
+	GetHandleVerifier [0x0x7ff7d533843e+185214]
+	GetHandleVerifier [0x0x7ff7d533fe8f+216527]
+	GetHandleVerifier [0x0x7ff7d5327b94+117460]
+	GetHandleVerifier [0x0x7ff7d5327d4f+117903]
+	GetHandleVerifier [0x0x7ff7d530dc28+11112]
+	BaseThreadInitThunk [0x0x7fff0e23e8d7+23]
+	RtlUserThreadStart [0x0x7fff0ffcc53c+44]
+
+Browser window closed or session is invalid. Exiting.
+Message: element click intercepted: Element <a data-control-id="FZr+e/gHBRKN+s9dSHPCZw==" tabindex="0" href="/jobs/view/4270173526/?eBP=NON_CHARGEABLE_CHANNEL&amp;refId=DcKxxBJWd98DJFBFXUF7xw%3D%3D&amp;trackingId=FZr%2Be%2FgHBRKN%2Bs9dSHPCZw%3D%3D&amp;trk=flagship3_search_srp_jobs" id="ember757" class="disabled ember-view job-card-container__link
+                      vSrvMDxDzlDaIZDMnnsQURQqbzEZBDMeK
+                      job-card-list__title--link" aria-label="Cyber Security Faculty" dir="ltr">...</a> is not clickable at point (359, 185). Other element would receive the click: <div data-test-modal-container="" data-test-modal-id="easy-apply-modal" aria-hidden="false" id="ember1374" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">...</div>
+  (Session info: chrome=141.0.7390.77)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d531e955+80021]
+	GetHandleVerifier [0x0x7ff7d531e9b0+80112]
+	(No symbol) [0x0x7ff7d50a060f]
+	(No symbol) [0x0x7ff7d5100a39]
+	(No symbol) [0x0x7ff7d50fe3be]
+	(No symbol) [0x0x7ff7d50fb2e1]
+	(No symbol) [0x0x7ff7d50fa1a0]
+	(No symbol) [0x0x7ff7d50eb7c8]
+	(No symbol) [0x0x7ff7d512122a]
+	(No symbol) [0x0x7ff7d50eb056]
+	(No symbol) [0x0x7ff7d5121440]
+	(No symbol) [0x0x7ff7d514968a]
+	(No symbol) [0x0x7ff7d5121003]
+	(No symbol) [0x0x7ff7d50e95d1]
+	(No symbol) [0x0x7ff7d50ea3f3]
+	GetHandleVerifier [0x0x7ff7d55ddd0d+2960461]
+	GetHandleVerifier [0x0x7ff7d55d7fca+2936586]
+	GetHandleVerifier [0x0x7ff7d55f8a07+3070279]
+	GetHandleVerifier [0x0x7ff7d533843e+185214]
+	GetHandleVerifier [0x0x7ff7d533fe8f+216527]
+	GetHandleVerifier [0x0x7ff7d5327b94+117460]
+	GetHandleVerifier [0x0x7ff7d5327d4f+117903]
+	GetHandleVerifier [0x0x7ff7d530dc28+11112]
+	BaseThreadInitThunk [0x0x7fff0e23e8d7+23]
+	RtlUserThreadStart [0x0x7fff0ffcc53c+44]
+
+
+
+Total runs:                     1
+Jobs Easy Applied:              3
+External job links collected:   0
+                              ----------
+Total applied or collected:     3
+
+Failed jobs:                    0
+Irrelevant jobs skipped:        1
+
+
+The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt
+
+
+Best regards,
+Shakeeb Shaikh
+https://www.linkedin.com/in/shakeeb-shaikh-02b32b282/=/
+
+
+Closing the browser...
