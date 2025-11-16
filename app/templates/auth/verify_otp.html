@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block title %}Verify OTP - AutoHire{% endblock %}
+
+{% block content %}
+<section class="auth-section min-vh-100 d-flex align-items-center py-5">
+ <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+    <div class="auth-card">
+     <div class="text-center mb-4">
+      <h2 class="fw-bold text-light link-light">Verify your Email</h2>
+      <p class="text-secondary link-light">Enter the 6-digit code sent to your email</p>
+     </div>
+     {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+       {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+       {% endfor %}
+      {% endif %}
+     {% endwith %}
+     <div style="background:rgba(35,45,35,0.7); border-left:4px solid #68b267; color:#d3f9ce; padding:14px 12px; border-radius:8px; margin-bottom:12px;">
+      Tip: If you don’t see the email, check your Spam or Promotions, and add us to your contacts.
+     </div>
+     <form method="POST" action="{{ url_for('verify_otp') }}" class="needs-validation" novalidate>
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <div class="mb-3">
+       <label for="otp" class="form-label">6-Digit Code</label>
+       <div class="input-group">
+        <span class="input-group-text">
+         <i class="fas fa-key"></i>
+        </span>
+        <input type="text" id="otp" name="otp" required pattern="[0-9]{6}" maxlength="6" class="form-control form-design text-center" placeholder="Enter your code">
+       </div>
+      </div>
+      <button type="submit" class="btn btn-outline-light btn-lg w-100 mb-3">Verify Code</button>
+     </form>
+     <form method="POST" action="{{ url_for('resend_otp') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button type="submit" class="btn btn-outline-secondary w-100 mb-3" id="resend-otp-btn">
+       <i class="fas fa-sync-alt"></i> Resend OTP
+      </button>
+     </form>
+     <div class="text-center">
+      <p class="mb-0 text-light">
+       <a href="{{ url_for('forgot_password') }}" class="text-decoration-none fw-bold">Forgot password?</a>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+ .auth-section {
+  background: linear-gradient(135deg, rgb(31, 31, 31) 0%, #000000 100%);
+ }
+ .auth-card {
+  background: black;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  border: 1px solid rgb(255,255,255);
+  backdrop-filter: blur(10px);
+ }
+ .form-label {
+  color: #fff !important;
+  font-weight: 500;
+ }
+ .form-design {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid var(--secondary-color);
+  border-left: none;
+  transition: all 0.3s;
+ }
+ .input-group-text {
+  background: transparent;
+  color: #b7fdd2;
+  border: 2px solid var(--secondary-color);
+  border-right: none;
+  transition: all 0.3s;
+ }
+ .form-design::placeholder {
+  color: rgba(255,255,255,0.8) !important;
+ }
+ .form-control:focus {
+  border-color: var(--light-color) !important;
+  background: rgba(64,64,64,0.2) !important;
+  color: white !important;
+ }
+ .btn-outline-light {
+  color: var(--light-color);
+  border-color: var(--secondary-color);
+  transition: all 0.3s;
+ }
+ .btn-outline-light:hover {
+  color:var(--light-color);
+  background:rgba(64,64,64,0.3) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+ }
+ .btn-outline-secondary {
+  border-color: var(--secondary-color);
+  background: transparent;
+  color: var(--secondary-color);
+  transition: all 0.3s;
+ }
+ .btn-outline-secondary:hover {
+  background: rgba(64,64,64,0.3) !important;
+  border-color: rgba(255,255,255,0.5);
+  color: #fff;
+ }
+ .alert-success {
+  background-color: #b5f5c6;
+  color: #1c3b26;
+ }
+ .alert-danger {
+  background-color: #f8b5b5;
+  color: #4a0b0b;
+ }
+ @media (max-width: 576px) {
+  .auth-card {
+   padding: 1.5rem 0.8rem;
+  }
+ }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+ // Optionally, add a timeout to disable the resend button for 30s
+ const resendBtn = document.getElementById('resend-otp-btn');
+ if (resendBtn) {
+  resendBtn.addEventListener('click', function() {
+   resendBtn.disabled = true;
+   setTimeout(() => resendBtn.disabled = false, 30000);
+  });
+ }
+ // Client-side validation for OTP if needed
+ const form = document.querySelector('form.needs-validation');
+ if (form) {
+  form.addEventListener('submit', function(e) {
+   if (!form.checkValidity()) {
+    e.preventDefault();
+    form.classList.add('was-validated');
+   }
+  });
+ }
+});
+</script>
+{% endblock %}
