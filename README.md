@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/github/stars/USERNAME/REPO?style=flat&color=yellow" /></a>
-  <a href="#"><img src="https://img.shields.io/github/forks/USERNAME/REPO?style=flat&color=blue" /></a>
-  <a href="#"><img src="https://img.shields.io/github/license/USERNAME/REPO?style=flat&color=brightgreen" /></a>
+  <a href="#"><img src="https://img.shields.io/github/stars/ShakeebSk/AutoHire-Intelligent-Job-Application-System/?style=flat&color=yellow" /></a>
+  <a href="#"><img src="https://img.shields.io/github/forks/ShakeebSk/AutoHire-Intelligent-Job-Application-System/?style=flat&color=blue" /></a>
+  <a href="#"><img src="https://img.shields.io/github/license/ShakeebSk/AutoHire-Intelligent-Job-Application-System/?style=flat&color=brightgreen" /></a>
   <a href="#"><img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" /></a>
   <a href="#"><img src="https://img.shields.io/badge/Automation-Selenium%2FPlaywright-orange" /></a>
 </p>
