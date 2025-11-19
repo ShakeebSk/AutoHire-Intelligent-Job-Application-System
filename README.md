@@ -129,9 +129,26 @@ WTF_CSRF_ENABLED=true
 ---
 ```ini
 git clone https://github.com/ShakeebSk/AutoHire-Intelligent-Job-Application-System
+
 cd AutoHire-Intelligent-Job-Application-System
+
 python -m venv venv
+
 venv/Scripts/activate
+
 pip install -r requirements.txt
+
 python main.py
 ```
+
+---
+# Project Structure
+---
+```ini
+
+
+
+
+```
+
+
