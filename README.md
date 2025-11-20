@@ -145,10 +145,44 @@ python main.py
 # Project Structure
 ---
 ```ini
-
-
-
-
+AUTOHIRE/
+|-- .vs/
+|-- all excels/
+|-- all resumes/
+|-- app/
+|   |-- __pycache__/
+|   |-- auth/
+|   |-- automation/
+|   |-- dashboard/
+|   |-- models/
+|   |-- setup/
+|   |-- static/
+|   |-- templates/
+|   |-- utils/
+|   |   |-- __init__.py
+|   |   |-- forms.py
+|   |   |-- routes.py
+|-- config/
+|-- data/
+|-- docs/
+|-- instance/
+|   |-- autohire.db
+|-- logs/
+|-- migrations/
+|-- modules/
+|-- myenv/
+|-- requirements/
+|-- .env
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- app.py
+|-- demo_automation.py
+|-- diagnose_linkedin_ui.py
+|-- finalTestScript.py
+|-- manual_ui_inspector.py
+|-- requirements.txt
+|-- run.py
 ```
 
 
