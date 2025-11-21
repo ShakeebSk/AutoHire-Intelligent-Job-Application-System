@@ -192,3 +192,5 @@ AUTOHIRE/
 
 <img width="1919" height="1024" alt="Screenshot2" src="https://github.com/user-attachments/assets/5d69012a-fe55-4609-80f3-caa7743bcc71" />
 <img width="2000" height="1016" alt="Screenshot3" src="https://github.com/user-attachments/assets/cb017150-ac48-403e-ab0f-86cc286bfd80" />
+<img width="1919" height="1023" alt="Screenshot4" src="https://github.com/user-attachments/assets/42236896-4d95-4b28-9e87-8bf9060770db" />
+<img width="1919" he<img width="1919" height="1016" alt="Screenshot 2025-10-13 172034" src="https://github.com/user-attachments/assets/c8f05381-3d9c-4bc9-bd6b-583239aef8a6" />
