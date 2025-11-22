@@ -189,8 +189,25 @@ AUTOHIRE/
 ---
 # ScreenShots
 ---
-
+# Home Screen
 <img width="1919" height="1024" alt="Screenshot2" src="https://github.com/user-attachments/assets/5d69012a-fe55-4609-80f3-caa7743bcc71" />
 <img width="2000" height="1016" alt="Screenshot3" src="https://github.com/user-attachments/assets/cb017150-ac48-403e-ab0f-86cc286bfd80" />
 <img width="1919" height="1023" alt="Screenshot4" src="https://github.com/user-attachments/assets/42236896-4d95-4b28-9e87-8bf9060770db" />
 <img width="1919" he<img width="1919" height="1016" alt="Screenshot 2025-10-13 172034" src="https://github.com/user-attachments/assets/c8f05381-3d9c-4bc9-bd6b-583239aef8a6" />
+
+# Register Page
+<img width="1919" height="840" alt="Screenshot 2025-10-13 172137" src="https://github.com/user-attachments/assets/0ce56e3f-9ec5-4014-aad8-ead4532ea2c3" />
+<img width="1919" height="715" alt="Screenshot 2025-10-13 172153" src="https://github.com/user-attachments/assets/63460616-0c18-42b5-a36c-b04c2ad9a06d" />
+
+# Login Page
+<img width="1918" height="1079" alt="Screenshot 2025-10-13 172237" src="https://github.com/user-attachments/assets/2504d7bf-b6f9-4999-97f1-56fa7077b29c" />
+
+# Welcome and Prefernce Page
+<img width="1917" height="1077" alt="Screenshot 2025-10-13 172549" src="https://github.com/user-attachments/assets/f132073f-d0d0-42d0-b1e6-f6c7e4025520" />
+<img width="1919" height="704" alt="Screenshot 2025-10-13 172628" src="https://github.com/user-attachments/assets/36428bfb-2d17-4485-a3af-fce1ddd1a5fb" />
+<img width="1919" height="888" alt="Screenshot 2025-10-13 172747" src="https://github.com/user-attachments/assets/ad0d1bbf-c483-400a-8d74-513f5f2a9071" />
+<img width="1919" height="609" alt="Screenshot 2025-10-13 172805" src="https://github.com/user-attachments/assets/59ce8ad3-fe88-46f1-98d0-856d9900e5bc" />
+<img width="1919" height="660" alt="Screenshot 2025-10-13 172829" src="https://github.com/user-attachments/assets/2f6bf842-3607-4ee6-8462-21830af37e86" />
+<img width="1919" height="698" alt="Screenshot 2025-10-13 172846" src="https://github.com/user-attachments/assets/0b106d92-33db-4c1b-a558-20c57a1546ea" />
+<img width="1919" height="705" alt="Screenshot 2025-10-13 172910" src="https://github.com/user-attachments/assets/928704d0-c453-4db5-a85b-9d558ec852bc" />
+<img width="1919" height="657" alt="Screenshot 2025-10-13 172927" src="https://github.com/user-attachments/assets/c5135f31-6fe0-461a-b58d-2c0417e321f6" />
