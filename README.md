@@ -211,3 +211,12 @@ AUTOHIRE/
 <img width="1919" height="698" alt="Screenshot 2025-10-13 172846" src="https://github.com/user-attachments/assets/0b106d92-33db-4c1b-a558-20c57a1546ea" />
 <img width="1919" height="705" alt="Screenshot 2025-10-13 172910" src="https://github.com/user-attachments/assets/928704d0-c453-4db5-a85b-9d558ec852bc" />
 <img width="1919" height="657" alt="Screenshot 2025-10-13 172927" src="https://github.com/user-attachments/assets/c5135f31-6fe0-461a-b58d-2c0417e321f6" />
+
+# Befor Applying Index Page
+
+<img width="1919" height="903" alt="Screenshot 2025-10-13 173113" src="https://github.com/user-attachments/assets/2b6d3aaf-4622-4746-bc5f-fc3d2f88cdf6" />
+<img width="1919" height="767" alt="Screenshot 2025-10-13 173212" src="https://github.com/user-attachments/assets/1644a1bb-e536-4a29-b1d0-306fbd8f7c88" />
+# After Applying Index Page
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 205141" src="https://github.com/user-attachments/assets/3878e705-1b6d-40c3-892c-5ab11161f720" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 205157" src="https://github.com/user-attachments/assets/58b7d291-c6ae-4fe1-bfa0-cf0fc10c0c0f" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 205203" src="https://github.com/user-attachments/assets/4b9dd7de-42ed-4522-b96d-dfe41b603e77" />
