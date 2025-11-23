@@ -215,7 +215,8 @@ AUTOHIRE/
 # Befor Applying Index Page
 
 <img width="1919" height="903" alt="Screenshot 2025-10-13 173113" src="https://github.com/user-attachments/assets/2b6d3aaf-4622-4746-bc5f-fc3d2f88cdf6" />
-<img width="1919" height="767" alt="Screenshot 2025-10-13 173212" src="https://github.com/user-attachments/assets/1644a1bb-e536-4a29-b1d0-306fbd8f7c88" />
+<img width="1919" height="767" alt="Screenshot 2025-10-13 173212" src="https://github.com/user-attachments/assets/1644a1bb-e536-4a29-b1d0-306fbd8f7c88" />\
+
 # After Applying Index Page
 <img width="1919" height="1079" alt="Screenshot 2025-11-16 205141" src="https://github.com/user-attachments/assets/3878e705-1b6d-40c3-892c-5ab11161f720" />
 <img width="1919" height="1079" alt="Screenshot 2025-11-16 205157" src="https://github.com/user-attachments/assets/58b7d291-c6ae-4fe1-bfa0-cf0fc10c0c0f" />
