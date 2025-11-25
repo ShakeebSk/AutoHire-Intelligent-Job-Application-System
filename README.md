@@ -230,3 +230,8 @@ AUTOHIRE/
 <img width="1919" height="1079" alt="Screenshot 2025-11-16 205217" src="https://github.com/user-attachments/assets/55dd7b59-99b4-4d77-a799-41b7b2d24680" />
 <img width="1919" height="1079" alt="Screenshot 2025-11-16 205229" src="https://github.com/user-attachments/assets/b96bd196-f1dc-49e2-9b0f-22fdf6ded934" />
 <img width="1919" height="1079" alt="Screenshot 2025-11-16 205250" src="https://github.com/user-attachments/assets/03ef6a0f-5385-4744-8d0f-72e7de1428fb" />
+
+# Job Analytics Page
+
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 205333" src="https://github.com/user-attachments/assets/5fe6a917-4479-4d6d-9290-0a383671e3ee" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 205346" src="https://github.com/user-attachments/assets/2872335e-00db-4dd4-a4b2-f4d3a362abcc" />
