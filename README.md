@@ -238,3 +238,5 @@ AUTOHIRE/
 
 # Setting Analytics Page
 <img width="1919" height="883" alt="Screenshot 2025-10-13 173257" src="https://github.com/user-attachments/assets/2d4bd210-a7a9-4904-9029-44ec4fe12dcd" />
+<img width="1919" height="659" alt="Screenshot 2025-10-13 173351" src="https://github.com/user-attachments/assets/cbb05c4e-d3cd-45dc-b760-73a3572681ca" />
+
