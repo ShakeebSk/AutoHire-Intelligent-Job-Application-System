@@ -246,3 +246,8 @@ AUTOHIRE/
 
 # Setting > Platform Credentials Page
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1d5cbb19-ddec-459d-ad14-39ab595ab131" />
+
+# Setting > Job Preference Page
+<img width="1919" height="1079" alt="Screenshot 2025-11-28 104820" src="https://github.com/user-attachments/assets/6b976bde-2d00-4264-9677-05d7ad1f6459" />
+<img width="1918" height="705" alt="Screenshot 2025-11-28 104842" src="https://github.com/user-attachments/assets/c055b5c4-defa-4fc2-bae1-a23f51b38f8b" />
+
