@@ -256,3 +256,12 @@ AUTOHIRE/
 
 # Setting > Reset Password Page
 <img width="1919" height="1079" alt="Screenshot 2025-11-28 104928" src="https://github.com/user-attachments/assets/2a43eb83-d2fe-4d61-9b12-0f7174de8bd3" />
+
+# Setting > Analytics Report Page
+<img width="1919" height="1079" alt="Screenshot 2025-11-28 104947" src="https://github.com/user-attachments/assets/1cbb07ff-67d0-4e5c-ac6b-0f7e2b2dcaf6" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-28 104958" src="https://github.com/user-attachments/assets/7d402f35-279c-4fc8-892b-850633809694" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-28 105003" src="https://github.com/user-attachments/assets/c200d198-dd78-4f80-ade9-f228e2d13eb9" />
+
+
+
+
